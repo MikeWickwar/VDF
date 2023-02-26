@@ -103,8 +103,17 @@
   }
   .single-wide{
     width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .single-wide p{
+    width: 100%;
   }
   .second-container{
     overflow: hidden;
+  }
+  .second-container > img{
+    overflow: hidden;
+    width: 80%;
   }
 }

@@ -74,6 +74,15 @@ nav li{
 .afLink{
     justify-content: center;
     width: 100%;
+    margin-bottom: 20px;
+}
+.afLink > a{
+  justify-content: center;
+  width: 100%;
+}
+
+.afLinkImg{
+  width: 468px;
 }
 
 #routerView{
@@ -87,7 +96,6 @@ nav li{
 
 #footerNav{
   width: 100%;
-  margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
   align-self: center;
@@ -95,9 +103,11 @@ nav li{
 }
 
 @media all and (max-width: 400px) {
+  .afLinkImg,
   .centerMainImg{
-    width: 100%;
+    width: 80%;
   }
+
 }
 
 
