@@ -18,7 +18,7 @@ const outDir = path.resolve(__dirname, project.platform.output);
 const srcDir = path.resolve(__dirname, 'src');
 const nodeModulesDir = path.resolve(__dirname, 'node_modules');
 // const baseUrl = '/';
-//below is for production to be deploy DO NOT FORGET TO COMMENT AND UNCOMMENT THIS
+//below is for production to be deploy DO NOT FORGET TO COMMENT AND UNCOMMENT THIS *****~~~~!!!!!!!
 const baseUrl = './';
 
 const cssRules = [

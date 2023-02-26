@@ -44,17 +44,38 @@
 
 }
 
+.moneyGreenBg{
+  background-color: rgba(82, 110, 50, .2);
+}
+
 .single-wide{
   padding: 10px;
-  background-color: rgba(82, 110, 50, .2);
-  border-radius: 50px;
+  border-radius: 25px;
   margin-top: 40px;
   color: black;
+  width: 90%;
 }
 
 .single-wide > h3{
   display: flex;
   justify-content: center;
+}
+
+.trippleSplit{
+  display: flex;
+  justify-content: space-between;
+}
+.trippleSplit > p{
+  width: 28%;
+}
+
+#chipInfo > p{
+  margin-left: 30px;
+}
+
+#chipInfo{
+  justify-content: center;
+  align-items: center;
 }
 
 /* ;ess than 1150px */
@@ -82,5 +103,8 @@
   }
   .single-wide{
     width: 100%;
+  }
+  .second-container{
+    overflow: hidden;
   }
 }
