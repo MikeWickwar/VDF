@@ -46,6 +46,10 @@
 
 .single-wide{
   padding: 10px;
+  background-color: rgba(82, 110, 50, .2);
+  border-radius: 50px;
+  margin-top: 40px;
+  color: black;
 }
 
 .single-wide > h3{

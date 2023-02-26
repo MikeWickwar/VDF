@@ -49,10 +49,13 @@ ul {
 nav li{
   margin: auto;
 }
+.centerMainImg{
+  margin-bottom: 20px;
+}
 .centerMainImg img{
   height: 230px;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 .contentContainer{
   display: flex;
@@ -71,4 +74,76 @@ nav li{
   align-self: center;
   align-items: center;
   flex-flow: column;
+}
+
+@media all and (max-width: 400px) {
+  .centerMainImg{
+    width: 100%;
+  }
+}
+
+
+
+.shimmer {
+		text-align: center;
+		color: rgba(0, 0, 0, .7);
+		background: -webkit-gradient(linear, left top, right top, from(#000), to(#fff), color-stop(0.3, green));
+		background: -moz-gradient(linear, left top, right top, from(#000), to(#fff), color-stop(0.3, green));
+		background: gradient(linear, left top, right top, from(#000), to(#fff), color-stop(0.3, green));
+		-webkit-background-size: 125px 100%;
+		-moz-background-size: 125px 100%;
+		background-size: 125px 100%;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		background-clip: text;
+		-webkit-animation-name: shimmer;
+		-moz-animation-name: shimmer;
+		animation-name: shimmer;
+		-webkit-animation-duration: 4s;
+		-moz-animation-duration: 4s;
+		animation-duration: 4s;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-color: #fff;
+    cursor: pointer;
+
+}
+
+@-moz-keyframes shimmer {
+		0% {
+				background-position: top left;
+		}
+		100% {
+				background-position: top right;
+		}
+}
+
+@-webkit-keyframes shimmer {
+		0% {
+				background-position: top left;
+		}
+		100% {
+				background-position: top right;
+		}
+}
+
+@-o-keyframes shimmer {
+		0% {
+				background-position: top left;
+		}
+		100% {
+				background-position: top right;
+		}
+}
+
+@keyframes shimmer {
+		0% {
+				background-position: top left;
+		}
+		100% {
+				background-position: top right;
+		}
 }
