@@ -67,12 +67,10 @@ nav li{
 #routerView{
   background-color: rgba(255, 255, 255, 0.9);
   width: 80%;
-  height: 300vh;
   display: flex;
   align-self: center;
   align-items: center;
   flex-flow: column;
-
 }
 
 .HomeContainer{
@@ -134,9 +132,10 @@ nav li{
 @media all and (max-width: 1150px) {
   .info-split-duo{
     flex-flow: column;
+    width: 100%
   }
 
-  titleWithImages > h2{
+  .titleWithImages > h2{
     padding-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -147,6 +146,13 @@ nav li{
   .first-container {
       width: 100%;
       padding: 10px;
+      min-width: 0;
+  }
+  .titleWithImages{
+    margin-bottom: 70px;
+  }
+  .single-wide{
+    width: 100%;
   }
 }
 

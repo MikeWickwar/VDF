@@ -57,9 +57,10 @@
 @media all and (max-width: 1150px) {
   .info-split-duo{
     flex-flow: column;
+    width: 100%
   }
 
-  titleWithImages > h2{
+  .titleWithImages > h2{
     padding-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -70,5 +71,12 @@
   .first-container {
       width: 100%;
       padding: 10px;
+      min-width: 0;
+  }
+  .titleWithImages{
+    margin-bottom: 70px;
+  }
+  .single-wide{
+    width: 100%;
   }
 }
