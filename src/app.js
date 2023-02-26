@@ -3,7 +3,7 @@ require('bootstrap');
 
 export class App {
     configureRouter(config, router) {
-      config.title = 'Aurelia';
+      config.title = 'Vegas Deal Finder';
       config.map([
         { route: ['','home'],  name: 'home',
             moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Home' },
