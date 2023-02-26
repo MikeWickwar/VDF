@@ -1,0 +1,145 @@
+
+body{
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #020c30;
+  background-image: url(/554d6dd5a758a305476c.png);
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav{
+  width: 80%;
+  background-color: black;
+  color: white;
+  align-self: center;
+}
+.navbar-toggler-icon,
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  background-color: white;
+  border-radius: 3px;
+}
+h2{
+  text-align: center;
+}
+nav *{
+  color: white;
+}
+nav ul{
+  width: 100%;
+}
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  padding-left: 0;
+}
+nav li{
+  margin: auto;
+}
+.centerMainImg img{
+  height: 230px;
+  width: 100%;
+  max-width: 400px;
+}
+.contentContainer{
+  display: flex;
+  flex-flow: column;
+}
+.center{
+  display: flex;
+  align-self: center;
+  align-items: center;
+}
+
+#routerView{
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 80%;
+  height: 300vh;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-flow: column;
+
+}
+
+.HomeContainer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.info-split-duo{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.first-container{
+  align-content: center;
+  padding: 10px;
+  min-width: 400px;
+}
+.second-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.titleWithImages{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+}
+
+.titleWithImages > h2{
+  padding-top: 55px;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: center;
+
+}
+
+.single-wide{
+  padding: 10px;
+}
+
+.single-wide > h3{
+  display: flex;
+  justify-content: center;
+}
+
+/* ;ess than 1150px */
+@media all and (max-width: 1150px) {
+  .info-split-duo{
+    flex-flow: column;
+  }
+
+  titleWithImages > h2{
+    padding-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
