@@ -1,3 +1,12 @@
 import "./home.css"
+import $ from "jquery"
 
-export class home {}
+export class home {
+  onLoad = () => {
+    console.log("home onload...")
+
+  }
+}
+
+const _home = new home();
+$(document).ready(() => { _home.onLoad()})
