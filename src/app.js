@@ -1,6 +1,6 @@
+import $ from "jquery"
 require('bootstrap/dist/css/bootstrap.min.css');
 require('bootstrap');
-import $ from "jquery"
 
 
 
@@ -18,6 +18,8 @@ function bindWindowScroll(){
 export class App {
   onLoad(){
     console.log("App onload...")
+
+
 
     bindWindowScroll()
   }
