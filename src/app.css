@@ -75,6 +75,7 @@ nav li{
 
 .MainContainer > iframe{
     height: 352px;;
+    background-color: black;
 }
 .TitleImg,
 .centerMainImg{
@@ -261,7 +262,7 @@ nav li{
 		-webkit-background-size: 125px 100%;
 		-moz-background-size: 125px 100%;
 		background-size: 125px 100%;
-		-webkit-background-clip: text; 
+		-webkit-background-clip: text;
 		-moz-background-clip: text;
 		background-clip: text;
 		-webkit-animation-name: shimmer;
