@@ -14,6 +14,15 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+body video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
 nav{
   width: 80%;
   background-color: black;
@@ -65,7 +74,7 @@ nav li{
 }
 
 .MainContainer > iframe{
-  height: 455px;
+    height: 352px;;
 }
 .TitleImg,
 .centerMainImg{
@@ -252,7 +261,7 @@ nav li{
 		-webkit-background-size: 125px 100%;
 		-moz-background-size: 125px 100%;
 		background-size: 125px 100%;
-		-webkit-background-clip: text;
+		-webkit-background-clip: text; 
 		-moz-background-clip: text;
 		background-clip: text;
 		-webkit-animation-name: shimmer;

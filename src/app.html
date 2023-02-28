@@ -1,12 +1,13 @@
 <template class-"MainAppTemplate">
   <div class="contentContainer">
+    <video id="background-video" autoplay loop muted>
+      <source src="./Images/stripVid.mp4" type="video/mp4">
+    </video>
     <div class="centerMainImg center">
       <img src="./Images/VegasDealFinderLogo2020.png" alt="">
     </div>
 
-    <div class="flex center afLink">
-      <a href="https://vegas.vdvm.net/c/2091782/268707/4221" id="268707" class="center"><img class="afLinkImg" src="//a.impactradius-go.com/display-ad/4221-268707" border="0" alt="" height="60"/></a><img height="0" width="0" src="//vegas.vdvm.net/i/2091782/268707/4221" style="position:absolute;visibility:hidden;" border="0" />
-    </div>
+    
 
      <nav class="navbar navbar-expand-lg" id="topNav">
        <div class="container-fluid">
@@ -14,8 +15,8 @@
            <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-             <li repeat.for = "row of router.navigation">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+             <li repeat.for = "row of router.navigation"  class="nav-item">
                 <a href.bind = "row.href">${row.title}</a>
              </li>
              <!-- <li class="nav-item dropdown">

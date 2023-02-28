@@ -3,9 +3,10 @@ require('bootstrap');
 import $ from "jquery"
 
 
+
 function bindWindowScroll(){
   $(window).scroll(() => {
-    if (window.pageYOffset > 322) {
+    if (window.pageYOffset > 255) {
       $("#topNav").addClass("fixed")
     }else{
       $("#topNav").removeClass("fixed")
@@ -30,7 +31,7 @@ export class App {
       { route: ['toptips','topTips'],  name: 'toptips',
           moduleId: PLATFORM.moduleName('./components/topTips/topTips'),  nav: true, title:'Top 10 Tips' },
       { route: ['hotels','hotels'],  name: 'hotels',
-          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Hotels' },
+          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Hotels', hotels: true },
       { route: ['entertainment','entertainment'],  name: 'entertainment',
           moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Entertainment' },
       { route: ['foodanddrink','foodanddrink'],  name: 'foodanddrink',
