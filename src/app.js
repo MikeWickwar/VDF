@@ -18,10 +18,13 @@ function bindWindowScroll(){
 export class App {
   onLoad(){
     console.log("App onload...")
-
-
-
     bindWindowScroll()
+  }
+  onNavClick(href){
+    if(window.innerWidth <= 991){
+      $('#navTogglerBtn').click()
+    }
+    window.location.href = href
   }
   configureRouter(config, router) {
     config.title = 'Vegas Deal Finder';
@@ -29,7 +32,7 @@ export class App {
       { route: ['','home'],  name: 'home',
           moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Home' },
       { route: ['topdeals','topdeals'],  name: 'topdeals',
-          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Top 12 Deals' },
+          moduleId: PLATFORM.moduleName('./components/topDeals/topDeals'),  nav: true, title:'Top 12 Deals' },
       { route: ['toptips','topTips'],  name: 'toptips',
           moduleId: PLATFORM.moduleName('./components/topTips/topTips'),  nav: true, title:'Top 10 Tips' },
       { route: ['hotels','hotels'],  name: 'hotels',

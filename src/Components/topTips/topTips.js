@@ -4,7 +4,6 @@ import $ from "jquery"
 export class topTips {
   onLoad = () => {
     console.log("topTips onload...")
-
   }
 }
 
