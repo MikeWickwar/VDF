@@ -21,7 +21,7 @@ const nodeModulesDir = path.resolve(__dirname, 'node_modules');
 //Dont forget  NPM RUN BUILD cmd
 // const baseUrl = '/';
 //below is for production to be deploy DO NOT FORGET TO COMMENT AND UNCOMMENT THIS *****~~~~!!!!!!!
-const baseUrl = './';
+const baseUrl = './#/VDF';
 
 const cssRules = [
   {
