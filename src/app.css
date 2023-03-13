@@ -64,8 +64,14 @@ ul {
 nav li{
   margin: auto;
 }
+nav ul.dropdown-menu {
+  background-color: black;
+}
 .flex{
   display: flex;
+}
+.col{
+  flex-flow: column;
 }
 .fixed{
   position: fixed;
@@ -255,7 +261,6 @@ nav li{
    }
 
 }
-
 
 
 .shimmer {

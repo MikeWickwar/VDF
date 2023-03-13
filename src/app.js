@@ -1,8 +1,7 @@
 import $ from "jquery"
+import hotelData from 'resources/hotels.json';
 require('bootstrap/dist/css/bootstrap.min.css');
 require('bootstrap');
-
-
 
 function bindWindowScroll(){
   $(window).scroll(() => {
@@ -28,15 +27,26 @@ export class App {
   }
   configureRouter(config, router) {
     config.title = 'Vegas Deal Finder';
+    function step() {
+       return step.run;
+    }
+    step.run = (navigationInstruction, next) => {
+      if(navigationInstruction.config.name == "hotels"){
+        navigationInstruction.config.settings.hotel = $.grep(hotelData.Hotels, (gItem) => { return  gItem.name.toLowerCase() === navigationInstruction.params.childRoute.toLowerCase()})[0];
+      }
+      return next();
+    };
+    //add step to populate data into the view when needed - based on :id
+    config.addPreActivateStep(step)
     config.map([
       { route: ['','home'],  name: 'home',
-          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Home' },
+          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Home'},
       { route: ['topdeals','topdeals'],  name: 'topdeals',
           moduleId: PLATFORM.moduleName('./components/topDeals/topDeals'),  nav: true, title:'Top 12 Deals' },
       { route: ['toptips','topTips'],  name: 'toptips',
           moduleId: PLATFORM.moduleName('./components/topTips/topTips'),  nav: true, title:'Top 10 Tips' },
-      { route: ['hotels','hotels'],  name: 'hotels',
-          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Hotels', hotels: true },
+      { route: ['hotels',':id'], name: 'hotels',
+          moduleId: PLATFORM.moduleName('./components/hotels/hotels'),  nav: true, title:'Hotels'},
       { route: ['entertainment','entertainment'],  name: 'entertainment',
           moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Entertainment' },
       { route: ['foodanddrink','foodanddrink'],  name: 'foodanddrink',
@@ -47,7 +57,10 @@ export class App {
           moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Contact Us' }
     ]);
 
+
     this.router = router;
+    this.router.hotels = hotelData.Hotels;
+
 
   }
 }

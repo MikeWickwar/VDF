@@ -1,105 +1,146 @@
-  {"Hotels": [
-    {"name": "Aria",
-     "title": "Aria Hotel & Casino",
-     "vdfRating": "5.7",
-     "qualRating": "4.2",
-     "valueRating": "1.5",
-     "resortImgUrl": "images/ariaMain.jpeg",
-     "resortFee": "45",
-     "parkingDetails": "Self-Parking: First Hour: Free, 1 – 4 Hours: $15, 4 – 24 Hours: $18, Every day after that: $18 ",
-     "hotelDetails": "Aria Resort and Casino is a luxury resort and casino, part of the CityCenter complex on the Las Vegas Strip in Paradise, Nevada. Aria consists of two curved glass and steel highrise towers adjoined at the center. It opened on December 16, 2009 as a joint venture between MGM Resorts International and Infinity World Development. At 4,000,000 sq ft (370,000 m2) and 600 ft (180 m) in height, it is the largest and tallest structure at CityCenter.",
-     "roomsBlurb": "Discover a world of illuminating experiences at AAA Five Diamond ARIA Resort & Casino, where world-class dining and five-star service converge with in-room technologies and award-winning rooms and suites. ",
-     "rooms": [{"title":"Resort Club Lounge King ",
-              "blurb": "Hello, Goodnight Button - Go to sleep with just one touch. Triple-sheeted, 300-thread-count bedding. A goodnight button to power down your room with the touch of your finger. Custom beds from Sealy®. These are just a few of the details we’ve perfected in our 520-square-foot sanctuaries. And it’s earned us top ratings from both AAA and Forbes Travel Guide. Our Deluxe Rooms have all the amenities to make for a glamorous Las Vegas stay. ",
-              "roomDetails": "Size 520 sq. ft.   Bed:  1 King Bed.   Max Guest 3 ",
-              "img": "<img style=\"position: absolute;\" alt=\"King bed Resort Club Lounge city view at Aria.\" src=\"https://static.mgmresorts.com/content/dam/MGM/aria/hotel/aria/deluxe-room/aria-hotel-resort-club-lounge-king-room-city-view.tif.image.2480.1088.high.jpg\">",
-              "features": ["Panoramic Corner View ",
-                         "A Tablet to Control Light, Temperature, Request Reservations and more ",
-                         "Italian marble bath with soaking tub, glass-enclosed shower and personal sink"]
-            },
-            {"title":"Resort Club Lounge King ",
-             "blurb": "BRING A FRIEND - Go to sleep with just one touch. Triple-sheeted, 300-thread-count bedding. A goodnight button to power down your room with the touch of your finger. Custom beds from Sealy®. These are just a few of the details we’ve perfected in our 520-square-foot sanctuaries. And it’s earned us top ratings from both AAA and Forbes Travel Guide. Our Deluxe Rooms have all the amenities to make for a glamorous Las Vegas stay. ",
-             "roomDetails": "Size 520 sq. ft.   Bed:  1 King Bed.   Max Guest 3",
-             "img": "<img style=\"position: absolute;\" alt=\"Two queen bed deluxe room mountain view at Aria.\" src=\"https://static.mgmresorts.com/content/dam/MGM/aria/hotel/aria/deluxe-room/aria-hotel-deluxe-two-queen-room-beds.tif.image.2480.1088.high.jpg\">",
-             "features": ["Panoramic Corner View ",
-                        "A Tablet to Control Light, Temperature, Request Reservations and more ",
-                        "Italian marble bath with soaking tub, glass-enclosed shower and personal sink"]
-            },
-            {"title":"ARIA Tower Suites ",
-             "blurb": "Unparalleled Refinement - Relax in style and enjoy views of The Strip in this 840-square-foot escape. Spacious yet cozy, this suite features a custom-made Sealy® king bed with triple-sheeted, 300-thread-count bedding and an open-air whirlpool tub. You won’t have a care in the world with twice-daily housekeeping. And you’ll be awed by the amazing in-room technology that can control your room, order breakfast in bed, book a spa treatment or end the day with the tap of a 'goodnight' button.",
-             "roomDetails": "Size: 840 sq. ft. Bed: 1 King Bed. Max Guest: 3",
-             "img": "<img style=\"left: 0px; top: 0px; width: 920px; height: 404px; position: absolute;\" alt=\"Experience ARIA's Panoramic Studio Suite.\" src=\"https://static.mgmresorts.com/content/dam/MGM/aria/hotel/aria/panoramic-studio-suite/aria-hotel-panoramic-studio-suite.tif.image.2480.1088.high.jpg\">",
-             "features": ["Private Lounge Check-In ",
-                        "Concierge Pre-Arrival Contact ",
-                        "Enhanced Turn Down Service ",
-                        "Lounge Hours:  6:00 AM - 10:00 PM"]
-            },
-            {"title":"ARIA Corner Suite ",
-             "blurb": "The Suite Life - Pamper yourself with 920 square feet dedicated to you. Decisions, decisions. Loving the view from the living room? Then the view from the bedroom will also make your jaw drop. Our 920-square-foot Corner Suites have awe-inspiring views of the mountains throughout your suite. And every detail—from the three LCD HD televisions to the custom-made beds—was designed to spoil you. ",
-             "roomDetails": "Size:920 sq. ft. Bed: 1 King Bed. Max Guest: 3 ",
-             "img": "<img style=\"position: absolute; left: 0px; top: 0px; width: 920px; height: 404px;\" alt=\"Living Room for ARIA Corner Suite – Strip View.\" src=\"https://static.mgmresorts.com/content/dam/MGM/aria/hotel/aria/corner-suite/aria-hotel-aria-tower-suites-corner-suite-living-room.tif.image.2480.1088.high.jpg\">",
-             "features": ["Private Lounge Check-In ",
-                        "Concierge Pre-Arrival Contact ",
-                        "Enhanced Turn Down Service ",
-                        "Lounge Hours:  6:00 AM - 10:00 PM",
-                        "Beverages & Light Snacks: 7:00 AM – 8:00 PM "]
-            },
-            {"title":"ARIA Tower Suite",
-             "blurb": "Over-the-Top Indulgence - Soak your cares away in an open-air whirlpool tub. Then, fall into a custom-made Sealy® bed with triple-sheeted, 300-thread-count bedding. You won’t have a care in the world with twice-daily housekeeping. And you’ll be pampered by the amazing in-room technology, like the goodnight button that powers down your room for the night with the touch of a finger. If that doesn’t make for a restful night, nothing will. ",
-             "roomDetails": "Size: 1000 sq. ft. Bed: 1 King Bed. Max Guest: 3",
-             "img": "<img style=\"position: absolute;\" alt=\"Living room for ARIA Tower Suite.\" src=\"https://static.mgmresorts.com/content/dam/MGM/aria/hotel/aria/tower-suite/aria-hotel-aria-tower-suites-living-room.tif.image.2480.1088.high.jpg\">",
-             "features": ["Private Lounge Check-In ",
-                        "Concierge Pre-Arrival Contact ",
-                        "Enhanced Turn Down Service ",
-                        "Lounge Hours:  6:00 AM - 10:00 PM",
-                        "Beverages & Light Snacks: 7:00 AM – 8:00 PM "]
-            },
-            {"title":"ARIA Center Suite Strip View ",
-             "blurb": "Location, Location, Location - If panoramic views of The Strip and spacious living and bedroom areas are your style, then this is your suite. Tucked centrally between ARIA’s two towers, enjoy 1,075 square feet of separate living and bedroom spaces, a custom-made Sealy® bed and 300-thread-count, triple-sheeted bedding. We’ve made restful sleep even easier with a goodnight button to power down your room with the touch of a fingertip. ",
-             "roomDetails": "Size: 1075 sq. ft. Bed: 2 Queen Beds. Max Guest: 4 ",
-             "img": "<img style=\"position: absolute;\" alt=\"Excludes Broadcast\" src=\"https://static.mgmresorts.com/content/dam/MGM/aria/hotel/aria/center-suite/aria-hotel-tower-suites-center-suite-living-room.tif.image.2480.1088.high.jpg\">",
-             "features": ["Private Lounge Check-In ",
-                        "Concierge Pre-Arrival Contact ",
-                        "Enhanced Turn Down Service ",
-                        "Lounge Hours:  6:00 AM - 10:00 PM",
-                        "Beverages & Light Snacks: 7:00 AM – 8:00 PM "]
-            },
-            {"title":"Executive Hospitality Suite",
-             "blurb": "All Work and All Play - An in-suite conference room leaves plenty of time for both. Meet in style in the private 12-person conference room found within our 2,000-square-foot Executive Hospitality Suite. Then relax with a post-meeting drink from the wet bar and admire the view of the pool. When it’s time to rest up for the next day’s meetings (or pool party), a custom-made Sealy® bed—complete with triple-sheeted, 300-thread-count bedding—transports you to a night of euphoric sleep. ",
-             "roomDetails": "Size:  2000 sq. ft. Bed: 1 King Bed. Max Guest: 3 ",
-             "img": "<img style=\"position: absolute;\" alt=\"Experience ARIA's Executive Hospitality Suite.\" src=\"https://static.mgmresorts.com/content/dam/MGM/aria/hotel/aria/executive-hospitality-suite/aria-hotel-executive-hospitality-suite-living-room.tif.image.2480.1088.high.jpg\">",
-             "features": ["Private Lounge Check-In ",
-                        "Concierge Pre-Arrival Contact ",
-                        "Enhanced Turn Down Service ",
-                        "Lounge Hours:  6:00 AM - 10:00 PM",
-                        "Beverages & Light Snacks: 7:00 AM – 8:00 PM "]
-            }
-          ],
-       "casino": {
-         "title": "Aria Casino",
-         "subTitle": "At over 150,000 sq ft. the Aria casino delivers the highest level of casino play. Dress to impress.",
-         "titleImg": "",
-         "games": ["Blackjack",
-            "Roulette",
-            "Craps",
-            "Baccarat",
-            "Three Card Poker",
-            "Pai Gow Poker",
-            "Let It Ride",
-            "Pai Gow",
-            "Slots",
-            "Poker",
-            "Sportsbook"],
-         "slotBlurb": "",
-         "slotImg": "",
-         "pokerBlurb": "",
-         "pokerImg": "",
-         "sbBlurb": "",
-         "sbImg": ""
-       },
-       "Pool": {
-         "title": "Aria Pool",
-         "poolBlurb": "",
-         "poolImg": ""}
-       }
-    ]}
+{
+  "Hotels": [{
+    "name": "Aria",
+    "route": "/#/hotels/Aria",
+    "title": "Aria Hotel & Casino",
+    "vdfRating": "5.7",
+    "qualRating": "4.2",
+    "valueRating": "1.5",
+    "resortImgUrl": "hotelImg/ariaMain.jpg",
+    "resortFee": "$45.00",
+    "parkingDetails": "Self-Parking: First Hour: Free, 1 – 4 Hours: $15, 4 – 24 Hours: $18, Every day after that: $18 ",
+    "hotelDetails": "Aria Resort and Casino is a luxury resort and casino, part of the CityCenter complex on the Las Vegas Strip in Paradise, Nevada. Aria consists of two curved glass and steel highrise towers adjoined at the center. It opened on December 16, 2009 as a joint venture between MGM Resorts International and Infinity World Development. At 4,000,000 sq ft (370,000 m2) and 600 ft (180 m) in height, it is the largest and tallest structure at CityCenter.",
+    "roomsBlurb": "Discover a world of illuminating experiences at AAA Five Diamond ARIA Resort & Casino, where world-class dining and five-star service converge with in-room technologies and award-winning rooms and suites. ",
+    "rooms": [{
+        "title": "Resort Club Lounge King ",
+        "blurb": "Hello, Goodnight Button - Go to sleep with just one touch. Triple-sheeted, 300-thread-count bedding. A goodnight button to power down your room with the touch of your finger. Custom beds from Sealy®. These are just a few of the details we’ve perfected in our 520-square-foot sanctuaries. And it’s earned us top ratings from both AAA and Forbes Travel Guide. Our Deluxe Rooms have all the amenities to make for a glamorous Las Vegas stay. ",
+        "roomDetails": "Size 520 sq. ft.   Bed:  1 King Bed.   Max Guest 3 ",
+        "img": "https://static.mgmresorts.com/content/dam/MGM/aria/hotel/aria/deluxe-room/aria-hotel-resort-club-lounge-king-room-city-view.tif.image.2480.1088.high.jpg",
+        "features": ["Panoramic Corner View ",
+          "A Tablet to Control Light, Temperature, Request Reservations and more ",
+          "Italian marble bath with soaking tub, glass-enclosed shower and personal sink"
+        ]
+      },
+      {
+        "title": "ARIA Tower Suites ",
+        "blurb": "Unparalleled Refinement - Relax in style and enjoy views of The Strip in this 840-square-foot escape. Spacious yet cozy, this suite features a custom-made Sealy® king bed with triple-sheeted, 300-thread-count bedding and an open-air whirlpool tub. You won’t have a care in the world with twice-daily housekeeping. And you’ll be awed by the amazing in-room technology that can control your room, order breakfast in bed, book a spa treatment or end the day with the tap of a 'goodnight' button.",
+        "roomDetails": "Size: 840 sq. ft. Bed: 1 King Bed. Max Guest: 3",
+        "img": "https://static.mgmresorts.com/content/dam/MGM/aria/hotel/aria/panoramic-studio-suite/aria-hotel-panoramic-studio-suite.tif.image.2480.1088.high.jpg",
+        "features": ["Private Lounge Check-In ",
+          "Concierge Pre-Arrival Contact ",
+          "Enhanced Turn Down Service ",
+          "Lounge Hours:  6:00 AM - 10:00 PM"
+        ]
+      },
+      {
+        "title": "ARIA Corner Suite ",
+        "blurb": "The Suite Life - Pamper yourself with 920 square feet dedicated to you. Decisions, decisions. Loving the view from the living room? Then the view from the bedroom will also make your jaw drop. Our 920-square-foot Corner Suites have awe-inspiring views of the mountains throughout your suite. And every detail—from the three LCD HD televisions to the custom-made beds—was designed to spoil you. ",
+        "roomDetails": "Size:920 sq. ft. Bed: 1 King Bed. Max Guest: 3 ",
+        "img": "https://static.mgmresorts.com/content/dam/MGM/aria/hotel/aria/corner-suite/aria-hotel-aria-tower-suites-corner-suite-living-room.tif.image.2480.1088.high.jpg",
+        "features": ["Private Lounge Check-In ",
+          "Concierge Pre-Arrival Contact ",
+          "Enhanced Turn Down Service ",
+          "Lounge Hours:  6:00 AM - 10:00 PM",
+          "Beverages & Light Snacks: 7:00 AM – 8:00 PM "
+        ]
+      },
+      {
+        "title": "ARIA Tower Suite",
+        "blurb": "Over-the-Top Indulgence - Soak your cares away in an open-air whirlpool tub. Then, fall into a custom-made Sealy® bed with triple-sheeted, 300-thread-count bedding. You won’t have a care in the world with twice-daily housekeeping. And you’ll be pampered by the amazing in-room technology, like the goodnight button that powers down your room for the night with the touch of a finger. If that doesn’t make for a restful night, nothing will. ",
+        "roomDetails": "Size: 1000 sq. ft. Bed: 1 King Bed. Max Guest: 3",
+        "img": "https://static.mgmresorts.com/content/dam/MGM/aria/hotel/aria/tower-suite/aria-hotel-aria-tower-suites-living-room.tif.image.2480.1088.high.jpg",
+        "features": ["Private Lounge Check-In ",
+          "Concierge Pre-Arrival Contact ",
+          "Enhanced Turn Down Service ",
+          "Lounge Hours:  6:00 AM - 10:00 PM",
+          "Beverages & Light Snacks: 7:00 AM – 8:00 PM "
+        ]
+      },
+      {
+        "title": "ARIA Center Suite Strip View ",
+        "blurb": "Location, Location, Location - If panoramic views of The Strip and spacious living and bedroom areas are your style, then this is your suite. Tucked centrally between ARIA’s two towers, enjoy 1,075 square feet of separate living and bedroom spaces, a custom-made Sealy® bed and 300-thread-count, triple-sheeted bedding. We’ve made restful sleep even easier with a goodnight button to power down your room with the touch of a fingertip. ",
+        "roomDetails": "Size: 1075 sq. ft. Bed: 2 Queen Beds. Max Guest: 4 ",
+        "img": "https://static.mgmresorts.com/content/dam/MGM/aria/hotel/aria/center-suite/aria-hotel-tower-suites-center-suite-living-room.tif.image.2480.1088.high.jpg",
+        "features": ["Private Lounge Check-In ",
+          "Concierge Pre-Arrival Contact ",
+          "Enhanced Turn Down Service ",
+          "Lounge Hours:  6:00 AM - 10:00 PM",
+          "Beverages & Light Snacks: 7:00 AM – 8:00 PM "
+        ]
+      },
+      {
+        "title": "Executive Hospitality Suite",
+        "blurb": "All Work and All Play - An in-suite conference room leaves plenty of time for both. Meet in style in the private 12-person conference room found within our 2,000-square-foot Executive Hospitality Suite. Then relax with a post-meeting drink from the wet bar and admire the view of the pool. When it’s time to rest up for the next day’s meetings (or pool party), a custom-made Sealy® bed—complete with triple-sheeted, 300-thread-count bedding—transports you to a night of euphoric sleep. ",
+        "roomDetails": "Size:  2000 sq. ft. Bed: 1 King Bed. Max Guest: 3 ",
+        "img": "https://static.mgmresorts.com/content/dam/MGM/aria/hotel/aria/executive-hospitality-suite/aria-hotel-executive-hospitality-suite-living-room.tif.image.2480.1088.high.jpg",
+        "features": ["Private Lounge Check-In ",
+          "Concierge Pre-Arrival Contact ",
+          "Enhanced Turn Down Service ",
+          "Lounge Hours:  6:00 AM - 10:00 PM",
+          "Beverages & Light Snacks: 7:00 AM – 8:00 PM "
+        ]
+      }
+    ],
+    "casino": {
+      "title": "Aria Casino",
+      "subTitle": "At over 150,000 sq ft. the Aria casino delivers the highest level of casino play. Dress to impress.",
+      "titleImg": "https://static.mgmresorts.com/content/dam/MGM/aria/casino/table-games/architecture/aria-casino-table-games-chips-cards.tif.image.1440.550.high.jpg",
+      "games": ["Blackjack",
+        "Roulette",
+        "Craps",
+        "Baccarat",
+        "Three Card Poker",
+        "Pai Gow Poker",
+        "Let It Ride",
+        "Pai Gow",
+        "Slots",
+        "Poker",
+        "Sportsbook"
+      ],
+      "slotBlurb": "Bet $.01 to $5000.00 per pull - Discover the excitement of slots! At ARIA, they have taken great care to providetheir guests with the widest possible array of options when it comes to slot and video poker machines. ARIA offers everything, from games that can be played for one cent all the way up to a $5,000 wager. Guests may choose between games that can be played for one coin and games that allow players to wager up to 500 coins per spin. For slot players, ARIA has hundreds of options, from traditional 'reel' slot machines to the latest video reels to hit the market. Players may go after single-machine progressives or try for the big bucks on one of the machines with a multimillion dollar top award. The air quality at ARIA is pristine for good reason. Rather than wasting energy on empty space by cooling from the ceiling, slot machine bases serve as floor air-handling units that efficiently cool players from the ground up. This, in turn, pushes air contaminants up and away from guests. Various table games also contain an air-curtain that shoots directly up from the table, which rids the air of smoke. ARIA Casino is the first casino on The Strip to use this technology and has received LEED Certification for its efforts.",
+      "slotImg": "https://flightcentre-us.leonardocontentcloud.com/imageRepo/7/0/105/353/774/ARIA_-_Casino_Slots_P.jpg",
+      "pokerBlurb": "How's your Poker Face? - Poker, in its many different forms, is one of the premier gambling games in the world. It offers excitement and action, and while it demands great skill from an expert player, it still contains a strong element of luck for those who are just beginning. Most of all, poker is fun to play. Poker is played against other players; the casino is not involved. If you are an experienced player or just beginning your first adventure in poker, you will feel welcome and comfortable playing poker at ARIA. ARIA has a spacious 24-table card room that offers live poker games in a wide range of limits, from 1-2 No Limit Hold'em to the highest limits being played in the world today. ARIA features a wide array of cash games including but not limited to Texas Limit and No Limit Hold'em, Seven-Card Stud, Pot Limit Omaha, 2-7 Triple Draw, Badugi, Omaha 8 or Better, Chinese Poker and various mixed games. The setting is perfect for enjoying great poker action that is safe, friendly and smoke-free. The dealers are trained to run the games professionally, while the management team and poker rules are your assurance that our games uphold the highest standards of integrity and fair play. For those of you who like tournament poker, ARIA Daily Poker Tournaments are a must. Tournament registration begins an hour and a half before each event. ARIA DAILY POKER TOURNAMENTS Daily at 1 p.m. and 7 p.m. No Limit Texas Hold’em Times and buy-ins are subject to change. ARIA Poker is located next to Sports Bar and Five50 Pizza Bar on the east side of the casino floor. Be sure to come ready to play.",
+      "pokerImg": "",
+      "sbBlurb": "Big screens. Bigger winnings. It’s game time. And even if your team disappoints, our Race & Sports Book won’t. A wall of 90 HD screens guarantees you’ll have the best view of every pass, catch, basket, goal or home run. Don’t see your game? Just ask and we’ll turn it on. So place your bets, sit back in one of our plush couches or lounge chairs, and enjoy full drink and food service. There’s also a VIP section if you’re looking for an even more exclusive experience. Many people find The Race & Sports Book’s no-smoking policy to be a breath of fresh air. But if you want to smoke, the casino floor or Sports Bar are just steps away. This intimate celebration of sports is meant to be shared with others. So place your bet, sit back and enjoy your cocktail as you watch your winnings add up.",
+      "sbImg": "https://static.mgmresorts.com/content/dam/MGM/aria/casino/race-sports-book/architecture/aria-race-and-sports-book-wall.tif.image.1440.550.high.jpg"
+    },
+    "pool": {
+      "title": "Aria Pool",
+      "poolBlurb": "Ellipse - The distinctive shape of ARIA's three pools, where the most activity you need is raising your hand for another cocktail.  Grab your sunglasses and soak in an indulgent Vegas pool experience. ARIA’s three ellipse-shaped pools are perfect for lazing about with friends or people-watching with a drink from Pool Bar. When the time comes to take a more relaxing plunge, slip into one of our three outdoor hot tubs, each heated to roughly 101° F year-round. With room for you and a dozen friends old and new, our hot tubs are a go-to spot for scheming your next adventure.",
+      "poolImg": "https://afar-production.imgix.net/uploads/images/post_images/images/ZhmjNG6adS/original_ARIA_Pool.CourtesyMGM_Resorts_International.jpg?1533732181?ixlib=rails-0.3.0&amp;auto=format%2Ccompress&amp;crop=entropy&amp;fit=crop&amp;h=719&amp;q=80&amp;w=954"
+    }
+  }],
+  "CasinoGames": [{
+      "name": "Blackjack",
+      "desc": "Blackjack is one of the most popular casino table games. The object of the game is to have your cards total 21 or as near to 21 as possible without going over. Everyone plays against the dealer (the house) who begins the game by dealing each player two cards and dealing the house one card face up and one card face down. "
+    },
+    {
+      "name": "Roulette",
+      "desc": "Roulette is fun and easy to play. The roulette wheel is marked with numbers 1-36 and the symbols “0” and “00”. The numbers are alternately colored red and black, and the “0” and “00” are green. Color and number combinations offer a variety of betting options. Wagers can be placed on individual numbers or groups of numbers. Roulette chips are different from other casino chips. Each player receives a different color chip and decides the value of the chip when they are purchased. Roulette chips are usually purchased in stacks of 20. For example, if you would like your roulette chips to be worth $1 each, then you would purchase a stack for $20. "
+    },
+    {
+      "name": "Craps",
+      "desc": "Craps is a high-energy dice game that's like a rollercoaster ride for your emotions! With its fast-paced action, cheering crowds, and colorful language, it's a blast to play and watch. In craps, players take turns rolling two dice, hoping to hit certain numbers and avoiding others. You'll hear people shouting 'Come on, seven!' or 'Dont crap out!' as the dice bounce around the table. There are lots of different bets you can make in craps, each with its own odds and payout. It's a game of strategy and luck, and there's always a chance for a big win or a crushing defeat. But even if you're not a big-time gambler, you will still have a blast soaking up the energy and excitement of the craps table. So grab some chips, place your bets, and let the good times roll!"
+    },
+    {
+      "name": "Baccarat",
+      "desc": "Baccarat is a classy and sophisticated card game that's a favorite among high rollers and James Bond alike! With its elegant atmosphere and simple gameplay, it's easy to see why baccarat is a casino classic. In baccarat, players bet on whether the banker or the player will have the higher hand. Cards are dealt face down and players can choose to draw additional cards, trying to get as close to a total of 9 as possible. The game has a mysterious allure, with players whispering \"La grande!\" and \"Le petite!\" as they place their bets. But don't let the fancy lingo fool you - baccarat is a game of chance, and anyone can win big. So if you're feeling lucky and want to add a touch of sophistication to your gambling repertoire, head over to the baccarat table and try your hand at this timeless classic. Who knows, you might just leave with a stack of chips and a new air of elegance!"
+    },
+    {
+      "name": "Three Card Poker",
+      "desc": "Three Card Poker is a fast-paced and exciting variation of poker that's easy to learn and fun to play. It's played with a standard deck of 52 cards and each player is dealt three cards. In Three Card Poker, players aim to make the best possible three-card hand by combining their own cards with those on the table. The game also includes a unique feature where players can place an additional bet to compete against the dealer's hand. The game's simplicity and fast gameplay make it a favorite among players who want a quick thrill at the casino. And with the added bonus of potentially winning big payouts from the optional bet, Three Card Poker is a great choice for anyone looking for a fun and exciting game with a chance to win big!"
+    },
+    {
+      "name": "Pai Gow Poker",
+      "desc": "Pai Gow Poker is a unique and exciting card game that's a fusion of American poker and an ancient Chinese game called Pai Gow. It's played with a standard deck of 52 cards plus one joker, which can be used as an ace or to complete a straight or a flush. In Pai Gow Poker, each player receives seven cards, which they must split into two hands - a five-card hand and a two-card hand. The objective is to beat both the dealer's five-card hand and two-card hand to win the game. The game's strategic nature and low house edge make it a popular choice among savvy players who want to maximize their chances of winning. And with the added twist of having to create two separate hands, Pai Gow Poker offers a unique and exciting gaming experience that's sure to keep you on the edge of your seat!"
+    },
+    {
+      "name": "Let it Ride",
+      "desc": "Let It Ride is a popular casino table game that's based on five-card stud poker. In Let It Ride, players make three equal bets and receive three cards. Two community cards are also dealt face down on the table. Players then have the option to either \"let it ride\" and keep their bet in play, or to withdraw one of their three bets before the first community card is revealed. The same option is then offered after the second community card is revealed. The objective of the game is to create the best possible five-card poker hand using your three cards and the two community cards. Payouts are based on a pay table, which varies depending on the casino. Let It Ride is a fun and exciting game that's easy to learn and offers the potential for big payouts. It's a popular choice among players who enjoy poker-style games but want a more relaxed and casual gaming experience."
+    },
+    {
+      "name": "Pai Gow",
+      "desc": "Pai Gow is a unique and quirky casino game that's perfect for players who enjoy a bit of a challenge. It's played with a set of Chinese dominoes and the goal is to create two hands - a high hand and a low hand - that beat the dealer's two hands. The game requires players to think strategically and use a bit of math to create the best possible hands. It also offers the added bonus of being able to push, or tie, with the dealer, which can be a thrilling experience. Pai Gow is a fun and social game that's perfect for players who want to try something a little different from the usual card games at the casino. And with the potential for big payouts, it's definitely worth giving a try!"
+    }
+  ]
+}

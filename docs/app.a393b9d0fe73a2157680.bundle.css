@@ -1,0 +1,423 @@
+
+body{
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 100px;
+  background-color: #020c30;
+  background-image: url(/554d6dd5a758a305476c.png);
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .washer, */
+body video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+/* .washer{
+  background-color: rgba(255, 255, 255, .5);
+  z-index: -1;
+} */
+nav{
+  width: 80%;
+  background-color: black;
+  color: white;
+  align-self: center;
+}
+.navbar-toggler-icon,
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  background-color: white;
+  border-radius: 3px;
+}
+h2{
+  text-align: center;
+}
+nav *{
+  color: white;
+}
+nav ul{
+  width: 100%;
+}
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  padding-left: 0;
+}
+nav li{
+  margin: auto;
+}
+nav ul.dropdown-menu {
+  background-color: black;
+}
+.flex{
+  display: flex;
+}
+.col{
+  flex-flow: column;
+}
+.fixed{
+  position: fixed;
+}
+.MainContainer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.MainContainer > iframe{
+    height: 352px;;
+    background-color: black;
+}
+.TitleImg,
+.centerMainImg{
+  margin-bottom: 20px;
+}
+.centerMainImg img{
+  height: 230px;
+  width: 100%;
+  max-width: 500px;
+}
+.TitleImg img{
+  width: 100%;
+  max-width: 650px;
+}
+.contentContainer{
+  display: flex;
+  flex-flow: column;
+}
+.center{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.afLink{
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.afLink > a:not(.chainLink){
+  justify-content: center;
+  width: 100%;
+}
+
+.afLinkImg{
+  width: 468px;
+}
+
+
+.info-split-duo{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.first-container{
+  align-content: center;
+  padding: 10px;
+  min-width: 400px;
+}
+.second-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.titleWithImages{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+}
+
+.titleWithImages > h2{
+  padding-top: 55px;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: center;
+
+}
+
+.moneyGreenBg{
+  background-color: rgba(82, 110, 50, .2);
+}
+
+.single-wide{
+  padding: 10px;
+  border-radius: 25px;
+  margin-top: 40px;
+  color: black;
+  width: 90%;
+}
+
+.single-wide > h3{
+  display: flex;
+  justify-content: center;
+}
+.trippleSplit{
+  display: flex;
+  justify-content: space-between;
+}
+.trippleSplit > p{
+  width: 28%;
+}
+
+#routerView{
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 80%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+#footerNav{
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+@media all and (max-width: 1150px) {
+  .info-split-duo{
+    flex-flow: column;
+    width: 100%
+  }
+
+  .titleWithImages > h2{
+    padding-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+@media all and (max-width: 400px) {
+  .HomeContainer > iframe{
+    height: 255px;
+  }
+  .afLinkImg,
+  .centerMainImg{
+    width: 80%;
+  }
+  .chainLinkFlank{
+    display: none;
+  }
+  #footerNav{
+       width: 100%;
+   }
+
+   .titleWithImages{
+     margin-bottom: 70px;
+   }
+
+   .first-container {
+       width: 100%;
+       padding: 10px;
+       min-width: 0;
+   }
+   .single-wide{
+     width: 100%;
+     justify-content: center;
+     flex-direction: column;
+   }
+   .single-wide p{
+     width: 100%;
+   }
+   .second-container{
+     overflow: hidden;
+   }
+   .second-container > img{
+     overflow: hidden;
+     width: 80%;
+   }
+
+}
+
+
+.shimmer {
+		text-align: center;
+		color: rgba(0, 0, 0, .7);
+		background: -webkit-gradient(linear, left top, right top, from(#000), to(#fff), color-stop(0.3, green));
+		background: -moz-gradient(linear, left top, right top, from(#000), to(#fff), color-stop(0.3, green));
+		background: gradient(linear, left top, right top, from(#000), to(#fff), color-stop(0.3, green));
+		-webkit-background-size: 125px 100%;
+		-moz-background-size: 125px 100%;
+		background-size: 125px 100%;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		background-clip: text;
+		-webkit-animation-name: shimmer;
+		-moz-animation-name: shimmer;
+		animation-name: shimmer;
+		-webkit-animation-duration: 4s;
+		-moz-animation-duration: 4s;
+		animation-duration: 4s;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-color: #fff;
+    cursor: pointer;
+
+}
+
+@-moz-keyframes shimmer {
+		0% {
+				background-position: top left;
+		}
+		100% {
+				background-position: top right;
+		}
+}
+
+@-webkit-keyframes shimmer {
+		0% {
+				background-position: top left;
+		}
+		100% {
+				background-position: top right;
+		}
+}
+
+@-o-keyframes shimmer {
+		0% {
+				background-position: top left;
+		}
+		100% {
+				background-position: top right;
+		}
+}
+
+@keyframes shimmer {
+		0% {
+				background-position: top left;
+		}
+		100% {
+				background-position: top right;
+		}
+}
+
+#chipInfo > p{
+  margin-left: 30px;
+}
+
+#chipInfo{
+  justify-content: center;
+  align-items: center;
+}
+
+.myslots{
+  height: 300px;
+}
+
+
+
+@media all and (max-width: 400px) {
+  .myslots{
+    height: 150px;
+  }
+}
+
+
+.mainDetails,
+.mainResortImg{
+  width: 80%;
+}
+
+.poolDetails,
+.gameDetails,
+.signle-wide{
+  margin-top: 20px;
+}
+
+.poolDetails,
+.rooms,
+.titleAndFee{
+  margin-bottom: 20px;
+  flex-direction: column;
+  width: 80%;
+}
+.gameDetails,
+.img{
+  width: 100%;
+}
+.titleAndFee span{
+  font-weight: bold;
+}
+.split-sidebyside,
+.scores{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+}
+.topDetails{
+  flex-direction: column;
+  width: 60%;
+}
+
+.roomImg{
+  width: 100%;
+}
+
+.poolDetails,
+.gameDetails{
+  align-items: center;
+}
+.left-side{
+  width: 40%;
+}
+
+
+@media all and (max-width: 1150px) {
+  .scores{
+    flex-flow: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+  .topDetails{
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .poolDetails,
+  .gameDetails{
+    flex-flow: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+}
+

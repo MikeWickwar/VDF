@@ -1,0 +1,105 @@
+
+<template>
+  <require from="../helpers/rating.html"></require>
+
+  <div class="MainContainer">
+    <div class="TitleImg center">
+      <img src="../../Images/las-vegas-deal-finder-hotels.png" alt="">
+    </div>
+
+    <div class="titleAndFee flex">
+      <h1 class="center">${hotel.title}</h1>
+      <div class="scores">
+        <div class="topDetails flex">
+          <span>Daily Resort Fee: ${hotel.resortFee}</span>
+          <span>${hotel.parkingDetails}</span>
+        </div>
+        <span class="ratings">
+          <rating title="VDF Rating" rating="${hotel.vdfRating}" color="black" symbol="VDF"></rating>
+          <rating title="Quality Rating" rating="${hotel.qualRating}" color="purple" symbol="Q"></rating>
+          <rating title="Value Rating" rating="${hotel.valueRating}" color="green" symbol="$"></rating>
+        </span>
+      </div>
+    </div>
+    <div class="center flex col">
+      <p class="mainDetails">${hotel.hotelDetails}</p>
+      <img class="mainResortImg" src="${hotel.resortImgUrl}"/>
+    </div>
+    <div class="single-wide rooms center flex col">
+      <h3>Rooms & Suits</h3>
+      <p class="mainDetails">${hotel.roomsBlurb}</p>
+    </div>
+    <div class="rooms info-split-duo" repeat.for="room of rooms">
+      <div class="firsst-container">
+        <h4>${room.title}</h4>
+        <p>${room.roomDetails}</p>
+        <ul class="flex col">
+          <li repeat.for="feature of room.features">${feature}</li>
+        </ul>
+      </div>
+      <div class="second-container">
+        <img class="roomImg" src="${room.img}" alt="">
+      </div>
+   </div>
+
+   <div class="poolDetails flex center col">
+     <div class="">
+       <h3>${hotel.pool.title}!</h3>
+       <p>${hotel.pool.poolBlurb}</p>
+     </div>
+     <div>
+       <img class="img center" src="${hotel.pool.poolImg}" alt="">
+     </div>
+   </div>
+
+   <div class="single-wide rooms center flex col">
+     <h3>${hotel.casino.title}</h3>
+     <p class="mainDetails">${hotel.casino.subTitle}</p>
+
+     <div class="gameDetails split-sidebyside">
+       <div class="left-side">
+         <h3>Available Games:</h3>
+         <ul class="first-container flex col">
+           <li repeat.for="game of hotel.casino.games">${game}</li>
+         </ul>
+       </div>
+       <div>
+         <img class="img center" src="${hotel.casino.titleImg}" alt="">
+       </div>
+     </div>
+
+     <div class="gameDetails flex center col">
+       <div class="">
+         <h3>Slots!</h3>
+         <p>${hotel.casino.slotBlurb}</p>
+       </div>
+       <div>
+         <img class="img center" src="${hotel.casino.slotImg}" alt="">
+       </div>
+     </div>
+
+     <div class="gameDetails flex center col">
+       <div class="">
+         <h3>Poker!</h3>
+         <p>${hotel.casino.pokerBlurb}</p>
+       </div>
+       <div>
+         <img class="img center" src="${hotel.casino.pokerImg}" alt="">
+       </div>
+     </div>
+
+     <div class="gameDetails flex center col">
+       <div class="">
+         <h3>Sports Book!</h3>
+         <p>${hotel.casino.sbBlurb}</p>
+       </div>
+       <div>
+         <img class="img center" src="${hotel.casino.sbImg}" alt="">
+       </div>
+     </div>
+
+   </div>
+
+  </div>
+
+</template>
