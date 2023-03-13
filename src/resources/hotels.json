@@ -1,7 +1,7 @@
 {
   "Hotels": [{
     "name": "Aria",
-    "route": "/hotels/Aria",
+    "route": "/VDF/#/hotels/Aria",
     "title": "Aria Hotel & Casino",
     "vdfRating": "5.7",
     "qualRating": "4.2",
