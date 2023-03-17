@@ -1,7 +1,8 @@
 {
   "Hotels": [{
     "name": "Aria",
-    "route": "/VDF/#/hotels/Aria",
+    "route": "#/hotels/Aria",
+    "location": "strip",
     "title": "Aria Hotel & Casino",
     "vdfRating": "5.7",
     "qualRating": "4.2",
@@ -108,6 +109,80 @@
       "title": "Aria Pool",
       "poolBlurb": "Ellipse - The distinctive shape of ARIA's three pools, where the most activity you need is raising your hand for another cocktail.  Grab your sunglasses and soak in an indulgent Vegas pool experience. ARIA’s three ellipse-shaped pools are perfect for lazing about with friends or people-watching with a drink from Pool Bar. When the time comes to take a more relaxing plunge, slip into one of our three outdoor hot tubs, each heated to roughly 101° F year-round. With room for you and a dozen friends old and new, our hot tubs are a go-to spot for scheming your next adventure.",
       "poolImg": "https://afar-production.imgix.net/uploads/images/post_images/images/ZhmjNG6adS/original_ARIA_Pool.CourtesyMGM_Resorts_International.jpg?1533732181?ixlib=rails-0.3.0&amp;auto=format%2Ccompress&amp;crop=entropy&amp;fit=crop&amp;h=719&amp;q=80&amp;w=954"
+    }
+  },
+  {
+    "name": "4Queens",
+    "route": "#/hotels/4Queens",
+    "location": "fremont",
+    "title": "4 Queens Hotel & Casino",
+    "vdfRating": "7.2",
+    "qualRating": "3.7",
+    "valueRating": "3.5",
+    "resortImgUrl": "hotelImg/vegas4queens.jpg",
+    "resortFee": "No Resort Fees - Internet is $8.99",
+    "parkingDetails": "Parking - 'If you are not staying with us, we do charge an hourly fee for parking: $3 up to the first hour, 1 - 2 hours = $6; 2 - 4 hours = $9; 4 - 6 hours = $12; 6 - 24 hours = $18. Parking can be validated where you are gambling or eating at the Four Queens.'",
+    "hotelDetails": "The 4 Queens Hotel and Casino has been in operation since 1966. We have consistently concentrated on delivering high quality, traditional Las Vegas gaming and entertainment. The property is across from our sister property, Binion's Gambling Hall in the heart of Fremont Street in downtown Las Vegas. Both properties are owned by TLC Casino Enterprises.",
+    "roomsBlurb": "The premium South Tower rooms offer a modern feeling of comfort and are available with a choice of one king bed or two queen beds in approximately 325 square feet. Their upgraded linens promise a relaxing and comfortable night's sleep. Room amenities include a 32\" HD flat screen TV, coffee maker with complimentary coffee, hair dryer, iron with ironing board, mini fridge, in-room safe, and individualized heating and cooling system. Premium rooms offer a contemporary walk-in shower with a multiple head shower system to provide each guest with a spa like experience. Many rooms have an amazing view of the Las Vegas city lights and scenic mountain ranges. Relax in your room with a complimentary cup of coffee by day and experience the casino action each night. ",
+    "rooms": [{
+        "title": "South Tower Premium Room",
+        "blurb": "The premium South Tower rooms offer a modern feeling of comfort and are available with a choice of one king bed or two queen beds in approximately 325 square feet. Their upgraded linens promise a relaxing and comfortable night's sleep. Room amenities include a 32\" HD flat screen TV, coffee maker with complimentary coffee, hair dryer, iron with ironing board, mini fridge, in-room safe, and individualized heating and cooling system. Premium rooms offer a contemporary walk-in shower with a multiple head shower system to provide each guest with a spa like experience. Many rooms have an amazing view of the Las Vegas city lights and scenic mountain ranges. Relax in your room with a complimentary cup of coffee by day and experience the casino action each night. ",
+        "roomDetails": "One King Bed – Maximum Occupancy: 2  Two Queen Beds – Maximum Occupancy: 4 ",
+        "img": "hotelImg/vegas4queensstandardroom.jpg",
+        "features": [
+          "One King Bed – Maximum Occupancy: 2 ",
+          "Two Double Beds – Maximum Occupancy: 4",
+          "High speed, wireless internet access is also available for a nominal fee. "
+        ]
+      },
+      {
+        "title": "North Tower Standard Room",
+        "blurb": "Enjoy the comforts of our North Tower Standard rooms, available with a choice of one king bed or two double beds in approximately 290 square feet. Our upgraded linens promise a relaxing and comfortable night's sleep. Room amenities include a 32\" HD flat screen TV, coffee maker with complimentary coffee, hair dryer, iron with ironing board, and an in-room safe. Rooms on the higher floors have amazing views of the Las Vegas city lights and scenic mountain ranges. Relax in your room with a complimentary cup of coffee by day and experience the casino action each night.",
+        "roomDetails": "Size: 840 sq. ft. Bed: 1 King Bed. Max Guest: 3",
+        "img": "hotelImg/vegas4queensnorthstandardroom.jpg",
+        "features": [
+          "One King Bed – Maximum Occupancy: 2 ",
+          "Two Double Beds – Maximum Occupancy: 4",
+          "High speed, wireless internet access is also available for a nominal fee. "
+        ]
+      },
+      {
+        "title": "Regal Suite",
+        "blurb": "Our large Regal Suites, at 650 square feet, offer a little more room to kick back and relax. These beautiful suites offer one king bed with upgraded linens to ensure a peaceful night's sleep. You can unwind in the living area that includes a leather couch that folds out into a comfortable queen size bed, a sitting area, a bar with sink, and a 32\" HD flat screen TV. Room amenities include a coffee maker with complimentary coffee, hair dryer, iron with ironing board, mini fridge, in-room safe and individualized heating and cooling system. You will feel right at home in this Regal Suite and feel rejuvenated for an exciting night out on the town.",
+        "roomDetails": "Size:920 sq. ft. Bed: 1 King Bed. Max Guest: 3 ",
+        "img": "hotelImg/vegas4queenssuite.jpg",
+        "features": ["Maximum Occupancy: 4",
+          "High speed, wireless internet access is also available for a nominal fee. "
+        ]
+      }
+    ],
+    "casino": {
+      "title": "The 4 Queens Casino",
+      "subTitle": "",
+      "titleImg": "",
+      "games": ["Blackjack",
+        "Roulette",
+        "Craps",
+        "Baccarat",
+        "Three Card Poker",
+        "Pai Gow Poker",
+        "Let It Ride",
+        "Pai Gow",
+        "Slots",
+        "Poker",
+        "Sportsbook"
+      ],
+      "slotBlurb": "Bet $.01 to $5000.00 per pull - Discover the excitement of slots! At ARIA, they have taken great care to providetheir guests with the widest possible array of options when it comes to slot and video poker machines. ARIA offers everything, from games that can be played for one cent all the way up to a $5,000 wager. Guests may choose between games that can be played for one coin and games that allow players to wager up to 500 coins per spin. For slot players, ARIA has hundreds of options, from traditional 'reel' slot machines to the latest video reels to hit the market. Players may go after single-machine progressives or try for the big bucks on one of the machines with a multimillion dollar top award. The air quality at ARIA is pristine for good reason. Rather than wasting energy on empty space by cooling from the ceiling, slot machine bases serve as floor air-handling units that efficiently cool players from the ground up. This, in turn, pushes air contaminants up and away from guests. Various table games also contain an air-curtain that shoots directly up from the table, which rids the air of smoke. ARIA Casino is the first casino on The Strip to use this technology and has received LEED Certification for its efforts.",
+      "slotImg": "https://flightcentre-us.leonardocontentcloud.com/imageRepo/7/0/105/353/774/ARIA_-_Casino_Slots_P.jpg",
+      "pokerBlurb": "How's your Poker Face? - Poker, in its many different forms, is one of the premier gambling games in the world. It offers excitement and action, and while it demands great skill from an expert player, it still contains a strong element of luck for those who are just beginning. Most of all, poker is fun to play. Poker is played against other players; the casino is not involved. If you are an experienced player or just beginning your first adventure in poker, you will feel welcome and comfortable playing poker at ARIA. ARIA has a spacious 24-table card room that offers live poker games in a wide range of limits, from 1-2 No Limit Hold'em to the highest limits being played in the world today. ARIA features a wide array of cash games including but not limited to Texas Limit and No Limit Hold'em, Seven-Card Stud, Pot Limit Omaha, 2-7 Triple Draw, Badugi, Omaha 8 or Better, Chinese Poker and various mixed games. The setting is perfect for enjoying great poker action that is safe, friendly and smoke-free. The dealers are trained to run the games professionally, while the management team and poker rules are your assurance that our games uphold the highest standards of integrity and fair play. For those of you who like tournament poker, ARIA Daily Poker Tournaments are a must. Tournament registration begins an hour and a half before each event. ARIA DAILY POKER TOURNAMENTS Daily at 1 p.m. and 7 p.m. No Limit Texas Hold’em Times and buy-ins are subject to change. ARIA Poker is located next to Sports Bar and Five50 Pizza Bar on the east side of the casino floor. Be sure to come ready to play.",
+      "pokerImg": "",
+      "sbBlurb": "Big screens. Bigger winnings. It’s game time. And even if your team disappoints, our Race & Sports Book won’t. A wall of 90 HD screens guarantees you’ll have the best view of every pass, catch, basket, goal or home run. Don’t see your game? Just ask and we’ll turn it on. So place your bets, sit back in one of our plush couches or lounge chairs, and enjoy full drink and food service. There’s also a VIP section if you’re looking for an even more exclusive experience. Many people find The Race & Sports Book’s no-smoking policy to be a breath of fresh air. But if you want to smoke, the casino floor or Sports Bar are just steps away. This intimate celebration of sports is meant to be shared with others. So place your bet, sit back and enjoy your cocktail as you watch your winnings add up.",
+      "sbImg": "https://static.mgmresorts.com/content/dam/MGM/aria/casino/race-sports-book/architecture/aria-race-and-sports-book-wall.tif.image.1440.550.high.jpg"
+    },
+    "pool": {
+      "title": "Pool",
+      "poolBlurb": "Although the 4 Queens does not have a pool their guest are welcome to use the pool at the nearby Binions Gambling Hall.",
+      "poolImg": ""
     }
   }],
   "CasinoGames": [{

@@ -1,4 +1,6 @@
 <template class-"MainAppTemplate">
+  <require from="bootstrap/dist/css/bootstrap.min.css"></require>
+
   <div class="contentContainer">
     <video id="background-video" autoplay loop muted playsinline>
       <source src="./Images/stripVid.mp4" type="video/mp4">
@@ -8,28 +10,43 @@
       <img src="./Images/VegasDealFinderLogo2020.png" alt="">
     </div>
 
-     <nav class="navbar navbar-expand-lg" id="topNav">
-       <div class="container-fluid">
-         <button class="navbar-toggler" id="navTogglerBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-           <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
-             <li repeat.for="row of router.navigation"  class="nav-item dropdown" >
-               <a class="navlink" if.bind="row.title !== 'Hotels'" href.bind="row.href" aria-expanded="false" click.capture="onNavClick(row.href)">${row.title}</a>
-               <a if.bind="row.title == 'Hotels'" class="navlink dropdown-toggle" href.bind="row.href" aria-expanded="false" data-bs-toggle="dropdown">${row.title}</a>
-                <ul if.bind="row.title == 'Hotels'" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li repeat.for="subitem of router.hotels">
-                    <a class="dropdown-item" href="${subitem.route}">${subitem.name}</a>
-                  </li>
-                </ul>
-             </li>
-           </ul>
-         </div>
-       </div>
-     </nav>
+    <nav class="navbar navbar-expand-lg" id="topNav">
+      <div class="container-fluid">
+        <button class="navbar-toggler" id="navTogglerBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" repeat.for="row of router.navigation">
+            <li class="nav-item dropdown" if.bind="row.title != 'Hotels'">
+              <a class="nav-link" href.bind="row.href" click.capture="onNavClick(row.href)">${row.title}</a>
+            </li>
+            <li class="nav-item dropdown dropend" if.bind="row.title == 'Hotels'">
+              <a class="nav-item dropdown-toggle hotelLink" aria-expanded="false" data-bs-toggle="dropdown" data-bs-target="#hotelsDropdown">${row.title}</a>
+              <ul id="hotelsDropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="nav-item dropdown">
+                  <a class="dropdown-toggle fremontLink" href="#" aria-expanded="false" data-bs-toggle="dropdown" data-bs-target="#fremontDropdown" aria-controls="fremontDropdown" >Hotels on Fremont</a>
+                  <ul id="fremontDropdown" class="dropdown-menu" aria-labelledby="fremontDropdown">
+                    <li repeat.for="subitem of router.hotels">
+                      <a class="dropdown-item" if.bind="subitem.location == 'fremont'" click.capture="onNavClick(subitem.route)">${subitem.name}</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown dropend">
+                  <a class="dropdown-toggle stripLink" href="#" aria-expanded="false" data-bs-toggle="dropdown" data-bs-target="#stripDropdown" aria-controls="stripDropdown" >Hotels on The Strip</a>
+                  <ul id="stripDropdown" class="dropdown-menu" aria-labelledby="stripDropdown">
+                    <li repeat.for="subitem of router.hotels">
+                      <a class="dropdown-item" if.bind="subitem.location == 'strip'"  href.bind="subitem.route" click.capture="onNavClick(subitem.route)">${subitem.name}</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-     <router-view id="routerView" class="center"></router-view>
+   <router-view id="routerView" class="center"></router-view>
 
   </div>
 

@@ -40,15 +40,37 @@ nav{
   background-color: white;
   border-radius: 3px;
 }
+
 h2{
   text-align: center;
 }
-nav *{
-  color: white;
+nav *:not(:hover){
+  color: white !important;
+  text-decoration: solid;
+
 }
 nav ul{
   width: 100%;
 }
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  right: auto;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+    top: 0;
+    right: auto;
+    left: 100%;
+}
+
 a:-webkit-any-link {
     color: white;
     cursor: pointer;
@@ -63,6 +85,7 @@ ul {
 }
 nav li{
   margin: auto;
+  font-size: 14px;
 }
 nav ul.dropdown-menu {
   background-color: black;
@@ -73,8 +96,9 @@ nav ul.dropdown-menu {
 .col{
   flex-flow: column;
 }
+navbar.fixed,
 .fixed{
-  position: fixed;
+  position: fixed !important;
 }
 .MainContainer{
   height: 100%;

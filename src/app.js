@@ -1,7 +1,8 @@
 import $ from "jquery"
+import 'bootstrap'
+import {activationStrategy} from 'aurelia-router';
 import hotelData from 'resources/hotels.json';
-require('bootstrap/dist/css/bootstrap.min.css');
-require('bootstrap');
+
 
 function bindWindowScroll(){
   $(window).scroll(() => {
@@ -14,16 +15,27 @@ function bindWindowScroll(){
   })
 }
 
+function bindDropdownsInNav() {
+  let dropdowns = document.querySelectorAll('.dropdown-toggle')
+  dropdowns.forEach((dd)=>{
+      dd.addEventListener('click', function (e) {
+          var el = this.nextElementSibling
+          el.style.display = el.style.display==='block'?'none':'block'
+      })
+  })
+}
+
 export class App {
   onLoad(){
     console.log("App onload...")
     bindWindowScroll()
+    bindDropdownsInNav()
   }
   onNavClick(href){
     if(window.innerWidth <= 991){
       $('#navTogglerBtn').click()
     }
-    window.location.href = href
+    window.location.href = href;
   }
   configureRouter(config, router) {
     config.title = 'Vegas Deal Finder';
@@ -33,7 +45,7 @@ export class App {
     step.run = (navigationInstruction, next) => {
       if(navigationInstruction.config.name == "hotels"){
         navigationInstruction.config.settings.hotel = $.grep(hotelData.Hotels, (gItem) => { return  gItem.name.toLowerCase() === navigationInstruction.params.childRoute.toLowerCase()})[0];
-      }
+        }
       return next();
     };
     //add step to populate data into the view when needed - based on :id
@@ -45,7 +57,7 @@ export class App {
           moduleId: PLATFORM.moduleName('./components/topDeals/topDeals'),  nav: true, title:'Top 12 Deals' },
       { route: ['toptips','topTips'],  name: 'toptips',
           moduleId: PLATFORM.moduleName('./components/topTips/topTips'),  nav: true, title:'Top 10 Tips' },
-      { route: ['hotels',':id'], name: 'hotels',
+      { route: ['hotels',':id'], name: 'hotels', activationStrategy: activationStrategy.replace,
           moduleId: PLATFORM.moduleName('./components/hotels/hotels'),  nav: true, title:'Hotels'},
       { route: ['entertainment','entertainment'],  name: 'entertainment',
           moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Entertainment' },
