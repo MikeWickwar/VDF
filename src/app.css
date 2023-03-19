@@ -70,7 +70,7 @@ nav ul{
     right: auto;
     left: 100%;
 }
-
+a.nav-item,
 a:-webkit-any-link {
     color: white;
     cursor: pointer;
@@ -99,6 +99,15 @@ nav ul.dropdown-menu {
 navbar.fixed,
 .fixed{
   position: fixed !important;
+}
+nav .dropdown-menu li{
+  padding: 4px 8px;
+}
+#fremontDropdown,
+#stripDropdown,
+#hotelsDropdown{
+  padding: 0;
+  border: 1px solid white;
 }
 .MainContainer{
   height: 100%;

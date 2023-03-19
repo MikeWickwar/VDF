@@ -19,9 +19,9 @@ const srcDir = path.resolve(__dirname, 'src');
 const nodeModulesDir = path.resolve(__dirname, 'node_modules');
 
 //Dont forget  NPM RUN BUILD cmd
-// const baseUrl = '/';
+const baseUrl = '/';
 //below is for production to be deploy DO NOT FORGET TO COMMENT AND UNCOMMENT THIS *****~~~~!!!!!!!
-const baseUrl = './';
+// const baseUrl = './';
 
 const cssRules = [
   {
@@ -50,6 +50,7 @@ module.exports = ({ production }, { analyze, hmr, port, host }) => ({
     app: [
       // Uncomment next line if you need to support IE11
       // 'promise-polyfill/src/polyfill',
+      'babel-polyfill',
       'aurelia-bootstrapper'
     ]
   },

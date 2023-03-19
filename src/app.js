@@ -2,6 +2,8 @@ import $ from "jquery"
 import 'bootstrap'
 import {activationStrategy} from 'aurelia-router';
 import hotelData from 'resources/hotels.json';
+require('bootstrap/dist/css/bootstrap.min.css');
+import { HttpClient } from 'aurelia-http-client';
 
 
 function bindWindowScroll(){
@@ -25,11 +27,34 @@ function bindDropdownsInNav() {
   })
 }
 
+
+
+
 export class App {
   onLoad(){
     console.log("App onload...")
     bindWindowScroll()
     bindDropdownsInNav()
+    this.loadData();
+  }
+  loadData() {
+    const apiKey = 'AIzaSyCG9uRVzgyWOs4iI6X3kHcwNO8sd-ouVSE';
+    const location = 'San Francisco, CA';
+    const radius = 5000; // search radius in meters
+
+    const url = `https://maps.googleapis.com/maps/api/place/textsearch/json?key=${apiKey}&query=hotels+in+${location}&radius=${radius}`;
+    const client = new HttpClient();
+
+    client.jsonp(url)
+      .then(response => {
+        // handle the response data here
+        debugger
+        console.log(response.content);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+
   }
   onNavClick(href){
     if(window.innerWidth <= 991){
@@ -37,6 +62,7 @@ export class App {
     }
     window.location.href = href;
   }
+
   configureRouter(config, router) {
     config.title = 'Vegas Deal Finder';
     function step() {
@@ -72,7 +98,6 @@ export class App {
 
     this.router = router;
     this.router.hotels = hotelData.Hotels;
-
 
   }
 }
