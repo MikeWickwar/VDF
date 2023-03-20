@@ -142,7 +142,7 @@ export class App {
     if(window.innerWidth <= 991){
       $('#navTogglerBtn').click()
     }
-    var href = `VDF/#/hotels/${name}`
+    var href = `/#/hotels/${name}`
     window.location.href = href;
   }
   parseHotelName (name){
