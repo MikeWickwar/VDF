@@ -8,28 +8,33 @@
     </div>
 
     <div class="titleAndFee flex">
-      <h1 class="center">${hotel.title}</h1>
+      <h1 class="center">${hotelGData.name}</h1>
       <div class="scores">
-        <div class="topDetails flex">
+        <div if.bind="hotel" class="topDetails flex">
           <span>Daily Resort Fee: ${hotel.resortFee}</span>
           <span>${hotel.parkingDetails}</span>
         </div>
-        <span class="ratings">
-          <rating title="VDF Rating" rating="${hotel.vdfRating}" color="black" symbol="VDF"></rating>
-          <rating title="Quality Rating" rating="${hotel.qualRating}" color="purple" symbol="Q"></rating>
-          <rating title="Value Rating" rating="${hotel.valueRating}" color="green" symbol="$"></rating>
+        <div if.bind="hotelDetails" class="topDetails flex">
+          <span><a href="${hotelDetails.website}" class="textColor">Click here for more details...</a></span>
+          <span>${hotelDetails.formatted_address}</span>
+          <span>${hotelDetails.formatted_phone_number}</span>
+        </div>
+        <span if.bind="hotelDetails" class="ratings">
+          <rating title="VDF Rating" rating="${hotelDetails.rating + 1.5}" color="black" symbol="VDF"></rating>
+          <rating title="Quality Rating" rating="${hotelDetails.rating + 1}" color="purple" symbol="Q"></rating>
+          <rating title="Value Rating" rating="${hotelDetails.rating + 2}" color="green" symbol="$"></rating>
         </span>
       </div>
     </div>
     <div class="center flex col">
-      <p class="mainDetails">${hotel.hotelDetails}</p>
-      <img class="mainResortImg" src="${hotel.resortImgUrl}"/>
+      <p if.bind="hotel" class="mainDetails">${hotel.hotelDetails}</p>
+      <img class="mainResortImg" src="${hotelDetails.photos[0].url}"/>
     </div>
-    <div class="single-wide rooms center flex col">
+    <div if.bind="hotels" class="single-wide rooms center flex col">
       <h3>Rooms & Suits</h3>
       <p class="mainDetails">${hotel.roomsBlurb}</p>
     </div>
-    <div class="rooms info-split-duo" repeat.for="room of rooms">
+    <div if.bind="rooms" class="rooms info-split-duo" repeat.for="room of rooms">
       <div class="firsst-container">
         <h4>${room.title}</h4>
         <p>${room.roomDetails}</p>
@@ -42,7 +47,7 @@
       </div>
    </div>
 
-   <div class="poolDetails flex center col">
+   <div if.bind="hotel" class="poolDetails flex center col">
      <div class="">
        <h3>${hotel.pool.title}!</h3>
        <p>${hotel.pool.poolBlurb}</p>
@@ -52,7 +57,7 @@
      </div>
    </div>
 
-   <div class="single-wide rooms center flex col">
+   <div if.bind="hotel" class="single-wide rooms center flex col">
      <h3>${hotel.casino.title}</h3>
      <p class="mainDetails">${hotel.casino.subTitle}</p>
 

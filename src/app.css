@@ -49,9 +49,7 @@ nav *:not(:hover){
   text-decoration: solid;
 
 }
-nav ul{
-  width: 100%;
-}
+
 
 .dropdown-submenu {
   position: relative;
@@ -108,6 +106,11 @@ nav .dropdown-menu li{
 #hotelsDropdown{
   padding: 0;
   border: 1px solid white;
+  max-height: 400px;
+}
+#fremontDropdown,
+#stripDropdown{
+  overflow-y: scroll;
 }
 .MainContainer{
   height: 100%;

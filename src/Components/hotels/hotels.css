@@ -2,6 +2,9 @@
 .mainResortImg{
   width: 80%;
 }
+.textColor{
+  color: black !important;
+}
 
 .poolDetails,
 .gameDetails,

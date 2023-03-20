@@ -6,7 +6,7 @@ body{
   margin: 0;
   padding-bottom: 100px;
   background-color: #020c30;
-  background-image: url(./554d6dd5a758a305476c.png);
+  background-image: url(/554d6dd5a758a305476c.png);
   min-height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -49,9 +49,7 @@ nav *:not(:hover){
   text-decoration: solid;
 
 }
-nav ul{
-  width: 100%;
-}
+
 
 .dropdown-submenu {
   position: relative;
@@ -108,6 +106,11 @@ nav .dropdown-menu li{
 #hotelsDropdown{
   padding: 0;
   border: 1px solid white;
+  max-height: 400px;
+}
+#fremontDropdown,
+#stripDropdown{
+  overflow-y: scroll;
 }
 .MainContainer{
   height: 100%;
@@ -385,6 +388,9 @@ nav .dropdown-menu li{
 .mainDetails,
 .mainResortImg{
   width: 80%;
+}
+.textColor{
+  color: black !important;
 }
 
 .poolDetails,

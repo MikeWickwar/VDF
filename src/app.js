@@ -3,7 +3,8 @@ import 'bootstrap'
 import {activationStrategy} from 'aurelia-router';
 import hotelData from 'resources/hotels.json';
 require('bootstrap/dist/css/bootstrap.min.css');
-import { HttpClient } from 'aurelia-http-client';
+import { inject } from 'aurelia-framework';
+import { Loader } from '@googlemaps/js-api-loader';
 
 
 function bindWindowScroll(){
@@ -13,7 +14,6 @@ function bindWindowScroll(){
     }else{
       $("#topNav").removeClass("fixed")
     }
-
   })
 }
 
@@ -29,32 +29,108 @@ function bindDropdownsInNav() {
 
 
 
+function runRequest(location, that) {
+  const loader = new Loader({
+    apiKey: 'AIzaSyCG9uRVzgyWOs4iI6X3kHcwNO8sd-ouVSE',
+    libraries: ['places']
+  });
 
+  // Now you can use the Places API to fetch data
+  const keyword = `hotels on ${location}`;
+  const service = new google.maps.places.PlacesService(document.createElement('div'));
+  var lat = location.indexOf("Las Vegas Blvd") > -1 ? 36.1147 : 36.1663;
+  var lng = location.indexOf("Las Vegas Blvd") > -1 ? -115.1728 : -115.1492;
+  const request = {
+    location: { lat: lat, lng: lng },
+    radius: 2000,
+    type: 'lodging',
+    keyword: keyword
+  };
+
+  service.nearbySearch(request, (results, status, pagination) => {
+    // handle the results
+    debugger
+    if (status == "OK") {
+      results = results.sort((r1, r2) => (r1.name > r2.name) ? 1 : (r1.name < r2.name) ? -1 : 0);
+      if (location == "Las Vegas Blvd") {
+        if (typeof that.gHotelStripInfo === "undefined") {
+          that.gHotelStripInfo = [...results];
+        }else{
+          that.gHotelStripInfo = [...that.gHotelStripInfo, ...results];
+        }
+      }else{
+        if (typeof that.gHotelFremontInfo === "undefined") {
+          that.gHotelFremontInfo = [...results];
+        }else{
+          that.gHotelFremontInfo = [...that.gHotelFremontInfo, ...results];
+        }
+      }
+
+      // Check if there are additional pages of results
+      if (pagination.hasNextPage) {
+        // Call the fetch() method to get the next page of results
+        pagination.nextPage();
+      }else{
+        debugger
+        if (location == "Las Vegas Blvd") {
+          that.gHotelStripInfo = that.gHotelStripInfo.sort((r1, r2) => (r1.name > r2.name) ? 1 : (r1.name < r2.name) ? -1 : 0);
+          localStorage.setItem("LVD:stripHotels", JSON.stringify({"data": that.gHotelStripInfo}));
+          populateStripDropDown(that)
+        }else{
+          that.gHotelFremontInfo = that.gHotelFremontInfo.sort((r1, r2) => (r1.name > r2.name) ? 1 : (r1.name < r2.name) ? -1 : 0);
+          localStorage.setItem("LVD:fremontHotels", JSON.stringify({"data": that.gHotelFremontInfo}));
+          populateFremontDropDown(that)
+        }
+      }
+    }
+  });
+}
+
+function populateStripDropDown(that) {
+  $.each(that.gHotelStripInfo, (i, item) => {
+    var hotelNameForLink = that.parseHotelName(item.name)
+    $("#stripDropdown").append(`<li><a class="dropdown-item" href="#/hotels/${hotelNameForLink}">${item.name}</a></li>`)
+  })
+}
+
+function populateFremontDropDown(that) {
+  $.each(that.gHotelFremontInfo, (i, item) => {
+    var hotelNameForLink = that.parseHotelName(item.name)
+    $("#fremontDropdown").append(`<li><a class="dropdown-item" href="#/hotels/${hotelNameForLink}">${item.name}</a></li>`)
+  })
+}
+
+function getHotelData(that) {
+  var stripDataFromLs = localStorage.getItem("LVD:stripHotels")
+  var fremontDataFromLs = localStorage.getItem("LVD:fremontHotels")
+
+  if (stripDataFromLs !== null) {
+    console.log("strip items are in local storage")
+    stripDataFromLs = JSON.parse(stripDataFromLs).data
+    that.gHotelStripInfo = stripDataFromLs;
+  }else{
+    runRequest("Las Vegas Blvd", that);
+  }
+
+  if (fremontDataFromLs !== null) {
+    console.log("fremont items are in local storage")
+    fremontDataFromLs = JSON.parse(fremontDataFromLs).data
+    that.gHotelFremontInfo = fremontDataFromLs;
+  }else{
+    runRequest("Downtown Las Vegaas", that);
+  }
+
+}
+
+@inject('window')
 export class App {
+  async activate() {
+    getHotelData(this)
+  }
   onLoad(){
     console.log("App onload...")
     bindWindowScroll()
     bindDropdownsInNav()
-    this.loadData();
-  }
-  loadData() {
-    const apiKey = 'AIzaSyCG9uRVzgyWOs4iI6X3kHcwNO8sd-ouVSE';
-    const location = 'San Francisco, CA';
-    const radius = 5000; // search radius in meters
-
-    const url = `https://maps.googleapis.com/maps/api/place/textsearch/json?key=${apiKey}&query=hotels+in+${location}&radius=${radius}`;
-    const client = new HttpClient();
-
-    client.jsonp(url)
-      .then(response => {
-        // handle the response data here
-        debugger
-        console.log(response.content);
-      })
-      .catch(error => {
-        console.error(error);
-      });
-
   }
   onNavClick(href){
     if(window.innerWidth <= 991){
@@ -62,8 +138,25 @@ export class App {
     }
     window.location.href = href;
   }
-
+  onHotelNavClick(name){
+    if(window.innerWidth <= 991){
+      $('#navTogglerBtn').click()
+    }
+    var href = `/#/hotels/${name}`
+    window.location.href = href;
+  }
+  parseHotelName (name){
+    name = name.replaceAll(' ', '');
+    name = name.replaceAll('Resort&Casino', '');
+    name = name.replaceAll('Hotel&Casino', '');
+    name = name.replaceAll('HotelAndCasino', '');
+    name = name.replaceAll('of', '');
+    name = name.replaceAll('LasVegas', '');
+    name = name.replaceAll('Suites&Casino', '');
+    return name.trim()
+  }
   configureRouter(config, router) {
+    var that = this;
     config.title = 'Vegas Deal Finder';
     function step() {
        return step.run;
@@ -71,13 +164,19 @@ export class App {
     step.run = (navigationInstruction, next) => {
       if(navigationInstruction.config.name == "hotels"){
         navigationInstruction.config.settings.hotel = $.grep(hotelData.Hotels, (gItem) => { return  gItem.name.toLowerCase() === navigationInstruction.params.childRoute.toLowerCase()})[0];
+        navigationInstruction.config.settings.hotelGData = $.grep(that.gHotelStripInfo, (gItem) => { return that.parseHotelName(gItem.name).toLowerCase() === navigationInstruction.params.childRoute.toLowerCase()})[0];
+        if (typeof navigationInstruction.config.settings.hotelGData === "undefined") {
+          navigationInstruction.config.settings.hotelGData = $.grep(that.gHotelFremontInfo, (gItem) => { return that.parseHotelName(gItem.name).toLowerCase() === navigationInstruction.params.childRoute.toLowerCase()})[0];
         }
+      }
+
       return next();
     };
     //add step to populate data into the view when needed - based on :id
     config.addPreActivateStep(step)
+    config.options.activationStrategy = activationStrategy.invokeLifecycle;
     config.map([
-      { route: ['','home'],  name: 'home',
+      { route: ['/','home'],  name: 'home',
           moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Home'},
       { route: ['topdeals','topdeals'],  name: 'topdeals',
           moduleId: PLATFORM.moduleName('./components/topDeals/topDeals'),  nav: true, title:'Top 12 Deals' },
@@ -94,7 +193,17 @@ export class App {
       { route: ['contactus','contactus'],  name: 'contactus',
           moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Contact Us' }
     ]);
+    router.events.subscribe(async navigationInstruction => {
+      const instructions = navigationInstruction.getAllInstructions();
 
+      for (const instruction of instructions) {
+        const viewModel = instruction.viewModel;
+
+        if (viewModel && typeof viewModel.activate === 'function') {
+          await viewModel.activate(instruction.params);
+        }
+      }
+    });
 
     this.router = router;
     this.router.hotels = hotelData.Hotels;

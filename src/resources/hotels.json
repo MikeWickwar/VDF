@@ -1,7 +1,7 @@
 {
   "Hotels": [{
     "name": "Aria",
-    "route": "#/hotels/Aria",
+    "route": "#/hotels/Asria",
     "location": "strip",
     "title": "Aria Hotel & Casino",
     "vdfRating": "5.7",
@@ -112,10 +112,10 @@
     }
   },
   {
-    "name": "4Queens",
-    "route": "#/hotels/4Queens",
+    "name": "FourQueens",
+    "route": "#/hotels/FourQueens",
     "location": "fremont",
-    "title": "4 Queens Hotel & Casino",
+    "title": "Four Queens Hotel & Casino",
     "vdfRating": "7.2",
     "qualRating": "3.7",
     "valueRating": "3.5",
