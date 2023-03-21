@@ -13,6 +13,10 @@ export function configure(aurelia) {
   if (environment.testing) {
     aurelia.use.plugin(PLATFORM.moduleName('aurelia-testing'));
   }
+  
+  if (environment.production) {
+    aurelia.loader.baseUrl = '/VDF/';
+  }
 
   aurelia.start().then(() => aurelia.setRoot(PLATFORM.moduleName('app')));
 }
