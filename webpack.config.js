@@ -19,9 +19,10 @@ const srcDir = path.resolve(__dirname, 'src');
 const nodeModulesDir = path.resolve(__dirname, 'node_modules');
 
 //Dont forget  NPM RUN BUILD cmd
-// const baseUrl = '/';
-//below is for production to be deploy DO NOT FORGET TO COMMENT AND UNCOMMENT THIS *****~~~~!!!!!!!
-const baseUrl = './';
+const isDev = process.env.NODE_ENV !== 'production';
+const baseUrl = isDev ? '/' : './';
+
+
 
 const cssRules = [
   {

@@ -16,5 +16,7 @@ export function configure(aurelia) {
 
   aurelia.start().then(() => aurelia.setRoot(PLATFORM.moduleName('app')));
 
-  aurelia.loader.baseUrl = '/VDF/';
+  if (!environment.testing) {
+    aurelia.loader.baseUrl = '/VDF/';
+  }
 }

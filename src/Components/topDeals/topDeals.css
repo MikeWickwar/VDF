@@ -1,6 +1,10 @@
 .myslots{
   height: 300px;
 }
+a.textLink{
+  color: #118c4f !important;
+  text-decoration: underline;
+}
 
 
 
