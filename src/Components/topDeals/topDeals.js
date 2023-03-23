@@ -1,11 +1,11 @@
 import "./topDeals.css"
 import $ from "jquery"
 
-export class topTips {
+export class topDeals {
   onLoad = () => {
-    console.log("topTips onload...")
+    console.log("topDeals onload...")
   }
 }
 
-const _topTips = new topTips();
-$(document).ready(() => { _topTips.onLoad()})
+const _topDeals = new topDeals();
+$(document).ready(() => { _topDeals.onLoad()})
