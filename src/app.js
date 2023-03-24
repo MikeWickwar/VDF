@@ -5,6 +5,7 @@ import hotelData from 'resources/hotels.json';
 require('bootstrap/dist/css/bootstrap.min.css');
 import { inject } from 'aurelia-framework';
 import { Loader } from '@googlemaps/js-api-loader';
+import environment from '../config/environment.json';
 
 
 function bindWindowScroll(){
@@ -31,7 +32,7 @@ function bindDropdownsInNav() {
 
 function runRequest(location, that) {
   const loader = new Loader({
-    apiKey: 'AIzaSyCG9uRVzgyWOs4iI6X3kHcwNO8sd-ouVSE',
+    apiKey: environment.apiKey,
     libraries: ['places']
   });
 
@@ -49,7 +50,6 @@ function runRequest(location, that) {
 
   service.nearbySearch(request, (results, status, pagination) => {
     // handle the results
-    debugger
     if (status == "OK") {
       results = results.sort((r1, r2) => (r1.name > r2.name) ? 1 : (r1.name < r2.name) ? -1 : 0);
       if (location == "Las Vegas Blvd") {
@@ -71,7 +71,6 @@ function runRequest(location, that) {
         // Call the fetch() method to get the next page of results
         pagination.nextPage();
       }else{
-        debugger
         if (location == "Las Vegas Blvd") {
           that.gHotelStripInfo = that.gHotelStripInfo.sort((r1, r2) => (r1.name > r2.name) ? 1 : (r1.name < r2.name) ? -1 : 0);
           localStorage.setItem("LVD:stripHotels", JSON.stringify({"data": that.gHotelStripInfo}));
@@ -136,14 +135,22 @@ export class App {
     if(window.innerWidth <= 991){
       $('#navTogglerBtn').click()
     }
-    window.location.href = href;
+    if (!environment.debug) {
+      window.location.href = "/VDF/" + href;
+    }else{
+      window.location.href = href;
+    }
   }
   onHotelNavClick(name){
     if(window.innerWidth <= 991){
       $('#navTogglerBtn').click()
     }
     var href = `/#/hotels/${name}`
-    window.location.href = href;
+    if (!environment.debug) {
+      window.location.href = "/VDF/" + href;
+    }else{
+      window.location.href = href;
+    }
   }
   parseHotelName (name){
     name = name.replaceAll(' ', '');
