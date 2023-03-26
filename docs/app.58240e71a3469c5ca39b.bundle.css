@@ -6,7 +6,7 @@ body{
   margin: 0;
   padding-bottom: 100px;
   background-color: #020c30;
-  background-image: url(/554d6dd5a758a305476c.png);
+  background-image: url(./554d6dd5a758a305476c.png);
   min-height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
