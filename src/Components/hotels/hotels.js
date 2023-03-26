@@ -32,6 +32,20 @@ function getDetails(place_id, that){
   });
 }
 
+function getPhoto(place_id, that){
+  const service = new google.maps.places.PlacesService(document.createElement('div'));
+  const request = {
+    placeId: place_id,
+    fields: ["photos"]
+  };
+
+  return service.getDetails(request, (placeP, status) => {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      that.hotelDetails.photos[0].url = placeP.photos[0].getUrl();
+    }
+  });
+}
+
 export class hotels {
   onLoad = () => {
     console.log("hotels onload...")
@@ -51,7 +65,9 @@ export class hotels {
     if (lsHotel == null) {
       getDetails(this.hotelGData.place_id, this)
     }else{
+      //not letting me cache the photo so must call google api for that 
       this.hotelDetails = JSON.parse(lsHotel).data;
+      getPhoto(this.hotelGData.place_id, this)
       console.log( JSON.parse(lsHotel).data)
     }
 

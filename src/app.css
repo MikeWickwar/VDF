@@ -101,7 +101,7 @@ navbar.fixed,
 nav .dropdown-menu li{
   padding: 4px 8px;
 }
-#dealsDropdown
+#dealsDropdown,
 #fremontDropdown,
 #stripDropdown,
 #hotelsDropdown{
@@ -137,7 +137,7 @@ nav .dropdown-menu li{
 }
 .TitleImg img{
   width: 100%;
-  max-width: 650px;
+  max-width: 420px;
 }
 .contentContainer{
   display: flex;
@@ -256,7 +256,7 @@ nav .dropdown-menu li{
   justify-content: center;
 }
 
-@media all and (max-width: 1150px) {
+@media all and (max-width: 1250px) {
   .info-split-duo{
     flex-flow: column;
     width: 100%

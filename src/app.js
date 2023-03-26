@@ -6,7 +6,7 @@ require('bootstrap/dist/css/bootstrap.min.css');
 import { inject } from 'aurelia-framework';
 import { Loader } from '@googlemaps/js-api-loader';
 import environment from '../config/environment.json';
-
+import { HttpClient } from 'aurelia-fetch-client';
 
 function bindWindowScroll(){
   $(window).scroll(() => {
@@ -27,8 +27,6 @@ function bindDropdownsInNav() {
       })
   })
 }
-
-
 
 function runRequest(location, that) {
   const loader = new Loader({
@@ -154,6 +152,7 @@ export class App {
   }
   parseHotelName (name){
     name = name.replaceAll(' ', '');
+    name = name.replaceAll('\'', '');
     name = name.replaceAll('Resort&Casino', '');
     name = name.replaceAll('Hotel&Casino', '');
     name = name.replaceAll('HotelAndCasino', '');

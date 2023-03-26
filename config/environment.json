@@ -1,5 +1,7 @@
 {
   "debug": true,
   "testing": true,
-  "apiKey": "AIzaSyCG9uRVzgyWOs4iI6X3kHcwNO8sd"
+  "apiKey": "AIzaSyCG9uRVzgyWOs4iI6X3kHcwNO8sd",
+  "amadeusKey": "VAcSoy48PEW88bMzA5BBAPap7IXI39bp",
+  "amadeusSec": "gWB1LOzkII9Q4pB3"
 }
