@@ -8,6 +8,8 @@ import { Loader } from '@googlemaps/js-api-loader';
 import environment from '../config/environment.json';
 import { HttpClient } from 'aurelia-fetch-client';
 
+const stripRequest = `Hotels on las vegas blvd las vegas` ;
+
 function bindWindowScroll(){
   $(window).scroll(() => {
     if (window.pageYOffset > 255) {
@@ -37,11 +39,11 @@ function runRequest(location, that) {
   // Now you can use the Places API to fetch data
   const keyword = `hotels on ${location}`;
   const service = new google.maps.places.PlacesService(document.createElement('div'));
-  var lat = location.indexOf("Las Vegas Blvd") > -1 ? 36.1147 : 36.1663;
-  var lng = location.indexOf("Las Vegas Blvd") > -1 ? -115.1728 : -115.1492;
+  var lat = location.indexOf(stripRequest) > -1 ? 36.1147 : 36.1663;
+  var lng = location.indexOf(stripRequest) > -1 ? -115.1728 : -115.1492;
   const request = {
     location: { lat: lat, lng: lng },
-    radius: 2000,
+    radius: 3500,
     type: 'lodging',
     keyword: keyword
   };
@@ -50,7 +52,7 @@ function runRequest(location, that) {
     // handle the results
     if (status == "OK") {
       results = results.sort((r1, r2) => (r1.name > r2.name) ? 1 : (r1.name < r2.name) ? -1 : 0);
-      if (location == "Las Vegas Blvd") {
+      if (location == stripRequest) {
         if (typeof that.gHotelStripInfo === "undefined") {
           that.gHotelStripInfo = [...results];
         }else{
@@ -69,7 +71,7 @@ function runRequest(location, that) {
         // Call the fetch() method to get the next page of results
         pagination.nextPage();
       }else{
-        if (location == "Las Vegas Blvd") {
+        if (location == stripRequest) {
           that.gHotelStripInfo = that.gHotelStripInfo.sort((r1, r2) => (r1.name > r2.name) ? 1 : (r1.name < r2.name) ? -1 : 0);
           localStorage.setItem("LVD:stripHotels", JSON.stringify({"data": that.gHotelStripInfo}));
           populateStripDropDown(that)
@@ -101,12 +103,13 @@ function getHotelData(that) {
   var stripDataFromLs = localStorage.getItem("LVD:stripHotels")
   var fremontDataFromLs = localStorage.getItem("LVD:fremontHotels")
 
+
   if (stripDataFromLs !== null) {
     console.log("strip items are in local storage")
     stripDataFromLs = JSON.parse(stripDataFromLs).data
     that.gHotelStripInfo = stripDataFromLs;
   }else{
-    runRequest("Las Vegas Blvd", that);
+    runRequest(stripRequest, that);
   }
 
   if (fremontDataFromLs !== null) {
@@ -152,7 +155,6 @@ export class App {
   }
   parseHotelName (name){
     name = name.replaceAll(' ', '');
-    name = name.replaceAll('\'', '');
     name = name.replaceAll('Resort&Casino', '');
     name = name.replaceAll('Hotel&Casino', '');
     name = name.replaceAll('HotelAndCasino', '');

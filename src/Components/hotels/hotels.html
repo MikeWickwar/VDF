@@ -20,9 +20,9 @@
           <span>${hotelDetails.formatted_phone_number}</span>
         </div>
         <span if.bind="hotelDetails" class="ratings">
-          <rating title="VDF Rating" rating="${hotelDetails.rating + 1.5}" color="black" symbol="VDF"></rating>
-          <rating title="Quality Rating" rating="${hotelDetails.rating + 1}" color="purple" symbol="Q"></rating>
-          <rating title="Value Rating" rating="${hotelDetails.rating + 2}" color="green" symbol="$"></rating>
+          <rating title="VDF Rating" rating="${hotelDetails.rating * 2 + 1.5}" color="black" symbol="VDF"></rating>
+          <rating title="Quality Rating" rating="${hotelDetails.rating * 2 + 1}" color="purple" symbol="Q"></rating>
+          <rating title="Value Rating" rating="${hotelDetails.rating * 2 + 2}" color="green" symbol="$"></rating>
         </span>
       </div>
     </div>

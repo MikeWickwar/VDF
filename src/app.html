@@ -2,7 +2,7 @@
 
 
   <div class="contentContainer">
-    <video id="background-video" autoplay loop muted playsinline>
+    <video id="background-video" autoplay loop muted playsinline controls="true">
       <source src="./Images/stripVid.mp4" type="video/mp4">
     </video>
     <!-- <div class="washer">  </div> -->
@@ -20,7 +20,7 @@
             <li class="nav-item dropdown" if.bind="row.title != 'Hotels' && row.title != 'Top 12 Deals' && row.title != 'Airfare'">
               <a class="nav-link" href.bind="row.href" click.capture="onNavClick(row.href)">${row.title}</a>
             </li>
-            <li class="nav-item dropdown" if.bind="row.title == 'Top 12 Deals'">
+            <li class="nav-item dropdown dropend" if.bind="row.title == 'Top 12 Deals'">
               <a class="dropdown-toggle detailsLink" href="#" aria-expanded="false" data-bs-toggle="dropdown" data-bs-target="#dealsDropdown" aria-controls="dealsDropdown" >Top 12 Deals</a>
               <ul id="dealsDropdown" class="dropdown-menu" aria-labelledby="dealsDropdown">
                 <li class="nav-item">

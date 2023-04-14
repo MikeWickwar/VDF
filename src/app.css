@@ -114,6 +114,13 @@ nav .dropdown-menu li{
 #stripDropdown{
   overflow-y: scroll;
 }
+#fremontDropdown,
+#stripDropdown{
+  position: absolute;
+  /* width: 350px; */
+  left: 132px;
+}
+
 .MainContainer{
   height: 100%;
   width: 100%;
