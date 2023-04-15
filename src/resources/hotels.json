@@ -2537,6 +2537,846 @@
       "poolBlurb": "The Venetian pools evoke the charm and irresistible allure of their seaside Italian influences. From your private cabana, you can enjoy a cool drink from our menu handcrafted by master bartenders. A haven for lounging poolside, each of our pools is a picturesque respite for a refreshing swim or reveling in the sunshine.",
       "poolImg": "https://www.venetian.com/content/dam/venetian/poolsandspas/venetian-pool-deck/venetian-pool-deck_1200x800.jpg.resize.0.0.474.316.jpg"
     }
+  },
+  {
+    "name": "PlanetHollywood",
+    "route": "#/hotels/PlanetHollywood",
+    "location": "strip",
+    "title": "Planet Hollywood Hotel & Casino",
+    "vdfRating": "",
+    "qualRating": "",
+    "valueRating": "",
+    "resortImgUrl": "",
+    "overRideForLocalImg": false,
+    "resortFee": "Daily Resort Fee: $37",
+    "parkingDetails": "Free Parking",
+    "hotelDetails": "Planet Hollywood Las Vegas (formerly the Aladdin) is a hotel and casino located on the Las Vegas Strip in Paradise, Nevada. It is owned and operated by Caesars Entertainment Corporation. The property was previously occupied by an earlier resort known as the Aladdin, which operated from the 1962 to 1997. It was demolished in 1998, to make room for a new resort that would also be named Aladdin. The new Aladdin resort opened in August 2000, but suffered financial difficulties and was eventually purchased in 2003 by a partnership of Planet Hollywood and Starwood Hotels & Resorts Worldwide, which renamed it as Planet Hollywood in 2007.",
+    "roomsBlurb": "With all new rooms at Planet Hollywood Resort and Casino their ready for your next stay. These new rooms give off a contemporary feel with edgy artwork and modern furnishings that are a perfect fit to go alongside our robust entertainment lineup at the Zappos Theater. When you stay in a Planet Hollywood hotel room, the celebrity lifestyle is yours for the living, and fame lies around every corner.",
+    "rooms": [{
+        "title": "Ultra Hip Room",
+        "blurb": "1 King / 2 Queens | Premium Fountain View",
+        "roomDetails": "Enjoy contemporary elegance and a view of the famous fountains that will make you feel like the star of your own movie. Their new Ultra Hip rooms are a bright, bold addition to the Planet Hollywood portfolio, featuring luxury bedding and designer touches throughout -- along with convenient extras like a mini refrigerator on diamond floors.",
+        "img": "https://www.bing.com/th/id/OIP.p5WQYwpTCGVObyDg0voxHwHaEb?w=300&h=179&c=7&o=5&dpr=1.05&pid=1.7",
+        "features": [""]
+      },
+      {
+          "title": "Ultra Hip Strip Suite ",
+          "blurb": "1 King / 2 Queens I Strip View I Non-Smoking",
+          "roomDetails": "Add excitement, glamour and pizazz to your hotel stay. Measuring 850 square feet, each one King suite offers dazzling views of the Las Vegas Strip. The spacious suite’s modern décor and vibrantly-colored accents set the mood. Unwind in the suite’s oversized round soaking tub or lounge in the separate seating area, complete with flat-screen TV.",
+          "img": "http://hauteliving.com/wp-content/uploads/2017/05/Planet-Hollywood-Ultra-Panorama-Suite.jpg",
+          "features": [""]
+      },
+      {
+          "title": "Ultra Panorama Suite",
+          "blurb": "2 Queen | Non-Smoking",
+          "roomDetails": "Enjoy contemporary elegance and 180-degree views of the Las Vegas Strip in our new Panorama suites! Bright, bold and spacious, these suites offer luxury bedding, an oversized soaking tub and designer touches throughout. Extend your Hollywood experience: upgrades to a 2 bedroom suite are available.",
+          "img": "http://hauteliving.com/wp-content/uploads/2017/05/Planet-Hollywood-Ultra-Panorama-Suite.jpg",
+          "features": [""]
+      },
+      {
+          "title": "Ultra Boulevard Suite",
+          "blurb": "Our sleek, luxurious Boulevard Suite features a lounge-style living space with a suspended sofa, a separate dining area, large flat-screens and gorgeous Strip views. Each 1,800-square-foot suite includes luxury bedding and bold designer touches throughout. Extend your Hollywood experience: upgrades to a 2 bedroom suite are available. Living room design based on availability.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Ultra Apex Suite",
+          "blurb": "Glass doors open to an expansive wraparound private terrace allowing fresh air and sunlight to pour into the spacious interior. With panoramic views of the Vegas skyline, the Wraparound Terrace Suite boasts amenities not typically found in a luxury Las Vegas hotel room, including a sleek wet bar with a Sub-Zero wine chiller. ",
+          "roomDetails": "",
+          "img": "https://www.vegasnews.com/wp-content/uploads/Planet-Hollywood_Ultra-Apex-Suite.jpg",
+          "features": [""]
+      },
+      {
+          "title": "PH Bay Suite",
+          "blurb": "Get ready for a star-studded celebration with your entourage. This Planet Hollywood Las Vegas suite takes your average hotel stay to the next level. Ideal for wedding receptions, family reunions and any large event, the gigantic living and dining area includes multiple couches, a massive flat-screen TV, a wet bar and an eight-seat dining table. The suite also features a spacious kitchen, a separate office and remarkable Strip views. Unwind in one of two bedrooms, each on opposite sides of the suite. Complimentary round-trip airport limo service is included in your reservation. Stay connected with enhanced Wi-Fi across all Caesars Entertainment Las Vegas hotels.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "",
+          "blurb": "",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      }
+    ],
+    "casino": {
+      "title": "Planet Hollywood Casino",
+      "subTitle": "The resort features a three-acre casino floor full of traditional gambling machines like slots, table games and The Playing Field Race and Sports Book. This features 33 plasma screens, two jumbo screens and a section for VIP. Planet Hollywood is the first Las Vegas resort to offer table games dealt by young ladies in \"chic lingerie\". The Pleasure Pit is a section of the table games where this happens with go-go dancers entertaining the gamblers at the side",
+      "titleImg": "https://media-cdn.tripadvisor.com/media/photo-s/04/1b/02/9d/casino-is-great-fun.jpg",
+      "games": [],
+      "slotBlurb": "",
+      "slotImg": "",
+      "pokerBlurb": "",
+      "pokerImg": "",
+      "tableGamesBlurb": "There's nothing like strolling up to a craps or blackjack table with your entourage and trying your luck with the dice or cards. If exhilarating Las Vegas table games are what you're looking for, the Planet Hollywood casino has them all.",
+      "tableGamesImg": "",
+      "sbBlurb": "Visit The Playing Field Race & Sports Book at Planet Hollywood casino to place your bets on your favorite team, athlete or horse. The Playing Field is a hip, high-tech hangout within the Las Vegas casino, boasting 55 plasma TVs and a VIP race area.",
+      "sbImg": "https://s-media-cache-ak0.pinimg.com/originals/c7/39/d8/c739d868d539119ff82a58945682f8b4.jpg",
+      "clubName": "",
+      "clubBlurb": "",
+      "misc": [
+      ]
+    },
+    "pool": {
+      "title": "Planet Hollywood Pool",
+      "poolBlurb": "THE SCENE POOL DECK - HOME OF THE FLOWRIDER - Rooftop pools, Las Vegas Strip views AND open to the public - what more could you really ask for? Planet Hollywood features the ultimate Las Vegas poolside social retreat. The Scene Pool Deck offers two separate pool decks, two pool bars, live DJs and 31 cabanas and daybeds to capture your incredible Vegas Instagram moment. This Las Vegas summer party can get wild; be prepared for action-packed fun in the sun. Speaking of action, hang ten on the Strip’s only professional free-standing wave, the FlowRider. EXPERIENCE THE FLOWRIDER The Planet Hollywood Pools have changed the Las Vegas summer scene with the addition of the Strip’s first ever FlowRider Wave-in-a-Box Double. Professional wave riders and novices alike hanging ten and testing their talents in a safe yet exhilarating environment. With FlowRider’s waveform technology, riders should have no fear of wiping out as the surface is designed to absorb the energy of impacts. ",
+      "poolImg": "https://s-media-cache-ak0.pinimg.com/originals/c7/39/d8/c739d868d539119ff82a58945682f8b4.jpg"
+    }
+  },
+  {
+    "name": "Sahara",
+    "route": "#/hotels/Sahara",
+    "location": "strip",
+    "title": "",
+    "vdfRating": "",
+    "qualRating": "",
+    "valueRating": "",
+    "resortImgUrl": "http://1.bp.blogspot.com/-rjAxEf92jSE/Te0zwgDqW5I/AAAAAAAAAh8/B48sRlkThCE/s1600/saharahotel.jpg",
+    "overRideForLocalImg": false,
+    "resortFee": "$35",
+    "parkingDetails": "",
+    "hotelDetails": "Sahara Las Vegas is a hotel and casino located on the Las Vegas Strip in Winchester, Nevada. It is owned and operated by the Meruelo Group. The hotel has 1,600 rooms, and the casino contains 85,000 square feet . The Sahara anchors the northern end of the Las Vegas Strip. It is the site of the northernmost station of the Las Vegas Monorail.",
+    "roomsBlurb": "SAHARA Las Vegas epitomizes the timeless soul of Las Vegas. With a bold, sophisticated flair and a boutique approach to personal service, SAHARA provides guests an intimate and unexpected experience that sets a new standard for Vegas. The resort initially operated under the Sahara name from 1952 until 2011.  Following a $415 million renovation, the property reopened as SLS Las Vegas on August 23, 201. It was sold to the Meruelo Group in 2018, and renamed Sahara Las Vegas on August 29, 2019",
+    "rooms": [
+      {
+          "title": "Alexandria Tower",
+          "blurb": "Luxurious King or 2 Double beds with designated work area and additional seating area create an inviting, artfully appointed environment. Sophisticated and sleek, the World Tower King Room is highlighted by a contemporary palette across 360 square feet of artfully arranged space. A plush king bed, spacious work desk, and additional seating area create an inviting, expertly appointed environment.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Blanca Tower",
+          "blurb": "Ensuring a perfect stay for work or play, the newly redesigned 325 square foot King or 2 Double room features double Euro pillow top full-sized beds and includes the new addition of a complimentary mini-fridge, armoire-style closet, and built-in multi-purpose desk. With a modern touch to nostalgic designs, the transformed room is sophisticated yet inviting with stylish furnishings that offer the highest level of comfort",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Marra Junior Suite",
+          "blurb": "Sophisticated and sleek, the Marra Junior Suite is highlighted by a contemporary palette across 540 square feet of artfully arranged space. With separate bedroom & living areas, a plush King bed, spacious work desk, and additional seating area create an inviting, expertly appointed environment.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Marra One Bedroom Suite",
+          "blurb": "Sophisticated and sleek, the Marra Tower One Bedroom Suite is highlighted by a contemporary palette across 730 square feet of artfully arranged space. With separate bedroom & living areas, a plush King bed, spacious work desk, and additional seating area create an inviting, expertly appointed environment.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Blanca Junior Suite",
+          "blurb": " With a modern touch to nostalgic designs, the transformed Blanca Junior Suite is spacious and sophisticated yet inviting with stylish furnishings that offer the highest level of comfort and the perfect space to work, rest and play! Thoughtfully redesigned, this suite includes the new addition of a complimentary mini-fridge, armoire-style closet, built-in multi-purpose desk.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Blanca One Bedroom Suite",
+          "blurb": "Revel in the spaciousness of the newly redesigned 675 square foot suite with a separate bedroom which sleeps up to two in the Euro pillow top king-sized bed. A cozy, full-sized sectional sofa, coffee table, and a round dining set adorn a sitting area. This suite includes a fantastic array of amenities right at your fingertips with the new addition of a complimentary mini fridge, armoire-style closet, and built-in multi-purpose desk. With a modern touch to nostalgic designs, the transformed room is spacious and sophisticated yet inviting with stylish furnishings that offer the highest level of comfort and luxury.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Alexandria King Suite",
+          "blurb": "The 632 square foot suite is a seductive retreat featuring ambient lighting and rich, soothing tones in the living and bedroom areas. A plush banquette and custom-crafted work desk anchor the suite-style amenities and large floor plan of the room. The oversized bathroom maximizes space and offers a full range of custom, natural amenities created exclusively to meet the needs of corporate VIP’s and couples alike.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Alexandria Ultra Suite",
+          "blurb": "A seductive 955 square foot retreat, the Alexandria Ultra Suite features ambient lighting; rich, soothing tones. A plush bed anchors the whimsically edgy suite-style amenities and large floor plan. The oversized bathroom maximizes space and creates an environment perfect for corporate VIP’s and couples alike.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Marra Legendary Suite",
+          "blurb": "Our Marra Legendary Suite blends mysterious masculinity with undeniable sensuality. Veined marble, textured leather and espresso wood contrast beautifully against sculptural and curvaceous furnishings. With sweeping mountain views, the expansive area features a living room, dining area, powder room, master bedroom, and bathroom.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Blanca Penthouse",
+          "blurb": "Designed by Lenny Kravitz and over 3300 sq ft. this two bedroom Blanca Penthouse mixes fun and sensuality, complete with a photo booth. Custom art installations throughout and sliding floor-to-ceiling mirrors create an industrial loft feel. With two roof decks, fireplace and hot tub - you will want to stay awhile.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Alexandria Designer Suite",
+          "blurb": "Las Vegas is a city known for abandoning conventionality while embracing spontaneity, and this 1,267 square foot designed by Lenny Kravitz does just that. Adorning the top of the Alexandria Tower with sweeping views of Downtown Las Vegas and surrounding mountains, the one-of-a-kind suite oozes the feeling of retro Sin City. Natural light fills this masculine retreat contrasted against dark and textured furnishings. Separate living room & bedroom.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      }
+    ],
+    "casino": {
+      "title": "Sahara Casino",
+      "subTitle": "SAHARA Las Vegas delivers one of the most unique gaming destinations on the Strip. Comfortable and inviting, their nearly 60,000 square foot casino features dramatic chandeliers, rich colors, and an intimate vibe.",
+      "titleImg": "https://i.pinimg.com/736x/04/3a/59/043a59044901cf43cfa06f534604d741--las-vegas-nevada.jpg",
+      "games": ["Blackjack (High-Limit, Switch, Double Deck, Eight Deck, & Six Deck)",
+                "Midi-Baccarat",
+                "No Commission Baccarat (Midi)",
+                "Fortune Pai Gow Poker",
+                "Roulette",
+                "Craps",
+                "Ultimate Texas Hold’em",
+                "Three Card Poker",
+                "Face Up Pai Gow",
+                "Freebet Blackjack",
+                "Mini Baccarat",
+                "Three Card Blitz",
+                "Blackjack side bets (Jackpot Blackjack & Buster Blackjack) "],
+      "slotBlurb": "SAHARA Las Vegas is home to over 600 slot machines offering millions in jackpots. Our penny to $25 slot machines offer a variety of games, including bar top video poker at two separate casino bars as well as video, reel and video poker games available in a number of denominations.",
+      "slotImg": "https://static.mgmresorts.com/content/dam/MGM/mandalay-bay/casino/slots/mandalay-bay-casino-slots-main-slot-image.tif.image.1440.550.high.jpg",
+      "pokerBlurb": "",
+      "pokerImg": "",
+      "tableGamesBlurb": "",
+      "tableGamesImg": "",
+      "sbBlurb": "SAHARA Las Vegas in collaboration with global gaming leader William Hill offers a sports book experience featuring groundbreaking wagering technologies designed to provide guests with an unrivaled sports betting offering. Sports book guests have access to innovative wagering technology, including William Hill’s market-leading mobile betting platform available on iPhone, iPad and Android devices. Additionally, the sports book features an expansive HD video wall for viewing of sporting events and betting odds, as well as fully automated InPlay wagering.",
+      "sbImg": "",
+      "clubName": "",
+      "clubBlurb": "",
+      "misc": [
+      ]
+    },
+    "pool": {
+      "title": "Resort Pool, Retro Pool and Alexandria Pool",
+      "poolBlurb": "A relaxed environment that mixes comfort, style and fun. A variety of pleasures awaits their guests as they can recline in a chaise, relax in a daybed or for a more exclusive experience, reserve a private cabana. Enjoy pool season during your Las Vegas getaway. ",
+      "poolImg": ""
+    }
+  },
+  {
+    "name": "TheCromwell",
+    "route": "#/hotels/TheCromwell",
+    "location": "strip",
+    "title": "",
+    "vdfRating": "",
+    "qualRating": "",
+    "valueRating": "",
+    "resortImgUrl": "",
+    "overRideForLocalImg": false,
+    "resortFee": "",
+    "parkingDetails": "",
+    "hotelDetails": "The Cromwell Las Vegas (formerly Barbary Coast and Bill's Gamblin' Hall and Saloon is a luxury boutique hotel and casino on the Las Vegas Strip in Paradise, Nevada. It is owned and operated by Caesars Entertainment Corporation. ",
+    "roomsBlurb": "The Cromwell (2014–present).  Caesars announced in March 2013 that the hotel would be renovated at a cost of $185 million.  The Cromwell presents the Strip’s first Las Vegas standalone boutique hotel. Each of the 188 rooms features luxurious accommodations in an intimate, Parisian-inspired atmosphere.  The Cromwell also offers player-friendly gaming, free live entertainment nightly at Interlude Lounge, personal concierge service with Ivy and great food offerings. Bold. Sophisticated. Enticing.  ",
+    "rooms": [
+      {
+          "title": "Deluxe King or Two Queens",
+          "blurb": "The Cromwell's Deluxe King room measures 360 square feet and includes a pillow-top king bed. Reminiscent of a Parisian-style apartment, this Las Vegas hotel room's hardwood floors, plush seating and antique trunk-style furnishings give it both a modern and vintage flair. The neutral tones and berry accents provide a relaxing, glamorous vibe. The bathroom offers a window and rain shower experience. The room also has a 55-inch flat-screen and high-end bath products. Your reservation includes complimentary access to Drai's Beachclub (some exclusions apply).",
+          "roomDetails": "",
+          "img": "https://www.caesars.com/content/scaffold_pages/rooms/cromwell/en/deluxe_2_queen/_jcr_content/cards/card/image.stdimg.hd.m.jpg/1574878504844.jpg",
+          "features": [""]
+      },
+      {
+          "title": "Luxury 2 Queen Room",
+          "blurb": "The Cromwell’s Luxury 2 Queen room measures 360 square feet with a Strip View and includes two pillow-top queen beds, corner chair and armoire. Reminiscent of a Parisian-style apartment for its hardwood floors, plush seating and antique trunk-style furnishings, the room radiates both a modern and vintage flair. The bathroom offers a window and a rain shower. The room also has a 55-inch flat-screen and high-end bath products. Your reservation includes complimentary access to Drai's Beachclub (some exclusions apply).",
+          "roomDetails": "",
+          "img": "https://www.caesars.com/content/scaffold_pages/rooms/cromwell/en/deluxe_2_queen/_jcr_content/cards/card/image.stdimg.hd.m.jpg/1574878504844.jpg",
+          "features": [""]
+      },
+      {
+          "title": "Parlour Suite | 1 King | Strip View",
+          "blurb": "The Parlour Suite measures 723 square feet and features a dining and living room area attached to the bedroom. Displaying modern and retro décor with a Parisian touch, this suite has hardwood floors and vintage trunk-style furnishings. All suites offer a full size refrigerator with food options for sale, as well as a vanity wall with hair and makeup products. Your reservation includes complimentary access to Drai's Beachclub (some exclusions apply). Expand your experience: upgrades to a 2 bedroom suite are available.",
+          "roomDetails": "",
+          "img": "https://www.caesars.com/content/scaffold_pages/rooms/cromwell/en/2_bay_suite/_jcr_content/cards/card/image.stdimg.hd.m.jpg/1574815092342.jpg",
+          "features": [""]
+      },
+      {
+          "title": "Boulevard Suite",
+          "blurb": "Fun and glamour come together in this 1,061-square-foot Boulevard Suite with a spectacular Strip View. This modern Las Vegas suite has one king bed, steam shower, a comfortable dining area, wet bar, and a living room with plush seating in front of a 55-inch flat screen TV. The suite also includes a vintage fully operational pinball machine. The full size refrigerator has food options for sale, while the vanity wall makes getting ready a breeze. Your reservation includes complimentary access to Drai's Beachclub (some exclusions apply).",
+          "roomDetails": "",
+          "img": "https://www.caesars.com/content/scaffold_pages/rooms/cromwell/en/3_bay_suite/_jcr_content/cards/card/image.stdimg.hd.m.jpg/1574814973788.jpg",
+          "features": [""]
+      },
+      {
+          "title": "The Cromwell Suite",
+          "blurb": "The Cromwell Suite offers the best Las Vegas boutique hotel experience. This 1,730-square-foot suite extends to 2,550 square feet with connecting room options. The spacious living area features sectional seating, a flat-screen TV, an eight-seat dining table, a fridge with food items for sale and a pool table. This suite offers a half bathroom in the living area, while the master bath offers a separate tub and shower. Complimentary round-trip airport limo service is included in your reservation. Your reservation includes complimentary access to Drai's Beachclub (some exclusions apply).",
+          "roomDetails": "",
+          "img": "https://www.caesars.com/content/scaffold_pages/rooms/cromwell/en/presidential_5_bay_suite/_jcr_content/cards/card/image.stdimg.hd.m.jpg/1574815868398.jpg",
+          "features": [""]
+      }
+    ],
+    "casino": {
+      "title": "The Cromwell Casino",
+      "subTitle": "With over 40,000 sq ft. casino, The Cromwell has some great odds. With 100X Odds on Craps, 3/2 Double Deck Blackjack, Single Zero Roulette and commission free EZ Baccarat it's no wonder The Cromwell was named a \"Top 10 Best U.S. Casino\" by USA Today readers. Visit The Cromwell today to experience better odds and bigger wins.",
+      "titleImg": "https://www.blackjackonline.com/wp-content/uploads/2017/08/TheCromwellCasinoFloor.jpg",
+      "games": ["100X Odds on Craps – If you enjoy rolling the dice, you'll find generous 100X odds on craps (the only location offering these odds on the Strip) as well as affordable table limits at The Cromwell.",
+                "3-2 Shoe and Double-Deck Blackjack – For those who like classic gaming, blackjack at The Cromwell offers terrific value with some of the lowest minimum bets on the Strip.",
+                "Single “0” Roulette – This table game, also known as European roulette, was previously found primarily only in high-limit areas. At The Cromwell you can find Single \"0\" Roulette on the main casino floor with approachable table limits.",
+                "Commission Free EZ Baccarat - The popular EZ Baccarat is played the same way as traditional baccarat with the same drawing rules. With EZ Baccarat, taking a 5 percent commission after every winning Bank hand is eliminated."],
+      "slotBlurb": "From all your favorite classics to the hottest new games, The Cromwell offers a variety of games spread across the casino floor. Whether you're a beginner or an experienced slot player, play a penny or play $1,000, you're sure to discover a game that suits your winning streak. ",
+      "slotImg": "https://vegasslots.net/wp-content/uploads/2019/06/1-10-7-1024x673.jpg",
+      "pokerBlurb": "",
+      "pokerImg": "",
+      "tableGamesBlurb": "",
+      "tableGamesImg": "",
+      "sbBlurb": "If you’re headed to the Strip to play, think boutique: The Cromwell offers a sports book for gaming and sports enthusiasts alike. The sports book gives guests a treat with its 32-foot-long by nine-foot-tall LED video wall. Stay updated with a nine-foot-by-five-foot LED odds wall displaying the latest scores and updates. Even if you’re not in the sports book, you can view this wall from various parts of the casino.  For those who decide to linger, the sports book offers a lounge-like setting that comfortably fits 50 guests. Talk about a boutique experience.   In addition to the sports book,guests can enjoy even more games in the resort’s 40,000-square-foot casino. This includes single “0” roulette and commission free EZ Baccarat to 100X odds on Craps to 3-2 shoe and double deck blackjack. Players get hungry too!       ",
+      "sbImg": "",
+      "clubName": "",
+      "clubBlurb": "",
+      "misc": [
+        {
+          "miscTitle": "Drai's Beachclub Nightclub",
+          "miscBlurb": "Hang late night for Swim Night only on Thursdays starting at 10:30 p.m. On the weekends, this tranquil oasis turns into a hot party spot with Drai’s Beachclub. The Beachclub is open Friday - Sunday, 11 a.m. – 6 p.m. and features a party vibe and music from top DJs and special guests. ",
+          "miscPhoto": ""
+        }
+      ]
+    },
+    "pool": {
+      "title": "DRAI'S POOL AT THE CROMWELL",
+      "poolBlurb": "Hotel guests can relax and unwind at Drai's Pool located inside The Cromwell, situated on a rooftop deck 11 stories above the Strip. Take in the spectacular Las Vegas views from two main pools as well as six hot tubs that are accessible if you purchase one of the 10 bungalows surrounding the pools. There are also 15 cabanas for rental with HD TVs and private bathrooms with showers. Daybeds and lounge chairs are available with a small food and beverage minimum from Drai's Cafe. Guests can enjoy drink service as they lounge around the palm tree-lined pool. A full bar is available as well as specialty cocktails like spicy margaritas, blueberry mojitos and cucumber lemonade with Grey Goose, fresh lemonade, cucumber soda and fresh cucumber. You don’t even have to leave the pool if you’re hungry for lunch. Drai’s Café offers an extensive menu of bites to keep you satisfied as you soak up the sun. The menu offers shrimp ceviche, nachos, fries, hot dogs, salads, flatbreads, sandwiches, sliders and more.",
+      "poolImg": "https://media-cdn.tripadvisor.com/media/photo-s/06/ab/26/7a/drais-beach-club.jpg"
+    }
+  },
+  {
+    "name": "TheMirage",
+    "route": "#/hotels/TheMirage",
+    "location": "strip",
+    "title": "",
+    "vdfRating": "",
+    "qualRating": "",
+    "valueRating": "",
+    "resortImgUrl": "https://www.mysincityparty.com/wp-content/uploads/Mirage.jpg",
+    "overRideForLocalImg": true,
+    "resortFee": "$37",
+    "parkingDetails": "",
+    "hotelDetails": "The Mirage is a 3,044 room Polynesian-themed resort and casino resort located on the Las Vegas Strip in Paradise, Nevada, United States. The resort was built by developer Steve Wynn and is currently owned and operated by MGM Resorts International.  The original marquee sign in front of the Mirage is the largest free standing marquee in the world. The resort is connected by a free tram to the Treasure Island Hotel and Casino neighboring the hotel's property to the north.",
+    "roomsBlurb": " Enjoy luxurious amenities such as Mirage Serta Perfect Sleeper® pillow top mattresses, feather down pillows and comforter and a 42\" LCD TV.",
+    "rooms": [
+      {
+          "title": "Resort King or Two Queens",
+          "blurb": "A spacious resort room equipped with one KIng or two queen size beds. Each room will feature The Mirage Serta Perfect Sleeper® pillow top mattress, feather down pillows and comforter, 42\" LCD TV, JBL Horizon Bluetooth Speaker and office chairs designed to provide maximum support and flexibility. Tucked away will be an iron, ironing board, hair dryer and private, in-room safe for added convenience. ",
+          "roomDetails": "Size: 394 sq. ft.  Bed: 1 King / 2 Queen Beds.  Max Guest: 4",
+          "img": "https://static.mgmresorts.com/content/dam/MGM/the-mirage/hotel/guest-rooms/mirage-hotel-architectural-resort-tower-queen.tif.image.2480.1088.high.jpg",
+          "features": [""]
+      },
+      {
+          "title": "Premium Volcano View King or Two Queens",
+          "blurb": "A spacious resort room equipped with guaranteed Premium Volcano Views. Each room will feature The Mirage Serta Perfect Sleeper® pillow top mattress, feather down pillows and comforter, 42\" LCD TV, JBL Horizon Bluetooth Speaker and office chairs designed to provide maximum support and flexibility. Tucked away will be an iron, ironing board, hair dryer and private in room safe. Room Details:  Size: 394 sq. ft.  Bed: 2 Queen Beds.  Max Guest: 4 ",
+          "roomDetails": "",
+          "img": "https://static.mgmresorts.com/content/dam/MGM/the-mirage/hotel/guest-rooms/mirage-hotel-volcano-view-room-king.tif.image.2480.1088.high.jpg",
+          "features": [""]
+      },
+      {
+          "title": "PREMIUM STRIP VIEWS",
+          "blurb": "A spacious resort room equipped with guaranteed Premium Strip Views. Each room will feature The Mirage Serta Perfect Sleeper® pillow top mattress, feather down pillows and comforter, 42\" LCD TV, JBL Horizon Bluetooth Speaker and office chairs designed to provide maximum support and flexibility. Tucked away will be an iron, ironing board, hair dryer and private, in-room safe for added convenience.",
+          "roomDetails": "",
+          "img": "https://static.mgmresorts.com/content/dam/MGM/the-mirage/hotel/guest-rooms/mirage-hotel-architectural-king-deluxe-tower-strip-view.tif.image.2480.1088.high.jpg",
+          "features": [""]
+      }
+    ],
+    "casino": {
+      "title": "The Mirage Casino",
+      "subTitle": "With over 100,000 sq ft. casino  and state of the art machines and games. The Mirage offers something for everyone.",
+      "titleImg": "https://2.bp.blogspot.com/-E0RFdIV6qtQ/WqERPeSXWLI/AAAAAAAAAeo/eDfUaR_XfGsGNcgovf7gAQT9ss77a913wCLcBGAs/s1600/vencasino.jpg",
+      "games": ["Baccarat",
+                "Craps",
+                "Roulette",
+                "Let It Ride Poker",
+                "Three Card Poker",
+                "Crazy “4” Poker & Ultimate Texas Hold’em",
+                "Casino War",
+                "Pai Gow Poker"],
+      "slotBlurb": "From all your favorite classics to the hottest new games, The Mirage offers a variety of games spread across the casino floor. Whether you're a beginner or an experienced slot player, play a penny or play $1,000, you're sure to discover a game that suits your winning streak. Featured Slots:  Play a penny, or play $1,000 a spin - our reels are always rewarding! At The Mirage they have the hottest slots on the floor. Whether you are looking for classic slots or the latest HD and 3D-action packed game, The Mirage has it.",
+      "slotImg": "",
+      "pokerBlurb": "Take a seat at any one of Their many poker tables and test your luck. Named \"Best Poker Room in Vegas\" by Las Vegas Weekly, The Mirage Poker Room also hosts action-packed games throughout the day.",
+      "pokerImg": "",
+      "tableGamesBlurb": "Have a seat at one of Their table games and try your hand at popular casino card games such as Black Jack, Ultimate Texas Hold 'em and Mississippi Stud. Whether you're a novice or a serious game player, you're sure to get lucky on their casino floor. ",
+      "tableGamesImg": "",
+      "sbBlurb": "Experience wall-to-wall action at the best Race & Sports Book on the Strip. The 85’ state-of-the-art HD projection screens features horse racing and sporting events at 4X the resolution of 1080p for the ultimate viewing experience. Game on!",
+      "sbImg": "",
+      "clubName": "",
+      "clubBlurb": "",
+      "misc": [
+        {
+          "miscTitle": "Secret Garden & Dolphin Habitat",
+          "miscBlurb": "SIEGFRIED & ROY'S SECRET GARDEN AND DOLPHIN HABITAT Come face-to-face with some of nature's most exotic and majestic creatures at Siegfried & Roy's Secret Garden and Dolphin Habitat. Explore, learn and play in an enchanting world of Bottlenose Dolphins, White Tigers, White Lions and Leopards, right in our backyard  Get even closer with exclusive experiences that can't be found anywhere else in Vegas, including a behind-the-scenes VIP tour, Trainer for a Day, Painting with the Dolphins, and Yoga With the Dolphins.",
+          "miscPhoto": "https://static.mgmresorts.com/content/dam/MGM/the-mirage/entertainment/attractions/siegfried-and-roys-secret-garden-and-dolphin-habitat/mirage-entertainment-secret-garden-dolphin-habitat-bella-and-calf.jpg.image.1440.550.high.jpg"
+        }
+      ]
+    },
+    "pool": {
+      "title": "The Mirage Pool",
+      "poolBlurb": "This is one of the favorite backyards on the entire Strip, and it’s the perfect place to grab some rays—and perhaps a little attention.  ",
+      "poolImg": "https://static.mgmresorts.com/content/dam/MGM/the-mirage/pools/mirage-pool-overhead-view.tif.image.1440.550.high.jpg"
+    }
+  },
+  {
+    "name": "TheStrat",
+    "route": "#/hotels/TheStrat",
+    "location": "strip",
+    "title": "",
+    "vdfRating": "",
+    "qualRating": "",
+    "valueRating": "",
+    "resortImgUrl": "",
+    "overRideForLocalImg": false,
+    "resortFee": "$33",
+    "parkingDetails": "",
+    "hotelDetails": "The STRAT is a hotel, casino and tower located on Las Vegas Boulevard just north of the Las Vegas Strip in Las Vegas, Nevada. The STRAT is owned and operated by Golden Entertainment, which acquired the resort and three other properties from American Casino & Entertainment Properties for $850 million in 2017.",
+    "roomsBlurb": "The property's signature attraction is the 1,149 ft. Stratosphere Tower, the tallest freestanding observation tower in the United States and the second-tallest in the Western Hemisphere, surpassed only by the CN Tower in Toronto, Ontario. It is the tallest tower west of the Mississippi River and also the tallest structure in Las Vegas and in the state of Nevada. The hotel is a separate building with 24 stories, 2,427 rooms and an 80,000 sq ft. casino. The STRAT is located within the city limits of Las Vegas, and is sometimes considered to be the northernmost resort on the Las Vegas Strip, which is not located within the city. ",
+    "rooms": [
+      {
+          "title": "ELEVATE KING",
+          "blurb": "Elevate your stay with our newly remodeled Elevate King. A true respite featuring stylish and modern design in a comfortable space. Media outlets are available to accommodate all your technology.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "ELITE KING",
+          "blurb": "Enhance your stay with our recently redesigned Elite King. Featuring modern décor and additional comforts, including a designated work area.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "ELITE QUEEN",
+          "blurb": "Enhance your stay with our recently redesigned Elite Queen. Featuring modern décor and additional comforts, including a designated work area.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "SELECT KING",
+          "blurb": "Our most popular, the Select Room. The upgraded Select King features luxury accommodations with contemporary décor and additional comforts, including a sitting area and designated work area.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "SELECT QUEEN",
+          "blurb": "Our most popular, the Select Room. The upgraded Select Queen features luxury accommodations with contemporary décor and additional comforts, including a sitting area and designated work area.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "STANDARD KING",
+          "blurb": "Our spacious Standard King offers a refreshing and comfortable retreat.  Designed with both comfort and space in mind, you will find a designated seating area. This classic room is offered at our best value.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "STANDARD QUEEN",
+          "blurb": "Our spacious Standard Queen offers a refreshing and comfortable retreat with two queen-size beds and a designated seating area. Designed with both comfort and space in mind, you will find a designated seating area. This classic room is offered at our best value.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "TOWER SUITE",
+          "blurb": "The Tower Suite is a spacious retreat designed with couples in mind. Featuring a king bed, spacious living area that includes a designated work area, sofa bed as well as additional seating and refrigerator.  The oversized bathroom includes a roman tub, separate shower, double sinks and louver shutters opening up to the living area.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "GRAND SUITE",
+          "blurb": "This suite is perfectly appointed for those visiting Las Vegas for business, leisure or both. The Grand Suite features a private bedroom, spacious living room, dining area, refrigerator & wet bar.  Within the spacious bathroom you will find a double vanity, large walk-in shower with a rain showerhead and more to delight.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "CLASSIC FAMILY SUITE",
+          "blurb": "The perfect space for traveling families. Featuring two queen-sized beds and a sofa bed in a designated and spacious living area. The oversized bathroom includes a spa tub with shower.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "BOULEVARD SUITE",
+          "blurb": "An excellent option when you require more room, offering the perfect mix of space. The Boulevard Suite features a spacious bedroom, separate sitting area with a designated work area, refrigerator & wet bar and sofa bed. The oversized bathroom includes a spa tub and separate shower.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "CLASSIC GRAND SUITE",
+          "blurb": "Perfect for families or business travelers, the Grand Suite features a private bedroom, spacious living room, dining area, refrigerator & wet bar. Including one king bed and a sofa bed along with sweeping views of the Las Vegas valley.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      }
+    ],
+    "casino": {
+      "title": "The Stratospere Casino",
+      "subTitle": "80,000 sq ft. casino ",
+      "titleImg": "",
+      "games": [
+        "$5 Games",
+        "3 to 2 payouts on select Blackjack tables",
+        "Single Deck and Double Deck Blackjack",
+        "10X odds on Craps, Crapless Craps and Bonus Craps",
+        "FREE Table Game Tutorials",
+        "10x Odds on both Craps, Crapless Craps and Bonus Craps",
+        "Double Deck Blackjack",
+        "Single Deck Blackjack",
+        "Big Six Wheel"
+      ],
+      "slotBlurb": "The STRAT Hotel & Casino floor is packed with slots and video poker machines that will keep you fully entertained with a wide variety of themes, denominations and styles. Start with as little as a penny or go big with their $25 denomination machines. Go traditional with three-reel machines, or go modern with their state-of-the-art multi-denomination slot machines. Try your luck with the progressive slots to win thousands, or test both your skill and luck at our video poker machines.",
+      "slotImg": "",
+      "pokerBlurb": "",
+      "pokerImg": "",
+      "tableGamesBlurb": "For some of the hottest Las Vegas table game action and promotions, look no further than the Stratosphere Hotel, Casino & SkyPod. Their action packed casino floor features 45 table games and attentive cocktail servers. Be sure to hit all of their Vegas table games:",
+      "tableGamesImg": "",
+      "sbBlurb": "If you’re headed to the Strip to play, think boutique: The Cromwell offers a sports book for gaming and sports enthusiasts alike. The sports book gives guests a treat with its 32-foot-long by nine-foot-tall LED video wall. Stay updated with a nine-foot-by-five-foot LED odds wall displaying the latest scores and updates. Even if you’re not in the sports book, you can view this wall from various parts of the casino.  For those who decide to linger, the sports book offers a lounge-like setting that comfortably fits 50 guests. Talk about a boutique experience.   In addition to the sports book,guests can enjoy even more games in the resort’s 40,000-square-foot casino. This includes single “0” roulette and commission free EZ Baccarat to 100X odds on Craps to 3-2 shoe and double deck blackjack. Players get hungry too!           ",
+      "sbImg": "",
+      "clubName": "",
+      "clubBlurb": "",
+      "misc": [
+      ]
+    },
+    "pool": {
+      "title": "Resort Pool",
+      "poolBlurb": "Located on the 8th floor of the Stratosphere, our resort style pool offers incredible views and bustling pool activity. Three over-sized spas, plenty of chaise lounges and piped-in music set the tone for a truly relaxing experience.  When your fun in the sun calls for a more private poolside retreat, daybeds, cabanas and VIP cabanas are available at Elation Pool with a minimum food and beverage purchase. ",
+      "poolImg": "https://i.ytimg.com/vi/syi_tOzlOSc/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "TheVenetian",
+    "route": "#/hotels/TheVenetian",
+    "location": "strip",
+    "title": "",
+    "vdfRating": "",
+    "qualRating": "",
+    "valueRating": "",
+    "resortImgUrl": "https://www.tripsavvy.com/thmb/jNUgW939e8HNFooBYTM4-ixqLMY=/950x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-152924385-5a060225482c520037097e68.jpg",
+    "overRideForLocalImg": true,
+    "resortFee": "$45",
+    "parkingDetails": "",
+    "hotelDetails": "The Venetian Las Vegas is a luxury hotel and casino resort located on the Las Vegas Strip in Paradise, Nevada, United States, on the site of the old Sands Hotel.  The hotel tower contains 36 stories and rises 475 feet. The Venetian is owned and operated by Las Vegas Sands. The Venetian also serves as the seat of the corporate headquarters for its parent company. The Venetian resort complex is the world's second-largest hotel, with 4,049 rooms, 3,068 suites ranging in price and size.",
+    "roomsBlurb": "You could book an ordinary hotel for your trip to Vegas, or you could stay in a full-blown resort like the Venetian. When you choose the Venetian and its adjacent sister property, The Palazzo, you not only get a spacious suite to call your temporary home but also a seemingly endless amount of options for how to spend your time. When you consider the food options alone, you might stay at these hotels for a couple of weeks and never try all of their restaurants. At the Venetian, that would be a shame. The hotel’s Carnevino steakhouse and Table 10 by Emeril Lagasse are both deserving of repeat visits, but add Yardbird Southern Table and Bar, Public House, and Morels to the mix, and you'll have a few tough decisions when it comes to dinner time. The hotel’s shopping options are extensive in the Grand Canal Shoppes, and choosing a spot for a drink becomes a struggle between lounges, casino bars, and nightclubs. How will you survive the stress of these difficult decisions? A visit to the Canyon Ranch Spa can help, or utilize your spacious suite. The rooms at Venetian and Palazzo include plenty of space to lounge plus deep tubs for soaking. With so much to do, you might need a quick guide to help you navigate your vacation.",
+    "rooms": [
+      {
+          "title": "Luxury King Suites",
+          "blurb": "Stretch out in an oversized, pillow-top king bed, entertain in your distinct living room, or soak in your oversized tub. Choose a room with a view to enjoy the Las Vegas lights.",
+          "roomDetails": "",
+          "img": "",
+          "features": ["Oversized King size bed",
+                       "Distinct living room area and open bedroom",
+                       "Luxurious all-marble bath with oversized tub",
+                       "Full-size sofa-sleeper (upon availability)",
+                       "Oversized coffee table",
+                       "Dedicated work desk",
+                       "Dual-line telephone",
+                       "High-speed Internet access (wired/wireless)",
+                       "In-suite safe",
+                       "Sunken living room* (upon availability)",
+                       "Remote-controlled Roman shades and curtains",
+                       "46-inch (116 cm) flat-screen LCD HD TV in living room",
+                       "46-inch (116 cm) flat-screen LCD HD TV in bed area",
+                       "19-inch (48 cm) flat-screen LCD HD TV in bathroom (not available in Venezia Tower)",
+                       "iHome alarm clock",
+                       "Dining table that seats three",
+                       "Fully stocked refreshment center",
+                       "130-square-foot bathroom (12 square meters)",
+                       "19-inch flat-screen LCD HD TV (not available in Venezia Tower)",
+                       "Roman tub with separate glass-enclosed shower*",
+                       "Private water closet with telephone*",
+                       "Double-sink vanity*",
+                       "Dry vanity with makeup mirror",
+                       "Complimentary valet parking service",
+                       "Complimentary self-parking in enclosed garage"]
+      }
+    ],
+    "casino": {
+      "title": "Venetian Casino",
+      "subTitle": "120,000 sq ft. casino filled with all your favorite games and machines.",
+      "titleImg": "https://2.bp.blogspot.com/-E0RFdIV6qtQ/WqERPeSXWLI/AAAAAAAAAeo/eDfUaR_XfGsGNcgovf7gAQT9ss77a913wCLcBGAs/s1600/vencasino.jpg",
+      "games": [],
+      "slotBlurb": "The Venetian and The Palazzo are well known for having the most extensive selection of slots and video poker machines in the city. All your favorites are here on our two elegant casino floors. Experience the excitement as the reels spin and the bells ring, and earn generous rewards for your play when you join Grazie, the Strip’s premier loyalty program. There’s only one place to play Las Vegas slots, and that’s The Venetian and The Palazzo. With more than 1,000 slot games at The Venetian and over 900 slot games at The Palazzo, you’re sure to find your favorite game or find a new great game to enjoy. Regular updates bring the latest slot machines, such as Ghost Busters 4D, Game of Thrones: Fire & Blood and Lord of the Rings – Rule Them All.",
+      "slotImg": "",
+      "pokerBlurb": "Play one of the world’s favorite card games in The Venetian Poker Room. It’s the ultimate combination of elegance, comfort, and convenience. Plus get in on the action of the DeepStack Extravaganza tournament events, one of the most popular Poker tournament festivals in the world. With five major events a year there is always great tournament action and excitement.",
+      "pokerImg": "",
+      "tableGamesBlurb": "",
+      "tableGamesImg": "",
+      "sbBlurb": "The CG Sportsbook at The Venetian Resort Las Vegas features high limits, fair lines, comfortable seating, and one of the most comprehensive race and sports product offerings in town. With three Venetian retail locations and a great mobile app, you’ll never be short on betting options during your visit. CG’s nearly 10,000 square foot sportsbook next to the Venetian Poker Room is a bettor’s dream. With 118 reservable seats, a massive video wall, and a multitude of food and beverage options nearby, it is a hub for all of the action on any busy day in sports. It is also open 24 hours. A full-service CG betting kiosk on the Palazzo casino floor is a terrific choice for a quick over-the-counter wager while Lagasse’s Stadium is the perfect destination for watching and wagering with a group of friends. To avoid long lines on peak game days, try the CG Sportsbook app, which allows you to bet from anywhere in Nevada. It also features in-game betting to amplify your fun. All it takes is an app download on your smartphone (available on iOS and Android) and a brief in-person visit to a betting counter to set up your sports mobile account",
+      "sbImg": "https://www.onlinecasino.com.au/i/offline-casinos/las-vegas/venetian-sports-book.jpg",
+      "clubName": "",
+      "clubBlurb": "",
+      "misc": [
+        {
+          "miscTitle": "Authentic Venetian Gondola",
+          "miscBlurb": "No trip to Venice — or The Venetian — would be complete without a graceful and romantic glide down the Grand Canal in an authentic Venetian gondola. Float beneath bridges, beside cafes, under balconies, and through the vibrant Venetian streetscape as your singing gondolier sweeps you down the Grand Canal for a ride like no other.",
+          "miscPhoto": "https://www.venetian.com/content/dam/venetian/resort/attractions/gondola-rides/gondola_ext-3000x1730.jpg.resize.0.0.1200.675.jpg"
+        }
+      ]
+    },
+    "pool": {
+      "title": "Venetian Pool",
+      "poolBlurb": "Inspired by the Italian Riviera, the pools of The Venetian blend historic beauty with modern delights. With elaborate and lush gardens, the pristine waters of The Venetian pools evoke the charm and irresistible allure of their seaside Italian influences. From your private cabana, you can enjoy a cool drink from our menu handcrafted by master bartenders. A haven for lounging poolside, each of our pools is a picturesque respite for a refreshing swim or reveling in the sunshine. ",
+      "poolImg": "https://www.venetian.com/content/dam/palazzo/Home/pal-pool-deck_1586x1058.jpg.resize.0.0.474.316.jpg"
+    }
+  },
+  {
+    "name": "TreasureIsland",
+    "route": "#/hotels/TreasureIsland",
+    "location": "strip",
+    "title": "",
+    "vdfRating": "",
+    "qualRating": "",
+    "valueRating": "",
+    "resortImgUrl": "https://pix6.agoda.net/hotelImages/934/9345/9345_13061804030013332446.jpg?s=1024x768",
+    "overRideForLocalImg": false,
+    "resortFee": "37",
+    "parkingDetails": "",
+    "hotelDetails": "The $430 million Treasure Island was opened by Mirage Resorts on the night of October 26, 1993. It included a casino, a 2,900-room hotel, and a free pirate show located in front of the resort.[4] It opened under the direction of Steve Wynn and Atlandia Design (a Mirage Resorts subsidiary). The initial plans called for a tower addition to The Mirage, but later evolved into a full-fledged separate hotel casino resort. The resort was designed by architects Joel Bergman and Jon Jerde in collaboration with Steve Wynn along with Roger Thomas who designed the interior of Treasure Island Hotel and Casino.  The resort included a roadside sign featuring an 8,000-pound pirate skull,[5] made of fiberglass and measuring 27 1/2 feet. ",
+    "roomsBlurb": "",
+    "rooms": [
+      {
+          "title": "Deluxe King",
+          "blurb": "",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Deluxe Spa Room  ",
+          "blurb": "",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Resort Tower King",
+          "blurb": "",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Tower Suite",
+          "blurb": "",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Executive Suites",
+          "blurb": "",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Luxury Suite",
+          "blurb": "",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Las Vegas Parlor / Honeymoon / Luxury Suites at TI",
+          "blurb": "",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Las Vegas Parlor / Honeymoon / Presidential / Penthouse Suites at TI",
+          "blurb": "",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      }
+    ],
+    "casino": {
+      "title": "Treasure Island Casino",
+      "subTitle": "Looking for Gold? Checkout the 95,000 sq ft. casino here at Treasure Island.",
+      "titleImg": "",
+      "games": [],
+      "slotBlurb": "Treasure Island Casino and the TI Players Club offer an enticing variety of slots 24 hours every day. The casino floor is intimate in size, allowing Las Vegas slot players the opportunity to progress from one machine to another with ease and comfort. All TI Players Club members can qualify to receive the following rewards (subject to change): $5 to $25 in TI FREE SLOT PLAY; TI Slot card chain and shirt; complimentary room nights, buffets and show tickets; exclusive invitations to TI Las Vegas slot tournaments and more!",
+      "slotImg": "",
+      "pokerBlurb": "",
+      "pokerImg": "",
+      "tableGamesBlurb": "",
+      "tableGamesImg": "",
+      "sbBlurb": "Treasure Island's Race & Sports Book is the best place for viewing and wagering on the most popular sporting events and horse races.",
+      "sbImg": "",
+      "clubName": "",
+      "clubBlurb": "",
+      "misc": [
+      ]
+    },
+    "pool": {
+      "title": "Treasure Island Pool",
+      "poolBlurb": "The intimacy and splendor of the outdoor heated pool at TI is an essential element of any Las Vegas vacation. The double chaise lounges, plush round ottomans, live DJ* and 25 person hot tub provide the finest amenities for socializing with friends over Tropical frozen infusions, tasty bits, or simply enjoying some gratifying solo time basking in the sun.",
+      "poolImg": ""
+    }
+  },
+  {
+    "name": "Tropicana",
+    "route": "#/hotels/Tropicana",
+    "location": "strip",
+    "title": "",
+    "vdfRating": "",
+    "qualRating": "",
+    "valueRating": "",
+    "resortImgUrl": "",
+    "overRideForLocalImg": false,
+    "resortFee": "35",
+    "parkingDetails": "",
+    "hotelDetails": "With over 1600 rooms the Tropicana is located right in the heart of the Strip. Select a hotel room in the Paradise Tower to be near the casino or upgrade to a City View room to look out over the Las Vegas Strip. Book a guestroom in the Club Tower to be near their conference center and business services. Want a private balcony, easy access to all resort amenities and convenient parking? Try a stay in their Bungalows.",
+    "roomsBlurb": "Sky Villa Living Room Tropicana Las VegasThere are many things to look at in Las Vegas. In fact, it seems like everywhere you look there is something to attract your attention – from the sounds of slot machines and table games to sightseeing and soaking up the bright lights of the Strip at night.  ",
+    "rooms": [
+      {
+          "title": "Club Deluxe Room",
+          "blurb": "Club Deluxe Tropicana Las VegasLet their Club Deluxe Rooms welcome you with a calming palette of warm sunset shades. These refreshing residential-style Las Vegas hotel rooms are appointed with custom furnishings that will remind you of South Beach, Miami, with white plantation shutters that usher in plenty of natural light.  Whether you’re laying down for an afternoon nap or settling in for the night, you’re going to enjoy sinking into the comfort of our Euro Top Serta Perfect Sleeper mattresses that are ultra plush and wrapped in luxurious 300-thread-count linens. There is also an oversized workspace desk in case you need to catch up on work before you start your day. Their all-new Club Deluxe Rooms with two queen-size beds overlook the Tropicana Beach Club and their award-winning pool and gardens.",
+          "roomDetails": "",
+          "img": "",
+          "features": ["Euro Top Serta mattresses",
+                       "LED HDTVs",
+                       "300-thread-count linens",
+                       "Custom furnishings",
+                       "White plantation shutters",
+                       "Original artwork from an acclaimed Latin artist",
+                       "Wireless Internet",
+                       "iHome",
+                       "Oversized workspace desk",
+                       "Electronic in-room safe with room for a 17\" laptop"]
+      },
+      {
+          "title": "Club Deluxe Plus Room",
+          "blurb": "Club Deluxe Tropicana Las VegasLet their Club Deluxe Rooms welcome you with a calming palette of warm sunset shades. These refreshing residential-style Las Vegas hotel rooms are appointed with custom furnishings that will remind you of South Beach, Miami, with white plantation shutters that usher in plenty of natural light.  Whether you’re laying down for an afternoon nap or settling in for the night, you’re going to enjoy sinking into the comfort of our Euro Top Serta Perfect Sleeper mattresses that are ultra plush and wrapped in luxurious 300-thread-count linens. There is also an oversized workspace desk in case you need to catch up on work before you start your day. Their all-new Club Deluxe Rooms with two queen-size beds overlook the Tropicana Beach Club and their award-winning pool and gardens.",
+          "roomDetails": "",
+          "img": "",
+          "features": ["Euro Top Serta mattresses",
+                       "LED HDTVs",
+                       "300-thread-count linens",
+                       "Custom furnishings",
+                       "White plantation shutters",
+                       "Original artwork from an acclaimed Latin artist",
+                       "Wireless Internet",
+                       "iHome",
+                       "Oversized workspace desk",
+                       "Electronic in-room safe with room for a 17\" laptop"]
+      },
+      {
+          "title": "Club Deluxe Plus Room",
+          "blurb": "Club Deluxe Plus Rooms are 100 square feet larger than our Deluxe Rooms. This means that if you’re traveling with a carry-on suitcase, as many travelers do today, you could hypothetically fit 320 carry-on suitcases floor to ceiling in just the additional 100 square feet of this spacious hotel room! The design of these Las Vegas accommodations is intended to evoke a sense of casual luxury, as if you were at a South Beach getaway. They used warm tones – colors that are reminiscent of the sun setting over a beach – throughout the entire room, making the Club Deluxe Plus Rooms bright and cheerful with a residential style that can’t be experienced elsewhere on the Strip. They selected only the best amenities, from bamboo custom furnishings and original artwork by an acclaimed Latin artist to white plantation shutters that will transport you to a tropical escape, but without the humidity. Then there is the bed. Their luxury sheets are 300-thread-count, wrapped tightly around Euro Top Serta Perfect Sleeper mattresses that are ultra plush to ensure that you get the relaxation you deserve on your Vegas vacation. Finally, if you’re looking for a view, you should know that many of their Club Deluxe Plus Rooms have beautiful views of the award-winning Tropicana pool and its tropical gardens, our Las Vegas Beach Club and the always-stunning Vegas Strip.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Paradise Deluxe Room",
+          "blurb": "Residential-style Paradise Deluxe Rooms are inspired by South Beach, Miami, and will greet you with a warm palette of sunset shades. These bright, spacious quarters have white plantation shutters that provide a natural sunlit feel and custom furnishings including a sleek chaise lounge and original artwork. When it’s time for your afternoon siesta or to turn out the lights, their Euro Top Serta Perfect Sleeper mattresses are ultra plush and wrapped in luxury linens – 300 thread count because they want to ensure that you get the rejuvenating rest you deserve on your Vegas escape. In addition to the lavish ambiance and amenities, there is yet another reason to choose the Paradise Deluxe Room, and most travelers will agree that it is a very important reason. Of all the Las Vegas hotel rates for rooms of this quality, the Paradise Deluxe Room won’t break your budget. They took into account the importance of making our rooms affordable so you can spend your hard-earned money the way that you want to on your vacation. On this Las Vegas trip, you don’t have to worry about whether or not you’re going to win. When you book a Paradise Deluxe Room, you already have.",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "Bungalow Deluxe Room",
+          "blurb": "If you’re looking for affordable convenience, you should consider a stay in one of their Bungalow Deluxe Rooms.  Let’s start with in-room amenities. With a warm palette of sunset colors and a style that is inspired by South Beach, their Bungalow Deluxe Rooms will instantly make you feel welcome. Unlike other Las Vegas hotel rooms, these luxury accommodations evoke a residential style – as if you were in a beach house in Miami – with natural sunlight, original artwork and custom-designed bamboo furnishings. The bed is ultra plush, a Euro Top Serta Perfect Sleeper mattress, which is wrapped in 300-thread-count linens so you can rest even better than you do at home. These best-in-class rooms also feature private balconies – a luxury that is not often found in Vegas.  The Bungalow Deluxe Rooms are situated to give you easy access to our hotel’s restaurants – including Starbucks, for those of you who like to start your day with a cup of fresh coffee, the pool and gardens, the casino and live entertainment options. ",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      }
+    ],
+    "casino": {
+      "title": "Tropicana Casino",
+      "subTitle": " With over 50,000 sq ft. casino, Tropicana has a really fun and inviting casino",
+      "titleImg": "",
+      "games": ["Baccarat", "Blackjack", "Craps", "Roulette"],
+      "slotBlurb": "They offer more than 650 of the hottest slots, from single and multi-line video poker, to a variety of your favorite reel and video reel slots and more.  ",
+      "slotImg": "",
+      "pokerBlurb": "",
+      "pokerImg": "",
+      "tableGamesBlurb": "We know there’s a thrill that you only get when you place your chips on a gaming table in Las Vegas. The moment you enter the Tropicana casino, you’re going to notice our dealers’ warm and friendly vibe – which is going to make all the difference in your gaming experience. ",
+      "tableGamesImg": "",
+      "sbBlurb": "",
+      "sbImg": "",
+      "clubName": "",
+      "clubBlurb": "",
+      "misc": [
+      ]
+    },
+    "pool": {
+      "title": "TROPICANA POOL",
+      "poolBlurb": "Enjoy a bright, tropical setting surrounded by palm trees, lush landscaping and flowing waterfalls at the pool where swim-up blackjack originated.",
+      "poolImg": ""
+    }
+  },
+  {
+    "name": "PlanetHollywood",
+    "route": "#/hotels/PlanetHollywood",
+    "location": "strip",
+    "title": "",
+    "vdfRating": "",
+    "qualRating": "",
+    "valueRating": "",
+    "resortImgUrl": "",
+    "overRideForLocalImg": false,
+    "resortFee": "",
+    "parkingDetails": "",
+    "hotelDetails": "",
+    "roomsBlurb": "",
+    "rooms": [
+      {
+          "title": "",
+          "blurb": "",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "",
+          "blurb": "",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "",
+          "blurb": "",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      },
+      {
+          "title": "",
+          "blurb": "",
+          "roomDetails": "",
+          "img": "",
+          "features": [""]
+      }
+    ],
+    "casino": {
+      "title": "",
+      "subTitle": "",
+      "titleImg": "",
+      "games": [],
+      "slotBlurb": "",
+      "slotImg": "",
+      "pokerBlurb": "",
+      "pokerImg": "",
+      "tableGamesBlurb": "",
+      "tableGamesImg": "",
+      "sbBlurb": "",
+      "sbImg": "",
+      "clubName": "",
+      "clubBlurb": "",
+      "misc": [
+      ]
+    },
+    "pool": {
+      "title": "",
+      "poolBlurb": "",
+      "poolImg": ""
+    }
   }],
   "CasinoGames": [{
       "name": "Blackjack",

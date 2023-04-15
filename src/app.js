@@ -8,7 +8,7 @@ import { Loader } from '@googlemaps/js-api-loader';
 import environment from '../config/environment.json';
 import { HttpClient } from 'aurelia-fetch-client';
 
-const stripRequest = `Hotels on las vegas blvd las vegas` ;
+const stripRequest = `Hotels on las vegas blvd las vegas and the cromwell and Tropicana and the wynn` ;
 
 function bindWindowScroll(){
   $(window).scroll(() => {
@@ -161,6 +161,10 @@ export class App {
     name = name.replaceAll('of', '');
     name = name.replaceAll('LasVegas', '');
     name = name.replaceAll('Suites&Casino', '');
+    name = name.replaceAll('Hotel,Casino&SkyPod', '');
+    name = name.replaceAll('-TI,aRadissonHotel', '');
+    name = name.replaceAll('-aDoubleTreebyHiltonHotel', '');
+
     return name.trim()
   }
   configureRouter(config, router) {
