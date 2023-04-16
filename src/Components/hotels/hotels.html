@@ -65,9 +65,12 @@
 
      <div class="gameDetails">
        <div class="">
-         <h3 if.bind="games">Available Games:</h3>
+         <h3 if.bind="hotel.casino.games">Available Games:</h3>
          <div if.bind="hotel.casino.games" class="flex col">
-           <li repeat.for="game of hotel.casino.games">${game}</li>
+           <div repeat.for="game of hotel.casino.games">
+             <h5>${game}</h5>
+             <p>${getGame(game)}</p>
+           </div>
          </div>
        </div>
        <div>

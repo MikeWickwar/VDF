@@ -167,7 +167,7 @@
         "3 Card Poker",
         "Blackjack Switch",
         "Mississippi Stud",
-        "Let-It-Ride",
+        "Let It Ride",
         "Ultimate Texas Hold'em"
       ],
       "slotBlurb": "The Four Queens offers a full-service casino, including over 1,000 of the newest and hottest game variety, including the best video poker downtown. Their slot floor has some of the most liberal pay tables with denominations from 1 cent to high limit action.",
@@ -2344,7 +2344,6 @@
       "titleImg": "http://www.mantripping.com/images/stories/park-mgm-las-vegas/twin-queens-suite-park-mgm-las-vegas_copy.jpg",
       "games": ["Craps",
          "Blackjack",
-         "Craps",
          "Roulette",
          "Poker",
          "Pai Gow Poker",
@@ -3309,106 +3308,24 @@
       "poolBlurb": "Enjoy a bright, tropical setting surrounded by palm trees, lush landscaping and flowing waterfalls at the pool where swim-up blackjack originated.",
       "poolImg": ""
     }
-  },
-  {
-    "name": "PlanetHollywood",
-    "route": "#/hotels/PlanetHollywood",
-    "location": "strip",
-    "title": "",
-    "vdfRating": "",
-    "qualRating": "",
-    "valueRating": "",
-    "resortImgUrl": "",
-    "overRideForLocalImg": false,
-    "resortFee": "",
-    "parkingDetails": "",
-    "hotelDetails": "",
-    "roomsBlurb": "",
-    "rooms": [
-      {
-          "title": "",
-          "blurb": "",
-          "roomDetails": "",
-          "img": "",
-          "features": [""]
-      },
-      {
-          "title": "",
-          "blurb": "",
-          "roomDetails": "",
-          "img": "",
-          "features": [""]
-      },
-      {
-          "title": "",
-          "blurb": "",
-          "roomDetails": "",
-          "img": "",
-          "features": [""]
-      },
-      {
-          "title": "",
-          "blurb": "",
-          "roomDetails": "",
-          "img": "",
-          "features": [""]
-      }
-    ],
-    "casino": {
-      "title": "",
-      "subTitle": "",
-      "titleImg": "",
-      "games": [],
-      "slotBlurb": "",
-      "slotImg": "",
-      "pokerBlurb": "",
-      "pokerImg": "",
-      "tableGamesBlurb": "",
-      "tableGamesImg": "",
-      "sbBlurb": "",
-      "sbImg": "",
-      "clubName": "",
-      "clubBlurb": "",
-      "misc": [
-      ]
-    },
-    "pool": {
-      "title": "",
-      "poolBlurb": "",
-      "poolImg": ""
-    }
   }],
-  "CasinoGames": [{
-      "name": "Blackjack",
-      "desc": "Blackjack is one of the most popular casino table games. The object of the game is to have your cards total 21 or as near to 21 as possible without going over. Everyone plays against the dealer (the house) who begins the game by dealing each player two cards and dealing the house one card face up and one card face down. "
-    },
-    {
-      "name": "Roulette",
-      "desc": "Roulette is fun and easy to play. The roulette wheel is marked with numbers 1-36 and the symbols “0” and “00”. The numbers are alternately colored red and black, and the “0” and “00” are green. Color and number combinations offer a variety of betting options. Wagers can be placed on individual numbers or groups of numbers. Roulette chips are different from other casino chips. Each player receives a different color chip and decides the value of the chip when they are purchased. Roulette chips are usually purchased in stacks of 20. For example, if you would like your roulette chips to be worth $1 each, then you would purchase a stack for $20. "
-    },
-    {
-      "name": "Craps",
-      "desc": "Craps is a high-energy dice game that's like a rollercoaster ride for your emotions! With its fast-paced action, cheering crowds, and colorful language, it's a blast to play and watch. In craps, players take turns rolling two dice, hoping to hit certain numbers and avoiding others. You'll hear people shouting 'Come on, seven!' or 'Dont crap out!' as the dice bounce around the table. There are lots of different bets you can make in craps, each with its own odds and payout. It's a game of strategy and luck, and there's always a chance for a big win or a crushing defeat. But even if you're not a big-time gambler, you will still have a blast soaking up the energy and excitement of the craps table. So grab some chips, place your bets, and let the good times roll!"
-    },
-    {
-      "name": "Baccarat",
-      "desc": "Baccarat is a classy and sophisticated card game that's a favorite among high rollers and James Bond alike! With its elegant atmosphere and simple gameplay, it's easy to see why baccarat is a casino classic. In baccarat, players bet on whether the banker or the player will have the higher hand. Cards are dealt face down and players can choose to draw additional cards, trying to get as close to a total of 9 as possible. The game has a mysterious allure, with players whispering \"La grande!\" and \"Le petite!\" as they place their bets. But don't let the fancy lingo fool you - baccarat is a game of chance, and anyone can win big. So if you're feeling lucky and want to add a touch of sophistication to your gambling repertoire, head over to the baccarat table and try your hand at this timeless classic. Who knows, you might just leave with a stack of chips and a new air of elegance!"
-    },
-    {
-      "name": "Three Card Poker",
-      "desc": "Three Card Poker is a fast-paced and exciting variation of poker that's easy to learn and fun to play. It's played with a standard deck of 52 cards and each player is dealt three cards. In Three Card Poker, players aim to make the best possible three-card hand by combining their own cards with those on the table. The game also includes a unique feature where players can place an additional bet to compete against the dealer's hand. The game's simplicity and fast gameplay make it a favorite among players who want a quick thrill at the casino. And with the added bonus of potentially winning big payouts from the optional bet, Three Card Poker is a great choice for anyone looking for a fun and exciting game with a chance to win big!"
-    },
-    {
-      "name": "Pai Gow Poker",
-      "desc": "Pai Gow Poker is a unique and exciting card game that's a fusion of American poker and an ancient Chinese game called Pai Gow. It's played with a standard deck of 52 cards plus one joker, which can be used as an ace or to complete a straight or a flush. In Pai Gow Poker, each player receives seven cards, which they must split into two hands - a five-card hand and a two-card hand. The objective is to beat both the dealer's five-card hand and two-card hand to win the game. The game's strategic nature and low house edge make it a popular choice among savvy players who want to maximize their chances of winning. And with the added twist of having to create two separate hands, Pai Gow Poker offers a unique and exciting gaming experience that's sure to keep you on the edge of your seat!"
-    },
-    {
-      "name": "Let it Ride",
-      "desc": "Let It Ride is a popular casino table game that's based on five-card stud poker. In Let It Ride, players make three equal bets and receive three cards. Two community cards are also dealt face down on the table. Players then have the option to either \"let it ride\" and keep their bet in play, or to withdraw one of their three bets before the first community card is revealed. The same option is then offered after the second community card is revealed. The objective of the game is to create the best possible five-card poker hand using your three cards and the two community cards. Payouts are based on a pay table, which varies depending on the casino. Let It Ride is a fun and exciting game that's easy to learn and offers the potential for big payouts. It's a popular choice among players who enjoy poker-style games but want a more relaxed and casual gaming experience."
-    },
-    {
-      "name": "Pai Gow",
-      "desc": "Pai Gow is a unique and quirky casino game that's perfect for players who enjoy a bit of a challenge. It's played with a set of Chinese dominoes and the goal is to create two hands - a high hand and a low hand - that beat the dealer's two hands. The game requires players to think strategically and use a bit of math to create the best possible hands. It also offers the added bonus of being able to push, or tie, with the dealer, which can be a thrilling experience. Pai Gow is a fun and social game that's perfect for players who want to try something a little different from the usual card games at the casino. And with the potential for big payouts, it's definitely worth giving a try!"
+  "CasinoGames": {
+      "Blackjack": "Blackjack is one of the most popular casino table games. The object of the game is to have your cards total 21 or as near to 21 as possible without going over. Everyone plays against the dealer (the house) who begins the game by dealing each player two cards and dealing the house one card face up and one card face down. ",
+      "Roulette": "Roulette is fun and easy to play. The roulette wheel is marked with numbers 1-36 and the symbols “0” and “00”. The numbers are alternately colored red and black, and the “0” and “00” are green. Color and number combinations offer a variety of betting options. Wagers can be placed on individual numbers or groups of numbers. Roulette chips are different from other casino chips. Each player receives a different color chip and decides the value of the chip when they are purchased. Roulette chips are usually purchased in stacks of 20. For example, if you would like your roulette chips to be worth $1 each, then you would purchase a stack for $20. ",
+      "Craps": "Craps is a high-energy dice game that's like a rollercoaster ride for your emotions! With its fast-paced action, cheering crowds, and colorful language, it's a blast to play and watch. In craps, players take turns rolling two dice, hoping to hit certain numbers and avoiding others. You'll hear people shouting 'Come on, seven!' or 'Dont crap out!' as the dice bounce around the table. There are lots of different bets you can make in craps, each with its own odds and payout. It's a game of strategy and luck, and there's always a chance for a big win or a crushing defeat. But even if you're not a big-time gambler, you will still have a blast soaking up the energy and excitement of the craps table. So grab some chips, place your bets, and let the good times roll!",
+      "Baccarat": "Baccarat is a classy and sophisticated card game that's a favorite among high rollers and James Bond alike! With its elegant atmosphere and simple gameplay, it's easy to see why baccarat is a casino classic. In baccarat, players bet on whether the banker or the player will have the higher hand. Cards are dealt face down and players can choose to draw additional cards, trying to get as close to a total of 9 as possible. The game has a mysterious allure, with players whispering \"La grande!\" and \"Le petite!\" as they place their bets. But don't let the fancy lingo fool you - baccarat is a game of chance, and anyone can win big. So if you're feeling lucky and want to add a touch of sophistication to your gambling repertoire, head over to the baccarat table and try your hand at this timeless classic. Who knows, you might just leave with a stack of chips and a new air of elegance!",
+      "Mini Baccarat": "Mini baccarat is like the fun-sized version of the classic baccarat game. It's like the bite-sized candy bar that you can enjoy without feeling guilty about having too much. In mini baccarat, you don't need to be a high-roller to enjoy the excitement of the game. It's like the perfect combination of simplicity and elegance, where the outcome of the game is purely based on chance, yet the players are surrounded by an aura of sophistication. So, if you're looking for a game that's easy to learn, fast-paced, and a whole lot of fun, mini baccarat is definitely worth a try!",
+      "Three Card Poker": "Three Card Poker is a fast-paced and exciting variation of poker that's easy to learn and fun to play. It's played with a standard deck of 52 cards and each player is dealt three cards. In Three Card Poker, players aim to make the best possible three-card hand by combining their own cards with those on the table. The game also includes a unique feature where players can place an additional bet to compete against the dealer's hand. The game's simplicity and fast gameplay make it a favorite among players who want a quick thrill at the casino. And with the added bonus of potentially winning big payouts from the optional bet, Three Card Poker is a great choice for anyone looking for a fun and exciting game with a chance to win big!",
+      "Pai Gow Poker": "Pai Gow Poker is a unique and exciting card game that's a fusion of American poker and an ancient Chinese game called Pai Gow. It's played with a standard deck of 52 cards plus one joker, which can be used as an ace or to complete a straight or a flush. In Pai Gow Poker, each player receives seven cards, which they must split into two hands - a five-card hand and a two-card hand. The objective is to beat both the dealer's five-card hand and two-card hand to win the game. The game's strategic nature and low house edge make it a popular choice among savvy players who want to maximize their chances of winning. And with the added twist of having to create two separate hands, Pai Gow Poker offers a unique and exciting gaming experience that's sure to keep you on the edge of your seat!",
+      "Let it Ride": "Let It Ride is a popular casino table game that's based on five-card stud poker. In Let It Ride, players make three equal bets and receive three cards. Two community cards are also dealt face down on the table. Players then have the option to either \"let it ride\" and keep their bet in play, or to withdraw one of their three bets before the first community card is revealed. The same option is then offered after the second community card is revealed. The objective of the game is to create the best possible five-card poker hand using your three cards and the two community cards. Payouts are based on a pay table, which varies depending on the casino. Let It Ride is a fun and exciting game that's easy to learn and offers the potential for big payouts. It's a popular choice among players who enjoy poker-style games but want a more relaxed and casual gaming experience.",
+      "Pai Gow": "Pai Gow is a unique and quirky casino game that's perfect for players who enjoy a bit of a challenge. It's played with a set of Chinese dominoes and the goal is to create two hands - a high hand and a low hand - that beat the dealer's two hands. The game requires players to think strategically and use a bit of math to create the best possible hands. It also offers the added bonus of being able to push, or tie, with the dealer, which can be a thrilling experience. Pai Gow is a fun and social game that's perfect for players who want to try something a little different from the usual card games at the casino. And with the potential for big payouts, it's definitely worth giving a try!",
+      "Poker": "Poker is like a thrilling rollercoaster ride that takes you on a wild journey of strategy, bluffing, and luck. It's a game where you can go from being down on your luck to hitting the jackpot in a single hand. With its countless variations, there's always a new challenge to keep you on your toes, whether you're a seasoned pro or a newbie at the table. Plus, there's just something about the sound of chips clinking and cards shuffling that adds to the excitement of the game. So, if you're looking for a game that's full of adrenaline and high-stakes, poker is the perfect choice for you!",
+      "Let It Ride Poker": "Let It Ride Poker is like a unique twist on the classic game of poker. It's like a breath of fresh air that combines elements of traditional poker with the thrill of a casino game. In Let It Ride Poker, you get to play with a set of cards and place three bets that stay in play throughout the game. The best part is that you can take back two of your bets if you're not feeling too confident about your hand. It's like having a safety net while still taking risks and making bold moves. With the potential for big payouts and the excitement of a new challenge, Let It Ride Poker is definitely worth giving a try!",
+      "Texas Hold’em": "Texas Hold'em is like the king of the poker world. It's the most popular and widely played variation of poker, and for good reason. It's like a game of strategy and skill, where the best players know when to hold 'em and when to fold 'em. In Texas Hold'em, you get two hole cards and five community cards that are dealt face up on the table. It's a game of reading your opponents, bluffing, and making the right decisions at the right time. The excitement of Texas Hold'em lies in the unpredictability of the game - you never know what cards will be dealt, what your opponents are holding, or what moves they'll make. With its fast pace and high stakes, Texas Hold'em is the perfect choice for players who love a challenge and enjoy the thrill of the game.",
+      "Crazy 4 Poker":"Crazy 4 Poker is like a fun and exciting variation of traditional poker. It's a game of skill, strategy, and a little bit of luck, where players compete against the dealer to make the best four-card poker hand possible. The game starts with each player making an ante and a super bonus bet. Players then receive five cards, four of which they can use to make their poker hand. The objective is to beat the dealer's hand, and the payout depends on the strength of the hand. The \"crazy\" aspect of Crazy 4 Poker comes from the fact that players have the opportunity to raise their initial bet up to three times during the game, adding an extra layer of excitement and risk to the game. With its fast-paced action and the potential for big payouts, Crazy 4 Poker is a great choice for players who want to experience the thrill of the casino floor.",
+      "Sportsbook":"A Sportsbook is like the ultimate destination for sports fans and bettors alike. It's like a hub of excitement and anticipation, where you can bet on your favorite sports teams and watch the games unfold in real-time. Whether you're a seasoned bettor or just starting out, a Sportsbook offers a wide range of betting options to suit your preferences, from point spreads and money lines to over/unders and prop bets. With the help of expert handicappers and the latest data and analytics, a Sportsbook provides you with the tools you need to make informed betting decisions and maximize your chances of winning. So if you're a sports enthusiast who loves a little bit of risk and reward, a Sportsbook is definitely worth checking out!",
+      "Mississippi Stud":"Mississippi Stud is like a thrilling variation of traditional poker. It's a game of strategy and skill, where players compete against the paytable, rather than each other. In Mississippi Stud, players are dealt two cards and then three community cards are dealt face down. The objective is to make the best five-card poker hand possible, with the payout depending on the strength of the hand. The exciting part of Mississippi Stud comes from the decision-making process that players must go through. After the first three community cards are dealt, players must decide whether to raise their bet or fold. The next two community cards are then revealed one at a time, and players have the opportunity to raise or fold again. With each raise, the payout increases, but so does the risk. With its fast-paced action and the potential for big payouts, Mississippi Stud is a great choice for players who enjoy a little bit of risk and reward.",
+      "Let It Ride":"Let It Ride is like a unique and exciting variation of traditional poker. It's a game of strategy and luck, where players aim to make the best five-card poker hand possible using their own three cards and two community cards. The game starts with each player placing three equal bets. Players are then dealt three cards each, and two community cards are dealt face down. After examining their cards, players have the option to \"let it ride\" or withdraw one of their bets. The first community card is then revealed, and players again have the option to \"let it ride\" or withdraw one of their bets. Finally, the second community card is revealed, and payouts are determined based on the strength of each player's five-card poker hand. With its unique gameplay and the potential for big payouts, Let It Ride is a great choice for players who enjoy a blend of strategy and luck."
     }
-  ]
+
 }

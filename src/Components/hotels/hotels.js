@@ -51,6 +51,10 @@ export class hotels {
     console.log("hotels onload...")
 
   }
+  getGame = (game) => {
+    console.log("GAME: " + this.games[game])
+    return this.games[game]
+  }
   activate(params, routeConfig, navigationInstruction) {
     var lsHotel = localStorage.getItem(routeConfig.settings.hotelGData.place_id)
 
@@ -59,13 +63,14 @@ export class hotels {
       this.rooms = routeConfig.settings.hotel.rooms;
     }
     this.hotelGData = routeConfig.settings.hotelGData;
+    this.games = routeConfig.settings.games;
     console.log(this.hotel);
     console.log(this.hotelGData);
 
     if (lsHotel == null) {
       getDetails(this.hotelGData.place_id, this)
     }else{
-      //not letting me cache the photo so must call google api for that 
+      //not letting me cache the photo so must call google api for that
       this.hotelDetails = JSON.parse(lsHotel).data;
       getPhoto(this.hotelGData.place_id, this)
       console.log( JSON.parse(lsHotel).data)

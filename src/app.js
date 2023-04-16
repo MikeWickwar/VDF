@@ -176,6 +176,7 @@ export class App {
     step.run = (navigationInstruction, next) => {
       if(navigationInstruction.config.name == "hotels"){
         navigationInstruction.config.settings.hotel = $.grep(hotelData.Hotels, (gItem) => { return  gItem.name.toLowerCase() === navigationInstruction.params.childRoute.toLowerCase()})[0];
+        navigationInstruction.config.settings.games = hotelData.CasinoGames;
         navigationInstruction.config.settings.hotelGData = $.grep(that.gHotelStripInfo, (gItem) => { return that.parseHotelName(gItem.name).toLowerCase() === navigationInstruction.params.childRoute.toLowerCase()})[0];
         if (typeof navigationInstruction.config.settings.hotelGData === "undefined") {
           navigationInstruction.config.settings.hotelGData = $.grep(that.gHotelFremontInfo, (gItem) => { return that.parseHotelName(gItem.name).toLowerCase() === navigationInstruction.params.childRoute.toLowerCase()})[0];
@@ -221,6 +222,7 @@ export class App {
 
     this.router = router;
     this.router.hotels = hotelData.Hotels;
+    this.router.games = hotelData.CasinoGames;
 
   }
 }
