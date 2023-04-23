@@ -8,7 +8,8 @@ import { Loader } from '@googlemaps/js-api-loader';
 import environment from '../config/environment.json';
 import { HttpClient } from 'aurelia-fetch-client';
 
-const stripRequest = `Hotels on las vegas blvd las vegas and the cromwell and Tropicana and the wynn` ;
+const stripRequest = `Hotels on las vegas blvd las vegas` ;
+// const stripRequest = 'hotels on las vegas blvd in las vegas nv including The ARIA Resort And Casino, The Horseshoe,  Bellagio, Casino Royale Las Vegas, Caesars Palace Las Vegas, Circus Circus Las Vegas, The Cosmopolitan of Las Vegas, Ellis Island Hotel Las Vegas, Encore at Wynn Las Vegas, Excalibur Hotel and Casino, Flamingo Las Vegas, Harrah\'s Las Vegas, The LINQ Las Vegas, Luxor Las Vegas, Mandalay Bay Resort and Casino, MGM Grand Las Vegas, Park MGM Las Vegas, New York-New York Hotel and Casino, OYO Hotel and Casino Las Vegas, Paris Las Vegas Hotel & Casino, Planet Hollywood Resort & Casino Las Vegas, Sahara Las Vegas, The Cromwell Las Vegas, The Mirage Las Vegas, The STRAT Hotel, Casino & Skypod, The Venetian Resort Las Vegas, Treasure Island Las Vegas, Tropicana Las Vegas, Wynn Las Vegas';
 
 function bindWindowScroll(){
   $(window).scroll(() => {
@@ -50,6 +51,7 @@ function runRequest(location, that) {
 
   service.nearbySearch(request, (results, status, pagination) => {
     // handle the results
+
     if (status == "OK") {
       results = results.sort((r1, r2) => (r1.name > r2.name) ? 1 : (r1.name < r2.name) ? -1 : 0);
       if (location == stripRequest) {
@@ -124,7 +126,7 @@ function getHotelData(that) {
 
 @inject('window')
 export class App {
-  async activate() {
+  async activate(params, routerConfig) {
     getHotelData(this)
   }
   onLoad(){
@@ -169,6 +171,36 @@ export class App {
   }
   configureRouter(config, router) {
     var that = this;
+    var navItems = [
+      { route: ['/','home'],  name: 'home',
+          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Home', topLvl: true, hasSubMenu: false},
+      { route: ['topdeals','topdeals'],  name: 'topdeals',
+          moduleId: PLATFORM.moduleName('./components/topDeals/topDeals'),  nav: true, title:'Top 12 Deals', topLvl: true, hasSubMenu: true },
+      { route: ['airfare','airfare'],  name: 'topdeals',
+          moduleId: PLATFORM.moduleName('./components/topDeals/airfare/airfare'),  nav: true, title:'Airfare', topLvl: false, hasSubMenu: false},
+      { route: ['packing','packing'],  name: 'packing',
+          moduleId: PLATFORM.moduleName('./components/topDeals/packing/packing'),  nav: true, title:'Packing', topLvl: false, hasSubMenu: false },
+      { route: ['transportation','transportation'],  name: 'transportation',
+          moduleId: PLATFORM.moduleName('./components/topDeals/transportation/transportation'),  nav: true, title:'Transportation', topLvl: false, hasSubMenu: false },
+      { route: ['feature','feature'],  name: 'feature',
+          moduleId: PLATFORM.moduleName('./components/topDeals/featuredHotel/feature'),  nav: true, title:'Featured Hotel', topLvl: false, hasSubMenu: false },
+      { route: ['birthday','birthday'],  name: 'birthday',
+          moduleId: PLATFORM.moduleName('./components/topDeals/birthday/birthday'),  nav: true, title:'Birthday', topLvl: false, hasSubMenu: false },
+      { route: ['maps','maps'],  name: 'maps',
+          moduleId: PLATFORM.moduleName('./components/topDeals/maps/maps'),  nav: true, title:'Maps', topLvl: false, hasSubMenu: false },
+      { route: ['toptips','toptips'],  name: 'toptips',
+          moduleId: PLATFORM.moduleName('./components/topTips/topTips'),  nav: true, title:'Top 10 Tips', topLvl: true, hasSubMenu: false },
+      { route: ['hotels',':id'], name: 'hotels', activationStrategy: activationStrategy.replace,
+          moduleId: PLATFORM.moduleName('./components/hotels/hotels'),  nav: true, title:'Hotels', topLvl: true, hasSubMenu: true},
+      { route: ['entertainment','entertainment'],  name: 'entertainment',
+          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Entertainment', topLvl: true, hasSubMenu: false },
+      { route: ['foodanddrink','foodanddrink'],  name: 'foodanddrink',
+          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Food & Drink', topLvl: true, hasSubMenu: false },
+      { route: ['gambling','gambling'],  name: 'gambling',
+          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Gambling', topLvl: true, hasSubMenu: false },
+      { route: ['contactus','contactus'],  name: 'contactus',
+          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Contact Us', topLvl: true, hasSubMenu: false }
+    ]
     config.title = 'Vegas Deal Finder';
     function step() {
        return step.run;
@@ -185,29 +217,11 @@ export class App {
 
       return next();
     };
+
     //add step to populate data into the view when needed - based on :id
     config.addPreActivateStep(step)
     config.options.activationStrategy = activationStrategy.invokeLifecycle;
-    config.map([
-      { route: ['/','home'],  name: 'home',
-          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Home'},
-      { route: ['topdeals','topdeals'],  name: 'topdeals',
-          moduleId: PLATFORM.moduleName('./components/topDeals/topDeals'),  nav: true, title:'Top 12 Deals' },
-      { route: ['airfare','airfare'],  name: 'topdeals',
-          moduleId: PLATFORM.moduleName('./components/topDeals/airfare/airfare'),  nav: true, title:'Airfare' },
-      { route: ['toptips','toptips'],  name: 'toptips',
-          moduleId: PLATFORM.moduleName('./components/topTips/topTips'),  nav: true, title:'Top 10 Tips' },
-      { route: ['hotels',':id'], name: 'hotels', activationStrategy: activationStrategy.replace,
-          moduleId: PLATFORM.moduleName('./components/hotels/hotels'),  nav: true, title:'Hotels'},
-      { route: ['entertainment','entertainment'],  name: 'entertainment',
-          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Entertainment' },
-      { route: ['foodanddrink','foodanddrink'],  name: 'foodanddrink',
-          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Food & Drink' },
-      { route: ['gambling','gambling'],  name: 'gambling',
-          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Gambling' },
-      { route: ['contactus','contactus'],  name: 'contactus',
-          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Contact Us' }
-    ]);
+    config.map(navItems);
     router.events.subscribe(async navigationInstruction => {
       const instructions = navigationInstruction.getAllInstructions();
 
@@ -215,10 +229,12 @@ export class App {
         const viewModel = instruction.viewModel;
 
         if (viewModel && typeof viewModel.activate === 'function') {
-          await viewModel.activate(instruction.params);
+          await viewModel.activate(instruction.params, instruction.config);
         }
       }
     });
+
+    router.settings = {navItems: navItems}
 
     this.router = router;
     this.router.hotels = hotelData.Hotels;

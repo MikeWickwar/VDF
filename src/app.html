@@ -15,8 +15,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" repeat.for="row of router.navigation">
-            <li class="nav-item dropdown" if.bind="row.title != 'Hotels' && row.title != 'Top 12 Deals' && row.title != 'Airfare'">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" repeat.for="row of router.settings.navItems">
+            <li class="nav-item dropdown" if.bind="row.topLvl && !row.hasSubMenu">
               <a class="nav-link" href.bind="row.href" click.capture="onNavClick(row.href)">${row.title}</a>
             </li>
             <li class="nav-item dropdown dropend" if.bind="row.title == 'Top 12 Deals'">
@@ -27,6 +27,21 @@
                 </li>
                 <li class="nav-item">
                   <a class="dropdown-item" href="#/airfare">Airfare</a>
+                </li>
+                <li class="nav-item">
+                  <a class="dropdown-item" href="#/packing">Packing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="dropdown-item" href="#/maps">The Vegas Strip and Fremont Maps</a>
+                </li>
+                <li class="nav-item">
+                  <a class="dropdown-item" href="#/feature">VDF Featured Hoted</a>
+                </li>
+                <li class="nav-item">
+                  <a class="dropdown-item" href="#/transportation">Transportation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="dropdown-item" href="#/birthday">Birthday</a>
                 </li>
               </ul>
             </li>
