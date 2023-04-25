@@ -49,6 +49,9 @@ nav *:not(:hover){
   text-decoration: solid;
 }
 
+ul:not(:has(.nav-item)){
+  display: none;
+}
 ul.navbar-nav *:empty,
 ul.navbar-nav:empty{
   margin: 0;
@@ -304,9 +307,13 @@ nav .dropdown-menu li{
    .titleWithImages{
      margin-bottom: 70px;
    }
-
+   .triple-wide{
+     flex-flow: column;
+   }
+   .second-container,
+   .third-container,
    .first-container {
-       width: 100%;
+       width: 100% !important;
        padding: 10px;
        min-width: 0;
    }

@@ -11,12 +11,12 @@
   margin-top: 20px;
 }
 
-.first-container{
+.maps .first-container{
   width: 25%;
   min-width: 200px;
 }
 
-.second-container{
+.maps .second-container{
   width: 65%;
   text-align: left;
   justify-content: flex-start;
