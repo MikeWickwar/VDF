@@ -22,26 +22,8 @@
             <li class="nav-item dropdown dropend" if.bind="row.title == 'Top 12 Deals'">
               <a class="dropdown-toggle detailsLink" href="#" aria-expanded="false" data-bs-toggle="dropdown" data-bs-target="#dealsDropdown" aria-controls="dealsDropdown" >Top 12 Deals</a>
               <ul id="dealsDropdown" class="dropdown-menu" aria-labelledby="dealsDropdown">
-                <li class="nav-item">
-                  <a class="dropdown-item" click.capture="onNavClick('#/TopDeals')">Top 12 Deals</a>
-                </li>
-                <li class="nav-item">
-                  <a class="dropdown-item" click.capture="onNavClick('#/airfare')">Airfare</a>
-                </li>
-                <li class="nav-item">
-                  <a class="dropdown-item" click.capture="onNavClick('#/packing')">Packing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="dropdown-item" click.capture="onNavClick('#/maps')">The Vegas Strip and Fremont Maps</a>
-                </li>
-                <li class="nav-item">
-                  <a class="dropdown-item" click.capture="onNavClick('#/feature')">VDF Featured Hoted</a>
-                </li>
-                <li class="nav-item">
-                  <a class="dropdown-item" click.capture="onNavClick('#/transportation')">Transportation</a>
-                </li>
-                <li class="nav-item">
-                  <a class="dropdown-item" click.capture="onNavClick('#/birthday')">Birthday</a>
+                <li class="nav-item" repeat.for="subrow of router.settings.navItems">
+                  <a class="dropdown-item" if.bind="subrow.parent == 'topdeals'" click.capture="onNavClick(subrow.href)">${subrow.title}</a>
                 </li>
               </ul>
             </li>
@@ -63,6 +45,14 @@
                       <a class="dropdown-item"  href.bind="parseHotelName(subitem.name)" click.capture="onHotelNavClick(parseHotelName(subitem.name))">${subitem.name}</a>
                     </li>
                   </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown dropend" if.bind="row.title == 'Entertainment'">
+              <a class="dropdown-toggle detailsLink" href="#" aria-expanded="false" data-bs-toggle="dropdown" data-bs-target="#dealsDropdown" aria-controls="dealsDropdown" >Entertainment</a>
+              <ul id="dealsDropdown" class="dropdown-menu" aria-labelledby="dealsDropdown">
+                <li class="nav-item" repeat.for="subrow of router.settings.navItems">
+                  <a class="dropdown-item" if.bind="subrow.parent == 'entertainment'" click.capture="onNavClick(subrow.href)">${subrow.title}</a>
                 </li>
               </ul>
             </li>

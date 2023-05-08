@@ -1,0 +1,8 @@
+.third-container ol li,
+.first-container ol li,
+.second-container ol li{
+  display: list-item;
+}
+.second-container a{
+  color: blue;
+}

@@ -138,6 +138,7 @@ export class App {
     if(window.innerWidth <= 991){
       $('#navTogglerBtn').click()
     }
+    debugger
     if (!environment.debug) {
       window.location.href = "/VDF/" + href;
     }else{
@@ -172,33 +173,41 @@ export class App {
   configureRouter(config, router) {
     var that = this;
     var navItems = [
-      { route: ['/','home'],  name: 'home',
+      { route: ['/','home'],  name: 'home', href: '/#',
           moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Home', topLvl: true, hasSubMenu: false},
-      { route: ['topdeals','topdeals'],  name: 'topdeals',
-          moduleId: PLATFORM.moduleName('./components/topDeals/topDeals'),  nav: true, title:'Top 12 Deals', topLvl: true, hasSubMenu: true },
-      { route: ['airfare','airfare'],  name: 'topdeals',
-          moduleId: PLATFORM.moduleName('./components/topDeals/airfare/airfare'),  nav: true, title:'Airfare', topLvl: false, hasSubMenu: false},
-      { route: ['packing','packing'],  name: 'packing',
-          moduleId: PLATFORM.moduleName('./components/topDeals/packing/packing'),  nav: true, title:'Packing', topLvl: false, hasSubMenu: false },
-      { route: ['transportation','transportation'],  name: 'transportation',
-          moduleId: PLATFORM.moduleName('./components/topDeals/transportation/transportation'),  nav: true, title:'Transportation', topLvl: false, hasSubMenu: false },
-      { route: ['feature','feature'],  name: 'feature',
-          moduleId: PLATFORM.moduleName('./components/topDeals/featuredHotel/feature'),  nav: true, title:'Featured Hotel', topLvl: false, hasSubMenu: false },
-      { route: ['birthday','birthday'],  name: 'birthday',
-          moduleId: PLATFORM.moduleName('./components/topDeals/birthday/birthday'),  nav: true, title:'Birthday', topLvl: false, hasSubMenu: false },
-      { route: ['maps','maps'],  name: 'maps',
-          moduleId: PLATFORM.moduleName('./components/topDeals/maps/maps'),  nav: true, title:'Maps', topLvl: false, hasSubMenu: false },
-      { route: ['toptips','toptips'],  name: 'toptips',
+      { route: ['topdeals','topdeals'],  name: 'topdeals', href: '/#/topDeals',
+          moduleId: PLATFORM.moduleName('./components/topDeals/topDeals'),  nav: true, title:'Top 12 Deals', topLvl: true, hasSubMenu: true, parent: "topdeals" },
+      { route: ['airfare','airfare'],  name: 'airfare', href: '/#/airfare',
+          moduleId: PLATFORM.moduleName('./components/topDeals/airfare/airfare'),  nav: true, title:'Airfare', topLvl: false, hasSubMenu: false, parent: "topdeals"},
+      { route: ['packing','packing'],  name: 'packing', href: '/#/packing',
+          moduleId: PLATFORM.moduleName('./components/topDeals/packing/packing'),  nav: true, title:'Packing', topLvl: false, hasSubMenu: false, parent: "topdeals" },
+      { route: ['transportation','transportation'],  name: 'transportation', href: '/#/transportation',
+          moduleId: PLATFORM.moduleName('./components/topDeals/transportation/transportation'),  nav: true, title:'Transportation', topLvl: false, hasSubMenu: false, parent: "topdeals" },
+      { route: ['feature','feature'],  name: 'feature', href: '/#/feature',
+          moduleId: PLATFORM.moduleName('./components/topDeals/featuredHotel/feature'),  nav: true, title:'Featured Hotel', topLvl: false, hasSubMenu: false, parent: "topdeals" },
+      { route: ['birthday','birthday'],  name: 'birthday', href: '/#/birthday',
+          moduleId: PLATFORM.moduleName('./components/topDeals/birthday/birthday'),  nav: true, title:'Birthday', topLvl: false, hasSubMenu: false, parent: "topdeals" },
+      { route: ['maps','maps'],  name: 'maps', href: '/#/maps',
+          moduleId: PLATFORM.moduleName('./components/topDeals/maps/maps'),  nav: true, title:'Maps', topLvl: false, hasSubMenu: false, parent: "topdeals" },
+      { route: ['toptips','toptips'],  name: 'toptips', href: '/#/toptips',
           moduleId: PLATFORM.moduleName('./components/topTips/topTips'),  nav: true, title:'Top 10 Tips', topLvl: true, hasSubMenu: false },
       { route: ['hotels',':id'], name: 'hotels', activationStrategy: activationStrategy.replace,
           moduleId: PLATFORM.moduleName('./components/hotels/hotels'),  nav: true, title:'Hotels', topLvl: true, hasSubMenu: true},
-      { route: ['entertainment','entertainment'],  name: 'entertainment',
-          moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Entertainment', topLvl: true, hasSubMenu: false },
-      { route: ['foodanddrink','foodanddrink'],  name: 'foodanddrink',
+      { route: ['entertainment','entertainment'],  name: 'entertainment', href: '/#/entertainment',
+          moduleId: PLATFORM.moduleName('./components/entertainment/entertainment/entertainment'),  nav: true, title:'Entertainment', topLvl: true, hasSubMenu: true, parent: "entertainment" },
+      { route: ['shows','shows'],  name: 'shows', href: '/#/shows',
+          moduleId: PLATFORM.moduleName('./components/entertainment/shows/shows'),  nav: true, title:'Shows', topLvl: false, hasSubMenu: false, parent: "entertainment" },
+      { route: ['tripsandtours','tripsandtours'],  name: 'tripsandtours', href: '/#/tripsandtours',
+          moduleId: PLATFORM.moduleName('./components/entertainment/tripsandtours/tripsandtours'),  nav: true, title:'Tours and Trips', topLvl: false, hasSubMenu: false, parent: "entertainment" },
+      { route: ['freetosee','freetosee'],  name: 'freetosee', href: '/#/freetosee',
+          moduleId: PLATFORM.moduleName('./components/entertainment/freetosee/freetosee'),  nav: true, title:'Free To See', topLvl: false, hasSubMenu: false, parent: "entertainment" },
+      { route: ['coupons','coupons'],  name: 'coupons', href: '/#/coupons',
+          moduleId: PLATFORM.moduleName('./components/entertainment/coupons/coupons'),  nav: true, title:'Coupons', topLvl: false, hasSubMenu: false, parent: "entertainment" },
+      { route: ['foodanddrink','foodanddrink'],  name: 'foodanddrink', href: '/#/foodanddrink',
           moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Food & Drink', topLvl: true, hasSubMenu: false },
-      { route: ['gambling','gambling'],  name: 'gambling',
+      { route: ['gambling','gambling'],  name: 'gambling', href: '/#/gambling',
           moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Gambling', topLvl: true, hasSubMenu: false },
-      { route: ['contactus','contactus'],  name: 'contactus',
+      { route: ['contactus','contactus'],  name: 'contactus', href: '/#/contactus',
           moduleId: PLATFORM.moduleName('./components/home/home'),  nav: true, title:'Contact Us', topLvl: true, hasSubMenu: false }
     ]
     config.title = 'Vegas Deal Finder';

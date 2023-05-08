@@ -48,7 +48,7 @@ nav *:not(:hover){
   color: white !important;
   text-decoration: solid;
 }
-
+li:not(:has(a, b)),
 ul:not(:has(.nav-item)){
   display: none;
 }
