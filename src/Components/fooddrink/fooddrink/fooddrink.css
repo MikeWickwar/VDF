@@ -1,0 +1,12 @@
+h4.colorwhite{
+  color: white;
+}
+
+.bgColorBlack{
+  background-color: #333333;
+}
+
+p a:-webkit-any-link{
+  color: green;
+  text-decoration: underline;
+}

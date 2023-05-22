@@ -73,6 +73,7 @@ ul.navbar-nav:empty{
     right: auto;
     left: 100%;
 }
+a,
 nav-link:focus,
 .nav-link:hover,
 a.nav-link,
@@ -126,6 +127,9 @@ nav .dropdown-menu li{
 #fremontDropdown,
 #stripDropdown{
   overflow-y: scroll;
+}
+#dealsDropdown{
+  overflow: visible;
 }
 #fremontDropdown,
 #stripDropdown{
@@ -588,5 +592,118 @@ a.link{
 .first a{
   color: green;
   text-decoration: underline;
+}
+
+#dispListBtn{
+  boarder-radius: 3px;
+  background-color: green;
+  color: white !important;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#dispListBtn a{
+  color: white;
+  text-decoration: none;
+}
+
+.MainContainer a{
+  color: green;
+  text-decoration: underline;
+}
+
+h4.colorwhite{
+  color: white;
+}
+
+.bgColorBlack{
+  background-color: #333333;
+}
+
+p a:-webkit-any-link{
+  color: green;
+  text-decoration: underline;
+}
+
+.red{
+  color: red;
+}
+
+.blue{
+  color: blue;
+}
+
+ul.specialsList li{
+  display: list-item;
+  list-style-type: disc;
+}
+ul.specialsList{
+  display: flex;
+  padding: 25px;
+}
+
+.smallImg{
+  height: 300px;
+  width: 300px;
+}
+.buffetItems .first-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second-container{
+  justify-content: flex-start;
+}
+.bottomDiv{
+  justify-content: center;
+  width: 80%;
+  align-items: center;
+}
+
+.align{
+  align-items: center;
+}
+
+.hottip{
+  width: 80%;
+  background-color: rgba(137, 190, 137, .2);
+  align-items: center;
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.hottip > img{
+  margin-right: 20px;
+  height: 150px;
+  width: 150px;
+}
+
+.happyhour a:-webkit-any-link{
+  color: green;
+}
+
+.single-wide{
+  width: 95%;
+}
+
+.single-wide ul:not(:has(.nav-item)) {
+  display: block;
+}
+.single-wide li{
+  display: list-item;
+}
+.divimg > img{
+  max-height: 500px;
+  max-width: 600px;
+}
+.divimg{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.spaceBetween{
+  justify-content: space-between;
+}
+
+.hottip div:first-of-type{
+  align-items: center;
 }
 

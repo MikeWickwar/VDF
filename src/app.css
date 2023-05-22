@@ -73,6 +73,7 @@ ul.navbar-nav:empty{
     right: auto;
     left: 100%;
 }
+a,
 nav-link:focus,
 .nav-link:hover,
 a.nav-link,
@@ -126,6 +127,9 @@ nav .dropdown-menu li{
 #fremontDropdown,
 #stripDropdown{
   overflow-y: scroll;
+}
+#dealsDropdown{
+  overflow: visible;
 }
 #fremontDropdown,
 #stripDropdown{

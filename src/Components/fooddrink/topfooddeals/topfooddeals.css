@@ -1,0 +1,16 @@
+.red{
+  color: red;
+}
+
+.blue{
+  color: blue;
+}
+
+ul.specialsList li{
+  display: list-item;
+  list-style-type: disc;
+}
+ul.specialsList{
+  display: flex;
+  padding: 25px;
+}
