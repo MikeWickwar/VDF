@@ -6,7 +6,7 @@ body{
   margin: 0;
   padding-bottom: 100px;
   background-color: #020c30;
-  background-image: url(./Images/VegasBackground01.png);
+  background-image: url(./554d6dd5a758a305476c.png);
   min-height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -400,3 +400,365 @@ nav .dropdown-menu li:not(:empty){
 				background-position: top right;
 		}
 }
+
+#chipInfo > p{
+  margin-left: 30px;
+}
+
+#chipInfo{
+  justify-content: center;
+  align-items: center;
+}
+
+.myslots{
+  height: 300px;
+}
+a.textLink{
+  color: #118c4f !important;
+  text-decoration: underline;
+}
+
+
+
+@media all and (max-width: 400px) {
+  .myslots{
+    height: 150px;
+  }
+}
+
+ul{
+  flex-direction: column;
+}
+
+a.normalLink{
+  color: blue;
+  text-decoration: underline;
+}
+
+.third-container ul,
+ul > li:has(p),
+ul > li > p{
+  display: block;
+}
+
+#map1,
+#map2{
+  height: 60vh;
+  width: 70vw;
+  margin: 10px 20px 20px 10px;
+  position: relative;
+  z-index: 0;
+}
+
+.mapContainer{
+  margin-top: 20px;
+}
+
+.maps .first-container{
+  width: 25%;
+  min-width: 200px;
+}
+
+.maps .second-container{
+  width: 65%;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.double-wide{
+  width: 100%;
+}
+
+.mainDetails,
+.mainResortImg{
+  width: 80%;
+}
+.textColor{
+  color: black !important;
+}
+
+.poolDetails,
+.gameDetails,
+.signle-wide{
+  margin-top: 20px;
+}
+
+.poolDetails,
+.rooms,
+.titleAndFee{
+  margin-bottom: 20px;
+  flex-direction: column;
+  width: 80%;
+}
+.gameDetails,
+.img{
+  width: 100%;
+}
+.titleAndFee span{
+  font-weight: bold;
+}
+.split-sidebyside,
+.scores{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+}
+.topDetails{
+  flex-direction: column;
+  width: 60%;
+}
+
+.roomImg{
+  width: 100%;
+}
+
+.poolDetails,
+.gameDetails{
+  align-items: center;
+}
+.left-side{
+  width: 40%;
+}
+
+
+@media all and (max-width: 1450px) {
+  .scores{
+    flex-flow: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+  .topDetails{
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .poolDetails,
+  .gameDetails{
+    flex-flow: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.pokerchip2{
+  height: 150px;
+  width: 150px;
+}
+
+a.link{
+  color: blue;
+}
+.double-wide .first-container{
+  width: 25%;
+  min-width: 200px;
+}
+
+.double-wide .second-container{
+  width: 73%;
+}
+
+.even-split .first,
+.even-split .second{
+  width: 50%;
+}
+
+.even-split .nav-item{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-container ol li{
+  display: list-item;
+}
+
+.third-container ol li,
+.first-container ol li,
+.second-container ol li{
+  display: list-item;
+}
+.second-container a{
+  color: blue;
+}
+
+.second a,
+.first a{
+  color: green;
+  text-decoration: underline;
+}
+
+#dispListBtn{
+  boarder-radius: 3px;
+  background-color: green;
+  color: white !important;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#dispListBtn a{
+  color: white;
+  text-decoration: none;
+}
+
+.MainContainer a{
+  color: green;
+  text-decoration: underline;
+}
+
+h4.colorwhite{
+  color: white;
+}
+
+.bgColorBlack{
+  background-color: #333333;
+}
+
+p a:-webkit-any-link{
+  color: green;
+  text-decoration: underline;
+}
+
+.red{
+  color: red;
+}
+
+.blue{
+  color: blue;
+}
+
+ul.specialsList li{
+  display: list-item;
+  list-style-type: disc;
+}
+ul.specialsList{
+  display: flex;
+  padding: 25px;
+}
+
+.smallImg{
+  height: 300px;
+  width: 300px;
+}
+.buffetItems .first-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second-container{
+  justify-content: flex-start;
+}
+.bottomDiv{
+  justify-content: center;
+  width: 80%;
+  align-items: center;
+}
+
+.align{
+  align-items: center;
+}
+
+.hottip{
+  width: 80%;
+  background-color: rgba(137, 190, 137, .2);
+  align-items: center;
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.hottip > img{
+  margin-right: 20px;
+  height: 150px;
+  width: 150px;
+}
+
+.happyhour a:-webkit-any-link{
+  color: green;
+}
+
+.single-wide{
+  width: 95%;
+}
+
+.single-wide ul:not(:has(.nav-item)) {
+  display: block;
+}
+.single-wide li{
+  display: list-item;
+}
+.divimg > img{
+  max-height: 500px;
+  max-width: 600px;
+}
+.divimg{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.spaceBetween{
+  justify-content: space-between;
+}
+
+.hottip div:first-of-type{
+  align-items: center;
+}
+
+.single-wide img{
+  max-width: 400px;
+}
+.single-wide{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buttonDiv{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin-bottom: 20px;
+}
+button{
+  border-radius: 4px;
+  color: grey;
+  border: 2px solid grey;
+  box-shadow: 3px 3px 2px grey;
+  background-color: darkgreen;
+}
+button > .btnlink{
+  text-decoration: none;
+  color: white;
+}
+
+img.pokerImg{
+  max-width: 200px;
+  max-height: 200px;
+  margin-right: 20px;
+  width: 20%;
+  height: 20%;
+}
+
+img{
+  max-height: 700px;
+  max-width: 700px;
+}
+.MainContainer{
+  padding: 20px;
+}
+
+img.largePicture{
+  max-width: 100%;
+  max-height: none;
+}
+button{
+  color: white;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.eighty{
+  width: 70%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+

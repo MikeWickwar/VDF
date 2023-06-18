@@ -70,6 +70,37 @@
                 </li>
               </ul>
             </li>
+            <li class="nav-item dropdown dropend" if.bind="row.title == 'Gambling'">
+              <a class="dropdown-toggle detailsLink" href="#" aria-expanded="false" data-bs-toggle="dropdown" data-bs-target="#gamblingDropdown" aria-controls="gamblingDropdown" >Gambling</a>
+              <ul id="gamblingDropdown" class="dropdown-menu" aria-labelledby="gamblingDropdown">
+                <li class="nav-item" repeat.for="subrow of router.settings.navItems" if.bind="subrow.parent == 'gambling'">
+                  <a class="dropdown-toggle detailsLink" if.bind="subrow.parent == 'gambling'" click.capture="onNavClick(subrow.href)" href="#" aria-expanded="false" data-bs-toggle="dropdown" data-bs-target="#gambling${subrow.title}Dropdown" aria-controls="gamblingDropdown" >${subrow.title}</a>
+                  <ul id=`#gambling${subrow.title}Dropdown` class="dropdown-menu" aria-labelledby=`#gambling${subrow.title}Dropdown`>
+                    <li class="nav-item" repeat.for="subrowmini of router.settings.navItems" if.bind="subrowmini.parent ==  subrow.name">
+                      <a class="dropdown-item" if.bind="subrowmini.parent == subrow.name" click.capture="onNavClick(subrowmini.href)">${subrowmini.title}</a>
+                    </li>
+                    <li class="nav-item" if.bind="subrow.name == 'gamblingWhereTo'">
+                      <a class="dropdown-toggle detailsLink" href="#" aria-expanded="false" data-bs-toggle="gamblingWhereToDropdownStrip" data-bs-target="dropdown" aria-controls="gamblingWhereToDropdownStrip" > The Strip</a>
+                      <ul id="gamblingWhereToDropdownStrip" class="dropdown-menu" aria-labelledby="gamblingWhereToDropdownStrip">
+                        <li class="nav-item" repeat.for="subrowtwo of router.settings.navItems" if.bind="subrowtwo.parent ==  'gamblingWhereToStrip'">
+                          <a class="dropdown-item" if.bind="subrowtwo.parent ==  'gamblingWhereToStrip'" click.capture="onNavClick(subrowtwo.href)">${subrowtwo.title}</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item" if.bind="subrow.name == 'gamblingWhereTo'">
+                      <a class="dropdown-toggle detailsLink" href="#" aria-expanded="false" data-bs-toggle="gamblingWhereToDropdownFremont" data-bs-target="dropdown" aria-controls="gamblingWhereToDropdownFremont" > Fremont St</a>
+                      <ul id="gamblingWhereToDropdownFremont" class="dropdown-menu" aria-labelledby="gamblingWhereToDropdownFremont">
+                        <li class="nav-item dropstart" repeat.for="subrowtwo of router.settings.navItems" if.bind="subrowtwo.parent == 'gamblingWhereToFremont'">
+                          <a class="dropdown-item" if.bind="subrowtwo.parent == 'gamblingWhereToFremont'" click.capture="onNavClick(subrowtwo.href)">${subrowtwo.title}</a>
+                        </li>
+                      </ul>
+                    </li>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
