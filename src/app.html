@@ -31,16 +31,16 @@
                 <li class="nav-item dropdown">
                   <a class="dropdown-toggle fremontLink" href="#" aria-expanded="false" data-bs-toggle="dropdown" data-bs-target="#fremontDropdown" aria-controls="fremontDropdown" >Hotels on Fremont</a>
                   <ul id="fremontDropdown" class="dropdown-menu" aria-labelledby="fremontDropdown">
-                    <li repeat.for="subitem of gHotelFremontInfo">
-                      <a class="dropdown-item" click.capture="onHotelNavClick(parseHotelName(subitem.name))">${subitem.name}</a>
+                    <li repeat.for="subitem of router.hotels" if.bind="subitem.location == 'fremont'">
+                      <a class="dropdown-item freemont-item" click.capture="onHotelNavClick(parseHotelName(subitem.name))">${subitem.title}</a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown dropend">
                   <a class="dropdown-toggle stripLink" href="#" aria-expanded="false" data-bs-toggle="dropdown" data-bs-target="#stripDropdown" aria-controls="stripDropdown" >Hotels on The Strip</a>
                   <ul id="stripDropdown" class="dropdown-menu" aria-labelledby="stripDropdown">
-                    <li repeat.for="subitem of gHotelStripInfo" value.bind="gHotelStripInfo">
-                      <a class="dropdown-item"  href.bind="parseHotelName(subitem.name)" click.capture="onHotelNavClick(parseHotelName(subitem.name))">${subitem.name}</a>
+                    <li repeat.for="subitem of router.hotels" if.bind="subitem.location == 'strip'"">
+                      <a class="dropdown-item strip-item"  click.capture="onHotelNavClick(parseHotelName(subitem.name))">${subitem.title}</a>
                     </li>
                   </ul>
                 </li>
@@ -98,10 +98,7 @@
                     </li>
                   </ul>
                 </li>
-
               </ul>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>

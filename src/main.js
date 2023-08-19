@@ -1,6 +1,6 @@
 import environment from '../config/environment.json';
 import {PLATFORM} from 'aurelia-pal';
-import "./app.css"
+import "./app.scss"
 
 export function configure(aurelia) {
 

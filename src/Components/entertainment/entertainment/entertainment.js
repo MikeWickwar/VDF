@@ -1,4 +1,3 @@
-import "./entertainment.css"
 import $ from "jquery"
 
 export class entertainment {

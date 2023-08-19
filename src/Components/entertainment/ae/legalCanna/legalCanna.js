@@ -1,4 +1,4 @@
-import "./legalCanna.css"
+import "./legalCanna.scss"
 import $ from "jquery"
 
 export class legalCanna {

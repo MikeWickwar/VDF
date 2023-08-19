@@ -1,4 +1,3 @@
-import "./contactUs.css"
 import $ from "jquery"
 
 export class contactUs {

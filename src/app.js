@@ -31,103 +31,11 @@ function bindDropdownsInNav() {
   })
 }
 
-function runRequest(location, that) {
-  const loader = new Loader({
-    apiKey: environment.apiKey,
-    libraries: ['places']
-  });
-
-  // Now you can use the Places API to fetch data
-  const keyword = `hotels on ${location}`;
-  const service = new google.maps.places.PlacesService(document.createElement('div'));
-  var lat = location.indexOf(stripRequest) > -1 ? 36.1147 : 36.1663;
-  var lng = location.indexOf(stripRequest) > -1 ? -115.1728 : -115.1492;
-  const request = {
-    location: { lat: lat, lng: lng },
-    radius: 3500,
-    type: 'lodging',
-    keyword: keyword
-  };
-
-  service.nearbySearch(request, (results, status, pagination) => {
-    // handle the results
-
-    if (status == "OK") {
-      results = results.sort((r1, r2) => (r1.name > r2.name) ? 1 : (r1.name < r2.name) ? -1 : 0);
-      if (location == stripRequest) {
-        if (typeof that.gHotelStripInfo === "undefined") {
-          that.gHotelStripInfo = [...results];
-        }else{
-          that.gHotelStripInfo = [...that.gHotelStripInfo, ...results];
-        }
-      }else{
-        if (typeof that.gHotelFremontInfo === "undefined") {
-          that.gHotelFremontInfo = [...results];
-        }else{
-          that.gHotelFremontInfo = [...that.gHotelFremontInfo, ...results];
-        }
-      }
-
-      // Check if there are additional pages of results
-      if (pagination.hasNextPage) {
-        // Call the fetch() method to get the next page of results
-        pagination.nextPage();
-      }else{
-        if (location == stripRequest) {
-          that.gHotelStripInfo = that.gHotelStripInfo.sort((r1, r2) => (r1.name > r2.name) ? 1 : (r1.name < r2.name) ? -1 : 0);
-          localStorage.setItem("LVD:stripHotels", JSON.stringify({"data": that.gHotelStripInfo}));
-          populateStripDropDown(that)
-        }else{
-          that.gHotelFremontInfo = that.gHotelFremontInfo.sort((r1, r2) => (r1.name > r2.name) ? 1 : (r1.name < r2.name) ? -1 : 0);
-          localStorage.setItem("LVD:fremontHotels", JSON.stringify({"data": that.gHotelFremontInfo}));
-          populateFremontDropDown(that)
-        }
-      }
-    }
-  });
-}
-
-function populateStripDropDown(that) {
-  $.each(that.gHotelStripInfo, (i, item) => {
-    var hotelNameForLink = that.parseHotelName(item.name)
-    $("#stripDropdown").append(`<li><a class="dropdown-item" href="#/hotels/${hotelNameForLink}">${item.name}</a></li>`)
-  })
-}
-
-function populateFremontDropDown(that) {
-  $.each(that.gHotelFremontInfo, (i, item) => {
-    var hotelNameForLink = that.parseHotelName(item.name)
-    $("#fremontDropdown").append(`<li><a class="dropdown-item" href="#/hotels/${hotelNameForLink}">${item.name}</a></li>`)
-  })
-}
-
-function getHotelData(that) {
-  var stripDataFromLs = localStorage.getItem("LVD:stripHotels")
-  var fremontDataFromLs = localStorage.getItem("LVD:fremontHotels")
-
-
-  if (stripDataFromLs !== null) {
-    console.log("strip items are in local storage")
-    stripDataFromLs = JSON.parse(stripDataFromLs).data
-    that.gHotelStripInfo = stripDataFromLs;
-  }else{
-    runRequest(stripRequest, that);
-  }
-
-  if (fremontDataFromLs !== null) {
-    console.log("fremont items are in local storage")
-    fremontDataFromLs = JSON.parse(fremontDataFromLs).data
-    that.gHotelFremontInfo = fremontDataFromLs;
-  }else{
-    runRequest("Downtown Las Vegaas", that);
-  }
-
-}
 
 @inject('window')
 export class App {
   async activate(params, routerConfig) {
-    getHotelData(this)
+
   }
   onLoad(){
     console.log("App onload...")
@@ -139,7 +47,6 @@ export class App {
     if(window.innerWidth <= 991){
       $('#navTogglerBtn').click()
     }
-    debugger
     if (!environment.debug) {
       window.location.href = "/VDF/" + href;
     }else{
@@ -148,6 +55,8 @@ export class App {
   }
   onHotelNavClick(name){
     window.scrollTo(0, 0);
+    debugger
+
     if(window.innerWidth <= 991){
       $('#navTogglerBtn').click()
     }
@@ -167,8 +76,8 @@ export class App {
     name = name.replaceAll('LasVegas', '');
     name = name.replaceAll('Suites&Casino', '');
     name = name.replaceAll('Hotel,Casino&SkyPod', '');
-    name = name.replaceAll('-TI,aRadissonHotel', '');
-    name = name.replaceAll('-aDoubleTreebyHiltonHotel', '');
+    name = name.replaceAll('RadissonHotel', '');
+    name = name.replaceAll('aDoubleTreebyHiltonHotel', '');
 
     return name.trim()
   }
@@ -309,12 +218,8 @@ export class App {
     }
     step.run = (navigationInstruction, next) => {
       if(navigationInstruction.config.name == "hotels"){
-        navigationInstruction.config.settings.hotel = $.grep(hotelData.Hotels, (gItem) => { return  gItem.name.toLowerCase() === navigationInstruction.params.childRoute.toLowerCase()})[0];
+        navigationInstruction.config.settings.hotel = $.grep(this.router.hotels, (gItem) => { return  gItem.name.replaceAll(" ", "").toLowerCase() === navigationInstruction.params.childRoute.toLowerCase()})[0];
         navigationInstruction.config.settings.games = hotelData.CasinoGames;
-        navigationInstruction.config.settings.hotelGData = $.grep(that.gHotelStripInfo, (gItem) => { return that.parseHotelName(gItem.name).toLowerCase() === navigationInstruction.params.childRoute.toLowerCase()})[0];
-        if (typeof navigationInstruction.config.settings.hotelGData === "undefined") {
-          navigationInstruction.config.settings.hotelGData = $.grep(that.gHotelFremontInfo, (gItem) => { return that.parseHotelName(gItem.name).toLowerCase() === navigationInstruction.params.childRoute.toLowerCase()})[0];
-        }
       }
 
       return next();
@@ -331,6 +236,7 @@ export class App {
         const viewModel = instruction.viewModel;
 
         if (viewModel && typeof viewModel.activate === 'function') {
+
           await viewModel.activate(instruction.params, instruction.config);
         }
       }
@@ -341,7 +247,6 @@ export class App {
     this.router = router;
     this.router.hotels = hotelData.Hotels;
     this.router.games = hotelData.CasinoGames;
-
   }
 }
 

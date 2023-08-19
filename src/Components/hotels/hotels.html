@@ -7,22 +7,18 @@
       <img src="../../Images/las-vegas-deal-finder-hotels.png" alt="">
     </div>
 
-    <div class="titleAndFee flex">
-      <h1 class="center">${hotelGData.name}</h1>
+    <div class="titleAndFee center flex">
+      <h1 class="center">${hotel.title}</h1>
+      <img src="${hotel.resortImgUrl}" alt="" class="center">
       <div class="scores">
         <div if.bind="hotel" class="topDetails flex">
           <span>Daily Resort Fee: ${hotel.resortFee}</span>
           <span>${hotel.parkingDetails}</span>
         </div>
-        <div if.bind="hotelDetails" class="topDetails flex">
-          <span><a href="${hotelDetails.website}" class="textColor">Click here for more details...</a></span>
-          <span>${hotelDetails.formatted_address}</span>
-          <span>${hotelDetails.formatted_phone_number}</span>
-        </div>
-        <span if.bind="hotelDetails" class="ratings">
-          <rating title="VDF Rating" rating="${hotelDetails.rating * 2 + 1.5}" color="black" symbol="VDF"></rating>
-          <rating title="Quality Rating" rating="${hotelDetails.rating * 2 + 1}" color="purple" symbol="Q"></rating>
-          <rating title="Value Rating" rating="${hotelDetails.rating * 2 + 2}" color="green" symbol="$"></rating>
+        <span if.bind="hotel && hotel.vdfRating > 0" class="ratings">
+          <rating title="VDF Rating" rating="${hotel.vdfRating}" color="black" symbol="VDF"></rating>
+          <rating title="Quality Rating" rating="${hotel.qualRating}" color="purple" symbol="Q"></rating>
+          <rating title="Value Rating" rating="${hotel.valueRating}" color="green" symbol="$"></rating>
         </span>
       </div>
     </div>

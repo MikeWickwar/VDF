@@ -1,4 +1,4 @@
-import "./dispList.css"
+import "./dispList.scss"
 import $ from "jquery"
 
 export class dispList {

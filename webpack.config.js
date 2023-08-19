@@ -20,7 +20,7 @@ const nodeModulesDir = path.resolve(__dirname, 'node_modules');
 
 //Dont forget  NPM RUN BUILD cmd
 const isDev = process.env.NODE_ENV !== 'production';
-// const baseUrl = isDev ? '/' : './';
+const baseUrl = isDev ? '/' : './';
 const baseUrl = './';
 
 
@@ -215,6 +215,14 @@ module.exports = ({ production }, { analyze, hmr, port, host }) => ({
         // CSS required in templates cannot be extracted safely
         // because Aurelia would try to require it again in runtime
         use: cssRules
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader', // Injects CSS into the DOM
+          'css-loader',   // Translates CSS into CommonJS
+          'sass-loader'   // Compiles SCSS to CSS
+        ],
       },
       // Skip minimize in production build to avoid complain on unescaped < such as
       // <span>${ c < 5 ? c : 'many' }</span>

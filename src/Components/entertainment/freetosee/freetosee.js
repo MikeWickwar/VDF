@@ -1,4 +1,4 @@
-import "./freetosee.css"
+import "./freetosee.scss"
 import $ from "jquery"
 
 export class freetosee {

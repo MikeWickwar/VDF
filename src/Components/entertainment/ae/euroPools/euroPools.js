@@ -1,4 +1,3 @@
-import "./euroPools.css"
 import $ from "jquery"
 
 export class euroPools {

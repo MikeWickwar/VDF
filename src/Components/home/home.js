@@ -1,4 +1,4 @@
-import "./home.css"
+import "./home.scss"
 import $ from "jquery"
 
 export class home {

@@ -1,4 +1,4 @@
-import "./shows.css"
+import "./shows.scss"
 import $ from "jquery"
 
 export class shows {

@@ -1,4 +1,3 @@
-import "./bestStrip.css"
 import $ from "jquery"
 
 export class bestStrip {

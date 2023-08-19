@@ -1,4 +1,4 @@
-import "./tripsandtours.css"
+import "./tripsandtours.scss"
 import $ from "jquery"
 
 export class tripsandtours {

@@ -1,4 +1,4 @@
-import "./coupons.css"
+import "./coupons.scss"
 import $ from "jquery"
 
 export class coupons {
