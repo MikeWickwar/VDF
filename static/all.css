@@ -93,6 +93,10 @@ nav .dropdown-menu li:not(:empty) {
   padding: 4px 8px;
 }
 
+#navTogglerBtn {
+  width: 50px;
+}
+
 #dealsDropdown,
 #fremontDropdown,
 #stripDropdown,
@@ -162,7 +166,7 @@ body {
   margin: 0;
   padding-bottom: 100px;
   background-color: #020c30;
-  background-image: "~/static/VegasBackground01.png";
+  background-image: url("../static/VegasBackground01.png");
   min-height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -379,6 +383,9 @@ a {
   .second-container > img {
     overflow: hidden;
     width: 80%;
+  }
+  img.center {
+    align-self: stretch;
   }
 }
 .shimmer {

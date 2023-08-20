@@ -215,7 +215,16 @@ a{
      overflow: hidden;
      width: 80%;
    }
-
+   .navbar-nav li ul.dropdown-menu {
+    display: none;
+   }
+   img.center {
+    align-self: stretch;
+  }
+  #fremontDropdown,
+  #stripDropdown {
+    left: 0;
+  }
 }
 
 
