@@ -6,7 +6,9 @@
   flex-flow: row;
   justify-content: center;
 }
-
+.rooms.info-split-duo {
+    flex-flow: column;
+}
 .third-container,
 .first-container{
   align-content: center;
