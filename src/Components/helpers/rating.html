@@ -1,0 +1,9 @@
+<template bindable="rating, color, symbol">
+  <svg width="62" height="64">
+    <circle cx="30" cy="30" r="29" fill="${color}" stroke="${color}" stroke-width="2" />
+    <circle cx="30" cy="30" r="28" fill="white" />
+    <circle cx="30" cy="30" r="26" fill="${color}" />
+    <text x="30" y="26" text-anchor="middle" fill="white" font-size="10">${symbol}</text>
+    <text x="30" y="39" text-anchor="middle" fill="white" font-size="14">${rating}</text>
+  </svg>
+</template>

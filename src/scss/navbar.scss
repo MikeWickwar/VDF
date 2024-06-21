@@ -1,0 +1,116 @@
+nav{
+  width: 80%;
+  background-color: black;
+  color: $navLinkColor;
+  align-self: center;
+}
+.navbar-toggler-icon,
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  background-color: $navLinkColor;
+  border-radius: 3px;
+}
+
+
+nav{ *:not(:hover){
+    color: $navLinkColor !important;
+    text-decoration: solid;
+  }
+}
+li:not(:has(a, b)),
+ul:not(:has(.nav-item)){
+  display: none;
+}
+ul.navbar-nav *:empty,
+ul.navbar-nav:empty{
+  margin: 0;
+}
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  right: auto;
+  left: 70%;
+}
+
+.navbar-nav li ul.dropdown-menu {
+    display: block;
+    right: auto;
+    left: 70%;
+}
+#stripDropdown > li.freemont-item{
+  display: none;
+}
+.navbar-nav li > ul.dropdown-menu {
+  transition: opacity $navTransitionInTime ease-in;
+  opacity: 0;
+  pointer-events: none; /* Disable pointer events to prevent interaction when submenu is hidden */
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+  opacity: 1;
+  transition: opacity $navTransitionOutTime ease-out;
+  pointer-events: auto; /* Enable pointer events when submenu is visible */
+}
+nav{
+  a,
+  nav-link:focus,
+  .nav-link:hover,
+  a.nav-link,
+  a.nav-item,
+  a:-webkit-any-link {
+      color: white;
+      text-decoration-color: $navLinkColor;
+      cursor: pointer;
+      text-decoration: none;
+  }
+}
+
+ul.navbar-nav:not(:has(.nav-item)){
+  margin-right: 0 !important;
+}
+
+nav li{
+  margin: auto;
+  font-size: 14px;
+}
+nav ul.dropdown-menu {
+  background-color: black;
+}
+
+navbar.fixed,
+.fixed{
+  position: fixed !important;
+  z-index: 1;
+}
+nav .dropdown-menu li:not(:empty){
+  padding: 4px 8px;
+}
+
+#navTogglerBtn{
+  width: 50px;
+}
+
+#dealsDropdown,
+#fremontDropdown,
+#stripDropdown,
+#hotelsDropdown{
+  padding: 0;
+  border: 1px solid $navLinkColor;
+  max-height: 400px;
+}
+#dealsDropdown,
+#fremontDropdown,
+#stripDropdown{
+  overflow-y: scroll;
+}
+#dealsDropdown{
+  overflow: visible;
+}
+#fremontDropdown,
+#stripDropdown{
+  position: absolute;
+  /* width: 350px; */
+  left: 132px;
+}

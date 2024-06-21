@@ -1,0 +1,21 @@
+.smallImg{
+  height: 300px;
+  width: 300px;
+}
+.buffetItems .first-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second-container{
+  justify-content: flex-start;
+}
+.bottomDiv{
+  justify-content: center;
+  width: 80%;
+  align-items: center;
+}
+
+.align{
+  align-items: center;
+}

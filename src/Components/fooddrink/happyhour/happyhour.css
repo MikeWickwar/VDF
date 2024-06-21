@@ -1,0 +1,40 @@
+.hottip{
+  width: 80%;
+  background-color: rgba(137, 190, 137, .2);
+  align-items: center;
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.hottip > img{
+  margin-right: 20px;
+  height: 150px;
+  width: 150px;
+}
+
+.happyhour a:-webkit-any-link{
+  color: green;
+}
+
+.single-wide{
+  width: 95%;
+}
+
+.single-wide ul:not(:has(.nav-item)) {
+  display: block;
+}
+.single-wide li{
+  display: list-item;
+}
+.divimg > img{
+  max-height: 500px;
+  max-width: 600px;
+}
+.divimg{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.spaceBetween{
+  justify-content: space-between;
+}

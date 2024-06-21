@@ -1,0 +1,74 @@
+.mainDetails,
+.mainResortImg{
+  width: 80%;
+}
+.textColor{
+  color: black !important;
+}
+
+.poolDetails,
+.gameDetails,
+.signle-wide{
+  margin-top: 20px;
+}
+
+.poolDetails,
+.rooms,
+.titleAndFee{
+  margin-bottom: 20px;
+  flex-direction: column;
+  width: 80%;
+}
+.gameDetails,
+.img{
+  width: 100%;
+}
+.titleAndFee span{
+  font-weight: bold;
+}
+.split-sidebyside,
+.scores{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+}
+.topDetails{
+  flex-direction: column;
+  width: 60%;
+}
+
+.roomImg{
+  width: 100%;
+}
+
+.poolDetails,
+.gameDetails{
+  align-items: center;
+}
+.left-side{
+  width: 40%;
+}
+
+
+@media all and (max-width: 1450px) {
+  .scores{
+    flex-flow: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+  .topDetails{
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .poolDetails,
+  .gameDetails{
+    flex-flow: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+}

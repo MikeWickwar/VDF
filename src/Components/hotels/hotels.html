@@ -1,0 +1,138 @@
+
+<template>
+  <require from="../helpers/rating.html"></require>
+
+  <div class="MainContainer">
+    <div class="TitleImg center">
+      <img src="../../Images/las-vegas-deal-finder-hotels.png" alt="">
+    </div>
+
+    <div class="titleAndFee center flex">
+      <h1 class="center">${hotel.title}</h1>
+      <img src="${hotel.resortImgUrl}" alt="" class="center">
+      <div class="scores">
+        <div if.bind="hotel" class="topDetails flex">
+          <span>Daily Resort Fee: ${hotel.resortFee}</span>
+          <span>${hotel.parkingDetails}</span>
+        </div>
+        <span if.bind="hotel && hotel.vdfRating > 0" class="ratings">
+          <rating title="VDF Rating" rating="${hotel.vdfRating}" color="black" symbol="VDF"></rating>
+          <rating title="Quality Rating" rating="${hotel.qualRating}" color="purple" symbol="Q"></rating>
+          <rating title="Value Rating" rating="${hotel.valueRating}" color="green" symbol="$"></rating>
+        </span>
+      </div>
+    </div>
+    <div class="center flex col">
+      <p if.bind="hotel" class="mainDetails">${hotel.hotelDetails}</p>
+      <img if.bind="!hotel.overRideForLocalImg" class="mainResortImg" src="${hotelDetails.photos[0].url}"/>
+      <img else class="mainResortImg" src="${hotel.resortImgUrl}"/>
+    </div>
+    <div if.bind="hotels" class="single-wide rooms center flex col">
+      <h3>Rooms & Suits</h3>
+      <p class="mainDetails">${hotel.roomsBlurb}</p>
+    </div>
+    <div if.bind="rooms" class="rooms info-split-duo" repeat.for="room of rooms">
+      <div class="firsst-container">
+        <h4>${room.title}</h4>
+        <p>${room.roomDetails}</p>
+        <p>${room.blurb}</p>
+        <ul class="flex col">
+          <li repeat.for="feature of room.features">${feature}</li>
+        </ul>
+      </div>
+      <div class="second-container">
+        <img class="roomImg" src="${room.img}" alt="">
+      </div>
+   </div>
+
+   <div if.bind="hotel" class="poolDetails flex center col">
+     <div class="single-wide">
+       <h3 class="" >${hotel.pool.title}</h3>
+       <p>${hotel.pool.poolBlurb}</p>
+     </div>
+     <div>
+       <img class="img center" src="${hotel.pool.poolImg}" alt="">
+     </div>
+   </div>
+
+   <div if.bind="hotel" class="single-wide rooms center flex col">
+     <h3>${hotel.casino.title}</h3>
+     <p class="mainDetails">${hotel.casino.subTitle}</p>
+
+     <div class="gameDetails">
+       <div class="">
+         <h3 if.bind="hotel.casino.games">Available Games:</h3>
+         <div if.bind="hotel.casino.games" class="flex col">
+           <div repeat.for="game of hotel.casino.games">
+             <h5>${game}</h5>
+             <p>${getGame(game)}</p>
+           </div>
+         </div>
+       </div>
+       <div>
+         <img class="img center" src="${hotel.casino.titleImg}" alt="">
+       </div>
+     </div>
+
+     <div if.bind="hotel.casino.clubBlurb" class="gameDetails flex center col">
+       <div class="">
+         <h3>${hotel.casino.clubName}</h3>
+         <p>${hotel.casino.clubBlurb}</p>
+       </div>
+     </div>
+
+     <div if.bind="hotel.casino.slotBlurb" class="gameDetails flex center col">
+       <div class="">
+         <h3 class="">Slots</h3>
+         <p>${hotel.casino.slotBlurb}</p>
+       </div>
+       <div>
+         <img class="img center" src="${hotel.casino.slotImg}" alt="">
+       </div>
+     </div>
+
+     <div if.bind="hotel.casino.slotBlurb" class="gameDetails flex center col">
+       <div class="">
+         <h3 class="">Table Games</h3>
+         <p>${hotel.casino.tableGamesBlurb}</p>
+       </div>
+       <div>
+         <img class="img center" src="${hotel.casino.tableGamesImg}" alt="">
+       </div>
+     </div>
+
+     <div if.bind="hotel.casino.pokerBlurb" class="gameDetails flex center col">
+       <div class="">
+         <h3 class="">Poker</h3>
+         <p>${hotel.casino.pokerBlurb}</p>
+       </div>
+       <div>
+         <img class="img center" src="${hotel.casino.pokerImg}" alt="">
+       </div>
+     </div>
+
+     <div if.bind="hotel.casino.sbBlurb" class="gameDetails flex center col">
+       <div class="">
+         <h3 class="">Sports Book</h3>
+         <p>${hotel.casino.sbBlurb}</p>
+       </div>
+       <div>
+         <img class="img center" src="${hotel.casino.sbImg}" alt="">
+       </div>
+     </div>
+
+     <div if.bind="hotel.casino.misc" repeat.for="miscItem of hotel.casino.misc" class="gameDetails flex center col">
+       <div class="">
+         <h3 class="">${miscItem.miscTitle}</h3>
+         <p if.bind="miscItem.miscBlurb">${miscItem.miscBlurb}</p>
+       </div>
+       <div>
+         <img if.bind="miscItem.miscPhoto" class="img center" src="${miscItem.miscPhoto}" alt="">
+       </div>
+     </div>
+
+   </div>
+
+  </div>
+
+</template>

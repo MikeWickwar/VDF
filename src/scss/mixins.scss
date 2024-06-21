@@ -1,0 +1,18 @@
+@mixin flex{
+  display: flex;
+}
+@mixin flexCol{
+  display: flex;
+  flex-flow: column;
+}
+@mixin flexCenterCol{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+@mixin flexCenter{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}

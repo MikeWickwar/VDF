@@ -1,0 +1,34 @@
+.triple-wide,
+.info-split-duo{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: center;
+}
+.rooms.info-split-duo {
+    flex-flow: column;
+}
+.third-container,
+.first-container{
+  align-content: center;
+  padding: $paddingDefault;
+  min-width: 400px;
+}
+.triple-wide .first-container,
+.triple-wide .third-container{
+  width: 25%;
+  min-width: inherit;
+}
+.second-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: $paddingDefault;
+}
+.triple-wide .second-container{
+  width: 65%;
+  min-width: inherit;
+  flex-direction: column;
+  justify-content: flex-start;
+}

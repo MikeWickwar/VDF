@@ -1,0 +1,5 @@
+.third-container ul,
+ul > li:has(p),
+ul > li > p{
+  display: block;
+}

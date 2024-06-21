@@ -1,0 +1,23 @@
+a.link{
+  color: blue;
+}
+.double-wide .first-container{
+  width: 25%;
+  min-width: 200px;
+}
+
+.double-wide .second-container{
+  width: 73%;
+  height: fit-content;
+}
+
+.even-split .first,
+.even-split .second{
+  width: 50%;
+}
+
+.even-split .nav-item{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
