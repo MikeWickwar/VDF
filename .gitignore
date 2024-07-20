@@ -31,6 +31,7 @@ node_modules
 bower_components
 .idea
 .DS_STORE
+.env
 
 # Compiled files
 /scripts

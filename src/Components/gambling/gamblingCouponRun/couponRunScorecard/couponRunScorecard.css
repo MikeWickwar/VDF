@@ -2,7 +2,7 @@ img.largePicture{
   max-width: 100%;
   max-height: none;
 }
-button{
+.printButton{
   color: white;
   margin-bottom: 20px;
   width: 200px;

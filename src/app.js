@@ -4,12 +4,7 @@ import {activationStrategy} from 'aurelia-router';
 import hotelData from 'resources/hotels.json';
 require('bootstrap/dist/css/bootstrap.min.css');
 import { inject } from 'aurelia-framework';
-import { Loader } from '@googlemaps/js-api-loader';
 import environment from '../config/environment.json';
-import { HttpClient } from 'aurelia-fetch-client';
-
-const stripRequest = `Hotels on las vegas blvd las vegas` ;
-// const stripRequest = 'hotels on las vegas blvd in las vegas nv including The ARIA Resort And Casino, The Horseshoe,  Bellagio, Casino Royale Las Vegas, Caesars Palace Las Vegas, Circus Circus Las Vegas, The Cosmopolitan of Las Vegas, Ellis Island Hotel Las Vegas, Encore at Wynn Las Vegas, Excalibur Hotel and Casino, Flamingo Las Vegas, Harrah\'s Las Vegas, The LINQ Las Vegas, Luxor Las Vegas, Mandalay Bay Resort and Casino, MGM Grand Las Vegas, Park MGM Las Vegas, New York-New York Hotel and Casino, OYO Hotel and Casino Las Vegas, Paris Las Vegas Hotel & Casino, Planet Hollywood Resort & Casino Las Vegas, Sahara Las Vegas, The Cromwell Las Vegas, The Mirage Las Vegas, The STRAT Hotel, Casino & Skypod, The Venetian Resort Las Vegas, Treasure Island Las Vegas, Tropicana Las Vegas, Wynn Las Vegas';
 
 function bindWindowScroll(){
   $(window).scroll(() => {
@@ -55,19 +50,17 @@ export class App {
       window.location.href = href;
     }
   }
-  parseHotelName (name){
-    name = name.replaceAll(' ', '');
-    name = name.replaceAll('Resort&Casino', '');
-    name = name.replaceAll('Hotel&Casino', '');
-    name = name.replaceAll('HotelAndCasino', '');
-    name = name.replaceAll('of', '');
-    name = name.replaceAll('LasVegas', '');
-    name = name.replaceAll('Suites&Casino', '');
-    name = name.replaceAll('Hotel,Casino&SkyPod', '');
-    name = name.replaceAll('RadissonHotel', '');
-    name = name.replaceAll('aDoubleTreebyHiltonHotel', '');
-
-    return name.trim()
+  parseHotelName(name) {
+    const replacements = [
+      ' ', 'Resort&Casino', 'Hotel&Casino', 'HotelAndCasino', 'of', 'LasVegas', 
+      'Suites&Casino', 'Hotel,Casino&SkyPod', 'RadissonHotel', 'aDoubleTreebyHiltonHotel'
+    ];
+  
+    replacements.forEach(replacement => {
+      name = name.replaceAll(replacement, '');
+    });
+  
+    return name.trim();
   }
   configureRouter(config, router) {
     var that = this;

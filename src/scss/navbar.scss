@@ -109,7 +109,35 @@ nav .dropdown-menu li:not(:empty){
 }
 #fremontDropdown,
 #stripDropdown{
-  position: absolute;
+  // position: absolute;
   /* width: 350px; */
-  left: 132px;
+  // left: 132px;
+}
+
+/* Targets devices with a maximum width of 480px (common for cell phones) */
+@media (max-width: 480px) {
+  /* Your CSS rules for cell phones here */
+  body {
+    background-color: lightblue;
+  }
+  .navbar {
+    font-size: 14px;
+  }
+  .content {
+    padding: 10px;
+  }
+}
+
+/* Targets devices with a maximum width of 767px (covering more cell phones and small tablets) */
+@media (max-width: 767px) {
+  /* Your CSS rules for cell phones and small tablets here */
+  body {
+    background-color: lightgreen;
+  }
+  .navbar {
+    font-size: 16px;
+  }
+  .content {
+    padding: 15px;
+  }
 }
