@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>LVD</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Ensure proper text rendering and size on Apple devices -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Control the text size in iOS to prevent zooming on form fields -->
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
     <base href="<%- htmlWebpackPlugin.options.metadata.baseUrl %>">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="all.css"  type="text/css">

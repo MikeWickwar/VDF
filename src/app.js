@@ -21,17 +21,6 @@ function bindWindowScroll(){
   })
 }
 
-function bindDropdownsInNav() {
-  let dropdowns = document.querySelectorAll('.dropdown-toggle')
-  dropdowns.forEach((dd)=>{
-      dd.addEventListener('click', function (e) {
-          var el = this.nextElementSibling
-          el.style.display = el.style.display==='block'?'none':'block'
-      })
-  })
-}
-
-
 @inject('window')
 export class App {
   async activate(params, routerConfig) {
@@ -40,7 +29,6 @@ export class App {
   onLoad(){
     console.log("App onload...")
     bindWindowScroll()
-    bindDropdownsInNav()
   }
   onNavClick(href){
     window.scrollTo(0, 0);

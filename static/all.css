@@ -1,128 +1,3 @@
-nav {
-  width: 80%;
-  background-color: black;
-  color: white;
-  align-self: center;
-}
-
-.navbar-toggler-icon,
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after {
-  background-color: white;
-  border-radius: 3px;
-}
-
-nav *:not(:hover) {
-  color: white !important;
-  text-decoration: solid;
-}
-
-li:not(:has(a, b)),
-ul:not(:has(.nav-item)) {
-  display: none;
-}
-
-ul.navbar-nav *:empty,
-ul.navbar-nav:empty {
-  margin: 0;
-}
-
-.dropdown-submenu {
-  position: relative;
-}
-
-.dropdown-submenu .dropdown-menu {
-  right: auto;
-  left: 70%;
-}
-
-.navbar-nav li ul.dropdown-menu {
-  display: block;
-  right: auto;
-  left: 70%;
-}
-
-#stripDropdown > li.freemont-item {
-  display: none;
-}
-
-.navbar-nav li > ul.dropdown-menu {
-  transition: opacity 0.5s ease-in;
-  opacity: 0;
-  pointer-events: none; /* Disable pointer events to prevent interaction when submenu is hidden */
-}
-
-.navbar-nav li:hover > ul.dropdown-menu {
-  opacity: 1;
-  transition: opacity 0s ease-out;
-  pointer-events: auto; /* Enable pointer events when submenu is visible */
-}
-
-nav a,
-nav nav-link:focus,
-nav .nav-link:hover,
-nav a.nav-link,
-nav a.nav-item,
-nav a:-webkit-any-link {
-  color: white;
-  text-decoration-color: white;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-ul.navbar-nav:not(:has(.nav-item)) {
-  margin-right: 0 !important;
-}
-
-nav li {
-  margin: auto;
-  font-size: 14px;
-}
-
-nav ul.dropdown-menu {
-  background-color: black;
-}
-
-navbar.fixed,
-.fixed {
-  position: fixed !important;
-  z-index: 1;
-}
-
-nav .dropdown-menu li:not(:empty) {
-  padding: 4px 8px;
-}
-
-#navTogglerBtn {
-  width: 50px;
-}
-
-#dealsDropdown,
-#fremontDropdown,
-#stripDropdown,
-#hotelsDropdown {
-  padding: 0;
-  border: 1px solid white;
-  max-height: 400px;
-}
-
-#dealsDropdown,
-#fremontDropdown,
-#stripDropdown {
-  overflow-y: scroll;
-}
-
-#dealsDropdown {
-  overflow: visible;
-}
-
-#fremontDropdown,
-#stripDropdown {
-  position: absolute;
-  /* width: 350px; */
-  left: 132px;
-}
-
 .triple-wide,
 .info-split-duo {
   margin-top: 30px;
@@ -132,11 +7,15 @@ nav .dropdown-menu li:not(:empty) {
   justify-content: center;
 }
 
+.rooms.info-split-duo {
+  flex-flow: column;
+}
+
 .third-container,
 .first-container {
   align-content: center;
   padding: 1.25em;
-  min-width: 400px;
+  min-width: 50%;
 }
 
 .triple-wide .first-container,
@@ -165,8 +44,8 @@ body {
   padding: 0;
   margin: 0;
   padding-bottom: 100px;
-  background-color: #020c30;
-  background-image: url("../static/VegasBackground01.png");
+  background: linear-gradient(to bottom, #e0e0e0, #676767);
+  backdrop-filter: grayscale(1);
   min-height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -263,12 +142,13 @@ a {
 }
 
 .afLinkImg {
-  width: 468px;
+  width: 100%;
+  max-width: 468px;
 }
 
 .titleWithImages {
   margin-top: 1.25em;
-  margin-bottom: 1.25em;
+  margin-bottom: 4.25em;
   display: flex;
   width: 100%;
   height: 150px;
@@ -310,7 +190,7 @@ a {
 }
 
 #routerView {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(250, 255, 255, 0.9);
   width: 80%;
   display: flex;
   align-self: center;
@@ -386,6 +266,10 @@ a {
   }
   img.center {
     align-self: stretch;
+  }
+  #fremontDropdown,
+  #stripDropdown {
+    left: 0;
   }
 }
 .shimmer {

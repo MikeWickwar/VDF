@@ -10,8 +10,6 @@ nav{
   background-color: $navLinkColor;
   border-radius: 3px;
 }
-
-
 nav{ *:not(:hover){
     color: $navLinkColor !important;
     text-decoration: solid;
@@ -43,14 +41,15 @@ ul.navbar-nav:empty{
   display: none;
 }
 .navbar-nav li > ul.dropdown-menu {
-  transition: opacity $navTransitionInTime ease-in;
   opacity: 0;
+  transition: opacity $navTransitionInTime ease-in;
+  display: none;
   pointer-events: none; /* Disable pointer events to prevent interaction when submenu is hidden */
 }
 
 .navbar-nav li:hover > ul.dropdown-menu {
   opacity: 1;
-  transition: opacity $navTransitionOutTime ease-out;
+  display: block;
   pointer-events: auto; /* Enable pointer events when submenu is visible */
 }
 nav{

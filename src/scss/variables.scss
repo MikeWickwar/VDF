@@ -3,9 +3,12 @@ $background-image: url('../static/VegasBackground01.png');
 $primary-color: #020c30;
 $green-bg-color: rgba(82, 110, 50, 0.2);
 
-$navTransitionInTime: .5s;
-$navTransitionOutTime: 0s;
+$navTransitionInTime: 0s;
+$navTransitionOutTime: 1s;
 
+$paddingBottomDefault: 4.25em;
+$paddingLeftRightDefault: 1.25em;
+$paddingTopDefault: 1.25em;
 $paddingDefault: 1.25em;
 
 $pokerChipHeightWidth: 10em;
