@@ -4,7 +4,6 @@ import {activationStrategy} from 'aurelia-router';
 import hotelData from 'resources/hotels.json';
 require('bootstrap/dist/css/bootstrap.min.css');
 import { inject } from 'aurelia-framework';
-import environment from '../config/environment.json';
 
 function bindWindowScroll(){
   $(window).scroll(() => {
@@ -30,7 +29,7 @@ export class App {
     if(window.innerWidth <= 991){
       $('#navTogglerBtn').click()
     }
-    if (!environment.debug) {
+    if (process.env.NODE_ENV === 'production') {
       window.location.href = "/VDF/" + href;
     }else{
       window.location.href = href;
@@ -38,13 +37,12 @@ export class App {
   }
   onHotelNavClick(name){
     window.scrollTo(0, 0);
-    debugger
-
+    
     if(window.innerWidth <= 991){
       $('#navTogglerBtn').click()
     }
     var href = `/#/hotels/${name}`
-    if (!environment.debug) {
+    if (process.env.NODE_ENV === 'production') {
       window.location.href = "/VDF/" + href;
     }else{
       window.location.href = href;

@@ -1,4 +1,3 @@
-import environment from '../config/environment.json';
 import {PLATFORM} from 'aurelia-pal';
 import "./app.scss"
 
@@ -8,16 +7,15 @@ export function configure(aurelia) {
     .standardConfiguration()
     .feature(PLATFORM.moduleName('resources/index'));
 
-  aurelia.use.developmentLogging(environment.debug ? 'debug' : 'warn');
+  aurelia.use.developmentLogging(process.env.NODE_ENV !== 'production' ? 'debug' : 'warn');
 
-  if (environment.testing) {
+  if (process.env.NODE_ENV !== 'production') {
     aurelia.use.plugin(PLATFORM.moduleName('aurelia-testing'));
   }
 
-
   aurelia.start().then(() => aurelia.setRoot(PLATFORM.moduleName('app')));
 
-  if (!environment.testing) {
+  if (process.env.NODE_ENV !== 'production') {
     aurelia.loader.baseUrl = '/';
   }
 }

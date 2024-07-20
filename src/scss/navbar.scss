@@ -116,28 +116,26 @@ nav .dropdown-menu li:not(:empty){
 
 /* Targets devices with a maximum width of 480px (common for cell phones) */
 @media (max-width: 480px) {
-  /* Your CSS rules for cell phones here */
-  body {
-    background-color: lightblue;
-  }
-  .navbar {
-    font-size: 14px;
-  }
-  .content {
-    padding: 10px;
+  #dealsDropdown,
+  #fremontDropdown,
+  #stripDropdown,
+  #hotelsDropdown{
+    padding: 0;
+    border: 1px solid $navLinkColor;
+    max-height: 400px;
+    overflow: auto;
   }
 }
 
 /* Targets devices with a maximum width of 767px (covering more cell phones and small tablets) */
 @media (max-width: 767px) {
-  /* Your CSS rules for cell phones and small tablets here */
-  body {
-    background-color: lightgreen;
-  }
-  .navbar {
-    font-size: 16px;
-  }
-  .content {
-    padding: 15px;
+  #dealsDropdown,
+  #fremontDropdown,
+  #stripDropdown,
+  #hotelsDropdown{
+    padding: 0;
+    border: 1px solid $navLinkColor;
+    max-height: 400px;
+    overflow: auto;
   }
 }
