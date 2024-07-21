@@ -52,14 +52,14 @@
                 <li class="nav-item" repeat.for="subrow of router.settings.navItems">
                   <a class="dropdown-item" if.bind="subrow.parent == 'entertainment'" click.capture="onNavClick(subrow.href)">${subrow.title}</a>
                 </li>
-                <li class="nav-item dropdown dropend">
+                <!-- <li class="nav-item dropdown dropend">
                   <a class="dropdown-toggle stripLink" href="#" aria-expanded="false" data-bs-toggle="dropdown" data-bs-target="#aeDropdown" aria-controls="aeDropdown" >Adult Entertainment</a>
                   <ul id="aeDropdown" class="dropdown-menu" aria-labelledby="aeDropdown">
                     <li repeat.for="sr of router.settings.navItems">
                       <a if.bind="sr.parent == 'ae'" class="dropdown-item" click.capture="onNavClick(sr.href)">${sr.name}</a>
                     </li>
                   </ul>
-                </li>
+                </li> -->
               </ul>
             </li>
             <li class="nav-item dropdown dropend" if.bind="row.title == 'Food & Drink'">
