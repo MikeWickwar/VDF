@@ -91,6 +91,8 @@ nav .dropdown-menu li:not(:empty){
   width: 50px;
 }
 
+#gamblingDropdown,
+#fAndDDropdown,
 #dealsDropdown,
 #fremontDropdown,
 #stripDropdown,
@@ -99,6 +101,9 @@ nav .dropdown-menu li:not(:empty){
   border: 1px solid $navLinkColor;
   max-height: 400px;
 }
+
+#gamblingDropdown,
+#fAndDDropdown,
 #dealsDropdown,
 #fremontDropdown,
 #stripDropdown{
@@ -118,6 +123,8 @@ nav .dropdown-menu li:not(:empty){
 @media (max-width: 480px) {
   #dealsDropdown,
   #fremontDropdown,
+  #fAndDDropdown,
+  #gamblingDropdown,
   #stripDropdown,
   #hotelsDropdown{
     padding: 0;
@@ -131,6 +138,8 @@ nav .dropdown-menu li:not(:empty){
 @media (max-width: 767px) {
   #dealsDropdown,
   #fremontDropdown,
+  #gamblingDropdown,
+  #fAndDDropdown,
   #stripDropdown,
   #hotelsDropdown{
     padding: 0;

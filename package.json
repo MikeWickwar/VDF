@@ -1,5 +1,5 @@
 {
-  "name": "VegasDealFinder",
+  "name": "vegas_deal_finder",
   "description": "An Aurelia client application.",
   "version": "0.1.0",
   "license": "MIT",
@@ -65,7 +65,7 @@
     "webpack": "^5.93.0",
     "webpack-bundle-analyzer": "^4.7.0",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.11.1"
+    "webpack-dev-server": "^4.15.2"
   },
   "browserslist": [
     "defaults"

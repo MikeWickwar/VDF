@@ -12,14 +12,14 @@
   width: 70%;
   margin-bottom: 20px;
 }
-button{
+.buttonDiv button{
   border-radius: 4px;
   color: grey;
   border: 2px solid grey;
   box-shadow: 3px 3px 2px grey;
   background-color: darkgreen;
 }
-button > .btnlink{
+.buttonDiv button > .btnlink{
   text-decoration: none;
   color: white;
 }

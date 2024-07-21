@@ -20,9 +20,8 @@ const nodeModulesDir = path.resolve(__dirname, 'node_modules');
 
 //Dont forget  NPM RUN BUILD cmd
 const isDev = process.env.NODE_ENV !== 'production';
-console.log("+++---+++isDev: " + isDev)
+console.log("Is Developement Env... " + isDev)
 var baseUrl = isDev ? '/' : './';
-// const baseUrl = '/';
 
 
 
