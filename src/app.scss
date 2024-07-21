@@ -9,7 +9,7 @@ body{
   padding: 0;
   margin: 0;
   padding-bottom: 100px;
-  background: linear-gradient(to bottom, #e0e0e0, #676767);
+  background-image: $background-image;
   backdrop-filter: grayscale(1);
   min-height: 100vh;
   /* Create the parallax scrolling effect */  

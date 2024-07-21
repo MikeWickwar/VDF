@@ -75,7 +75,7 @@
               <ul id="gamblingDropdown" class="dropdown-menu" aria-labelledby="gamblingDropdown">
                 <li class="nav-item" repeat.for="subrow of router.settings.navItems" if.bind="subrow.parent == 'gambling'">
                   <a class="dropdown-toggle detailsLink" if.bind="subrow.parent == 'gambling'" click.capture="onNavClick(subrow.href)" href="#" aria-expanded="false" data-bs-toggle="dropdown" data-bs-target="#gambling${subrow.title}Dropdown" aria-controls="gamblingDropdown" >${subrow.title}</a>
-                  <ul id=`#gambling${subrow.title}Dropdown` class="dropdown-menu" aria-labelledby=`#gambling${subrow.title}Dropdown`>
+                  <ul id="gambling${subrow.name}Dropdown" class="dropdown-menu" aria-labelledby=`#gambling${subrow.title}Dropdown`>
                     <li class="nav-item" repeat.for="subrowmini of router.settings.navItems" if.bind="subrowmini.parent ==  subrow.name">
                       <a class="dropdown-item" if.bind="subrowmini.parent == subrow.name" click.capture="onNavClick(subrowmini.href)">${subrowmini.title}</a>
                     </li>

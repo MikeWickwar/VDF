@@ -91,6 +91,11 @@ nav .dropdown-menu li:not(:empty){
   width: 50px;
 }
 
+#gamblinggamblingStratDropdown,
+#gamblinggamblingDropdown,
+#gamblinggambling101Dropdown,
+#gamblinggamblingWhereToDropdown,
+#gamblinggamblingCouponRunDropdown,
 #gamblingDropdown,
 #fAndDDropdown,
 #dealsDropdown,
@@ -102,7 +107,11 @@ nav .dropdown-menu li:not(:empty){
   max-height: 400px;
 }
 
-#gamblingDropdown,
+#gamblinggamblingStratDropdown,
+#gamblinggamblingDropdown,
+#gamblinggamblingWhereToDropdown,
+#gamblinggambling101Dropdown,
+#gamblinggamblingCouponRunDropdown,
 #fAndDDropdown,
 #dealsDropdown,
 #fremontDropdown,
@@ -112,16 +121,14 @@ nav .dropdown-menu li:not(:empty){
 #dealsDropdown{
   overflow: visible;
 }
-#fremontDropdown,
-#stripDropdown{
-  // position: absolute;
-  /* width: 350px; */
-  // left: 132px;
-}
 
 /* Targets devices with a maximum width of 480px (common for cell phones) */
 @media (max-width: 480px) {
   #dealsDropdown,
+  #gamblinggamblingDropdown,
+  #gamblinggamblingCouponRunDropdown,
+  #gamblinggamblingWhereToDropdown,
+  #gamblinggamblingStratDropdown,
   #fremontDropdown,
   #fAndDDropdown,
   #gamblingDropdown,
@@ -137,6 +144,10 @@ nav .dropdown-menu li:not(:empty){
 /* Targets devices with a maximum width of 767px (covering more cell phones and small tablets) */
 @media (max-width: 767px) {
   #dealsDropdown,
+  #gamblinggamblingStratDropdown,
+  #gamblinggamblingCouponRunDropdown,
+  #gamblinggamblingWhereToDropdown,
+  #gamblinggamblingDropdown,
   #fremontDropdown,
   #gamblingDropdown,
   #fAndDDropdown,
