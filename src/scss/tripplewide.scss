@@ -6,7 +6,10 @@
   flex-flow: row;
   justify-content: center;
 }
-.rooms.info-split-duo {
+.triple-wide{
+  align-items: baseline;
+}
+.info-split-duo {
     flex-flow: column;
 }
 .third-container,
@@ -31,4 +34,15 @@
   min-width: inherit;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+@media all and (max-width: 800px) {
+  .triple-wide{
+    flex-flow: column;
+  }
+  .triple-wide .first-container,
+  .triple-wide .second-container,
+  .triple-wide .third-container{
+    width: 100%;
+  }
 }
